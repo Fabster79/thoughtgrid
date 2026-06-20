@@ -289,7 +289,11 @@ function ToolDetailPage({ data }: DataPageProps) {
 
             <div className="content-sections">
               <InfoList title="Wann nutzen?" items={tool.detail.whenToUse} />
-              <InfoList title="So funktioniert's" items={tool.detail.howToUse} ordered />
+              <InfoList
+                title="So funktioniert's"
+                items={tool.detail.howToUse}
+                ordered
+              />
               <InfoList
                 title="Typische Stolperfallen"
                 items={tool.detail.pitfalls}
@@ -299,7 +303,7 @@ function ToolDetailPage({ data }: DataPageProps) {
             <div className="fit-grid">
               <InfoList title="Gut geeignet für" items={tool.detail.goodFor} />
               <InfoList
-                title="Weniger geeignet für"
+                title="Eher nicht geeignet für"
                 items={tool.detail.notIdealFor}
               />
             </div>
@@ -331,7 +335,7 @@ function ToolDetailPage({ data }: DataPageProps) {
 
         {tool.visual && (
           <article className="detail-panel visual-panel">
-            <p className="eyebrow">Visual Preview</p>
+            <p className="eyebrow">Visual-Hinweis</p>
             <h2>{tool.visual.headline}</h2>
             <p>{tool.visual.metaphor}</p>
             <p className="layout-hint">{tool.visual.layoutHint}</p>
@@ -386,15 +390,17 @@ function ToolDetailPage({ data }: DataPageProps) {
                 </ol>
               </div>
             )}
-            <div className="template-fields">
-              {tool.template.fields.map((field) => (
-                <label key={field.label}>
-                  <span>{field.label}</span>
-                  {field.helperText && <small>{field.helperText}</small>}
-                  <textarea defaultValue={field.value} rows={3} />
-                </label>
-              ))}
-            </div>
+            {tool.template.fields.length > 0 && (
+              <div className="template-fields">
+                {tool.template.fields.map((field) => (
+                  <label key={field.label}>
+                    <span>{field.label}</span>
+                    {field.helperText && <small>{field.helperText}</small>}
+                    <textarea defaultValue={field.value} rows={3} />
+                  </label>
+                ))}
+              </div>
+            )}
           </article>
         )}
 

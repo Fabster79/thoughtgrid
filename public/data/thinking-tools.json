@@ -103,9 +103,9 @@
         "estimatedTime": "10–20 Minuten",
         "steps": [
           "Thema formulieren",
-          "Alphabet als Raster nutzen",
+          "Alphabet als Raster anlegen",
           "Begriffe spontan ergänzen",
-          "Lücken später füllen",
+          "Lücken in einer zweiten Runde füllen",
           "spannende Muster markieren"
         ],
         "fields": [
@@ -116,57 +116,57 @@
           },
           {
             "label": "A–F",
-            "helperText": "Erste Begriffe und Assoziationen",
+            "helperText": "Erste Begriffe und Assoziationen.",
             "value": ""
           },
           {
             "label": "G–L",
-            "helperText": "Weitere Begriffe und Assoziationen",
+            "helperText": "Weitere Begriffe und Assoziationen.",
             "value": ""
           },
           {
             "label": "M–R",
-            "helperText": "Weitere Begriffe und Assoziationen",
+            "helperText": "Weitere Begriffe und Assoziationen.",
             "value": ""
           },
           {
             "label": "S–Z",
-            "helperText": "Weitere Begriffe und Assoziationen",
+            "helperText": "Weitere Begriffe und Assoziationen.",
             "value": ""
           },
           {
             "label": "Auffällige Muster",
-            "helperText": "Welche Themen, Begriffe oder Lücken fallen auf?",
+            "helperText": "Welche Themen, Häufungen oder Lücken fallen auf?",
             "value": ""
           },
           {
             "label": "Nächster Schritt",
-            "helperText": "Welche Begriffe willst du weiterdenken?",
+            "helperText": "Welche Begriffe willst du weiterdenken oder verdichten?",
             "value": ""
           }
         ],
         "categoryFocus": "Generieren"
       },
-      "shortDescription": "Ein schneller Einstieg, um vorhandenes Wissen und neue Assoziationen zu einem Thema sichtbar zu machen.",
+      "shortDescription": "Ein schneller Ideenstarter, der vorhandenes Wissen aktiviert und neue Begriffe entlang des Alphabets sichtbar macht.",
       "detail": {
-        "whatItIs": "Die ABC-Liste nutzt das Alphabet als Denkgerüst. Zu jedem Buchstaben werden passende Begriffe, Ideen oder Assoziationen gesammelt. Dadurch entsteht schnell eine breite Sammlung, ohne dass sofort bewertet werden muss.",
+        "whatItIs": "Die ABC-Liste nutzt das Alphabet als einfaches Denkgerüst. Zu jedem Buchstaben werden Begriffe, Ideen oder Assoziationen gesammelt. So entsteht schnell Rohmaterial, ohne dass direkt bewertet oder sortiert werden muss.",
         "whenToUse": [
-          "Wenn ein Thema noch leer oder unübersichtlich wirkt.",
-          "Wenn vorhandenes Wissen aktiviert werden soll.",
-          "Wenn eine Gruppe schnell viele Begriffe sammeln soll.",
-          "Wenn du einen niederschwelligen Kreativstart brauchst."
+          "Wenn ein Thema noch leer, zäh oder unübersichtlich wirkt.",
+          "Wenn vorhandenes Wissen schnell aktiviert werden soll.",
+          "Wenn eine Gruppe viele Begriffe ohne lange Diskussion sammeln soll.",
+          "Wenn ein leichter Einstieg in Lernen, Workshop oder Content-Idee gebraucht wird."
         ],
         "howToUse": [
-          "Schreibe das Thema oben auf die Seite.",
-          "Notiere die Buchstaben A bis Z untereinander.",
-          "Fülle spontan passende Begriffe zu möglichst vielen Buchstaben ein.",
-          "Lass Lücken bewusst offen und komme später zurück.",
-          "Markiere anschließend spannende Begriffe oder Muster."
+          "Formuliere das Thema als kurzes Wort oder klare Fragestellung.",
+          "Schreibe die Buchstaben A bis Z untereinander.",
+          "Sammle spontan passende Begriffe zu möglichst vielen Buchstaben.",
+          "Lass Lücken stehen und ergänze sie später in einer zweiten Runde.",
+          "Markiere Begriffe, die überraschend, wichtig oder weiterführend sind."
         ],
         "pitfalls": [
           "Zu früh bewerten und dadurch den Ideenfluss stoppen.",
-          "Sich an fehlenden Buchstaben festbeißen.",
-          "Nur offensichtliche Begriffe notieren und keine ungewöhnlichen Assoziationen zulassen."
+          "Sich an schwierigen Buchstaben festbeißen.",
+          "Nur offensichtliche Begriffe notieren und ungewöhnliche Assoziationen ausbremsen."
         ],
         "goodFor": [
           "Wissensaktivierung",
@@ -176,17 +176,17 @@
         ],
         "notIdealFor": [
           "Tiefe Ursachenanalyse",
-          "Harte Priorisierungsentscheidungen",
-          "Sehr komplexe Abhängigkeiten"
+          "Verbindliche Entscheidungen",
+          "Komplexe Abhängigkeiten"
         ],
         "output": "Eine alphabetisch strukturierte Ideensammlung als Rohmaterial für weitere Arbeit."
       },
       "visual": {
         "headline": "Denken entlang des Alphabets",
-        "metaphor": "Alphabet als Regal, in das Gedanken einsortiert werden.",
-        "layoutHint": "Eine vertikale A–Z-Leiste links, rechts daneben ausgewählte Begriffe als kleine Tags.",
+        "metaphor": "Das Alphabet als Regal, in das Gedanken einsortiert werden.",
+        "layoutHint": "Vertikale A–Z-Leiste links, daneben ausgewählte Begriffe als kleine Tags; 3–5 Highlights deutlich markieren.",
         "elements": [
-          "A–Z Raster",
+          "A–Z-Raster",
           "Begriff-Tags",
           "markierte Highlights"
         ]
@@ -245,7 +245,7 @@
           },
           {
             "label": "Assoziationen",
-            "helperText": "Welche Begriffe passen zu den einzelnen Buchstaben?",
+            "helperText": "Welche Begriffe, Bilder oder Impulse passen zu den Buchstaben?",
             "value": ""
           },
           {
@@ -255,32 +255,32 @@
           },
           {
             "label": "Weiterdenken",
-            "helperText": "Welche Idee entsteht daraus?",
+            "helperText": "Welche Idee oder Frage entsteht daraus?",
             "value": ""
           }
         ],
         "categoryFocus": "Generieren"
       },
-      "shortDescription": "Ein Schlüsselwort wird in seine Buchstaben zerlegt und mit Assoziationen gefüllt.",
+      "shortDescription": "Ein Schlüsselwort wird Buchstabe für Buchstabe geöffnet und mit passenden Assoziationen gefüllt.",
       "detail": {
-        "whatItIs": "KaWa steht für kreative Analografie Wort-Assoziation. Ein Begriff wird senkrecht geschrieben, und jeder Buchstabe dient als Startpunkt für passende Gedanken. So wird ein einzelnes Wort zum Denkraum.",
+        "whatItIs": "KaWa nutzt ein Schlüsselwort als Denkgerüst. Die Buchstaben des Wortes werden untereinander geschrieben und mit passenden Begriffen, Bildern oder Impulsen ergänzt. So wird aus einem einzelnen Begriff ein kleiner Ideenraum.",
         "whenToUse": [
           "Wenn du ein Thema kreativ öffnen möchtest.",
-          "Wenn ein Begriff emotional oder inhaltlich aufgeladen werden soll.",
-          "Wenn du einen schnellen Einstieg in ein neues Thema brauchst.",
+          "Wenn ein Begriff inhaltlich oder emotional aufgeladen werden soll.",
+          "Wenn ein schneller Einstieg in ein neues Thema gebraucht wird.",
           "Wenn ein Workshop mit einer leichten Aktivierung starten soll."
         ],
         "howToUse": [
-          "Wähle ein zentrales Schlüsselwort.",
+          "Wähle ein kurzes, zentrales Schlüsselwort.",
           "Schreibe die Buchstaben untereinander.",
           "Sammle pro Buchstabe mehrere passende Assoziationen.",
-          "Ergänze auch ungewöhnliche oder persönliche Begriffe.",
+          "Ergänze auch ungewöhnliche, persönliche oder metaphorische Begriffe.",
           "Wähle anschließend die stärksten Impulse aus."
         ],
         "pitfalls": [
-          "Das Schlüsselwort zu lang wählen.",
+          "Ein zu langes Schlüsselwort wählen.",
           "Nur naheliegende Wörter sammeln.",
-          "KaWa mit einer finalen Struktur verwechseln; es ist eher ein Ideenstarter."
+          "KaWa als finale Struktur missverstehen; es ist vor allem ein Ideenstarter."
         ],
         "goodFor": [
           "Kreativität",
@@ -297,8 +297,8 @@
       },
       "visual": {
         "headline": "Ein Wort als Denkraum",
-        "metaphor": "Ein Schlüsselwort wird wie ein Baugerüst für Gedanken genutzt.",
-        "layoutHint": "Großes vertikales Schlüsselwort, daneben kleine Notizzettel mit Assoziationen.",
+        "metaphor": "Ein Schlüsselwort als Gerüst, an dem Gedanken andocken.",
+        "layoutHint": "Großes vertikales Schlüsselwort, daneben kurze Assoziationskarten pro Buchstabe.",
         "elements": [
           "vertikales Wort",
           "Assoziationskarten",
@@ -375,26 +375,26 @@
         ],
         "categoryFocus": "Generieren"
       },
-      "shortDescription": "Gedanken werden als einfache Skizzen, Symbole und Bildideen festgehalten.",
+      "shortDescription": "Gedanken werden in einfache Skizzen, Symbole und Bildideen übersetzt.",
       "detail": {
-        "whatItIs": "KaGa nutzt kleine Grafiken statt langer Texte. Begriffe, Zusammenhänge oder Ideen werden mit Symbolen und Mini-Skizzen visualisiert. Das hilft, Inhalte schneller zu erinnern und anders zu durchdenken.",
+        "whatItIs": "KaGa arbeitet mit kleinen Grafiken statt langen Texten. Begriffe, Zusammenhänge oder Ideen werden als einfache Symbole und Mini-Skizzen dargestellt. Das hilft, Inhalte schneller zu erinnern, zu erklären und anders zu durchdenken.",
         "whenToUse": [
           "Wenn ein Thema visuell greifbarer werden soll.",
-          "Wenn Menschen schneller erinnern als lesen sollen.",
-          "Wenn abstrakte Konzepte anschaulich erklärt werden müssen.",
-          "Wenn du eine Präsentationsidee entwickeln willst."
+          "Wenn abstrakte Konzepte verständlich erklärt werden müssen.",
+          "Wenn Menschen Inhalte schneller erinnern als lesen sollen.",
+          "Wenn du eine Präsentations- oder Erkläridee entwickeln willst."
         ],
         "howToUse": [
-          "Wähle ein Thema oder einen Begriff.",
-          "Sammle zentrale Aspekte.",
+          "Wähle ein Thema oder einen zentralen Begriff.",
+          "Sammle 5–7 wichtige Aspekte.",
           "Übersetze jeden Aspekt in ein einfaches Symbol.",
-          "Verbinde die Symbole zu einer kleinen Bildlandschaft.",
-          "Erkläre die Skizze in wenigen Worten."
+          "Ordne die Symbole zu einer kleinen Bildlandschaft.",
+          "Ergänze kurze Labels, damit die Skizze verständlich bleibt."
         ],
         "pitfalls": [
           "Zu schön zeichnen wollen.",
           "Zu viele Details einbauen.",
-          "Symbole verwenden, die nur du selbst verstehst."
+          "Symbole verwenden, die ohne Erklärung nicht verständlich sind."
         ],
         "goodFor": [
           "Visual Thinking",
@@ -412,7 +412,7 @@
       "visual": {
         "headline": "Denken in kleinen Bildern",
         "metaphor": "Eine Skizzenwand mit einfachen Icons statt langer Stichpunkte.",
-        "layoutHint": "Zentrale Skizze in der Mitte, darum kleine Symbolkarten mit Labels.",
+        "layoutHint": "Zentrale Skizze in der Mitte, darum Symbolkarten mit kurzen Labels und Pfeilen.",
         "elements": [
           "Mini-Icons",
           "Pfeile",
@@ -489,21 +489,21 @@
         ],
         "categoryFocus": "Strukturieren"
       },
-      "shortDescription": "Ein Thema wird vom Zentrum aus in Äste und Unterthemen verzweigt.",
+      "shortDescription": "Ein Thema wird vom Zentrum aus in Hauptäste, Unterthemen und Details verzweigt.",
       "detail": {
-        "whatItIs": "Die Mindmap ordnet Gedanken radial. Ein zentrales Thema steht in der Mitte, Hauptäste führen zu Unterthemen, Details und Beispielen. Dadurch wird ein Thema schnell übersichtlich und erweiterbar.",
+        "whatItIs": "Die Mindmap ordnet Gedanken radial. Ein zentrales Thema steht in der Mitte, Hauptäste führen zu Unterthemen, Details, Beispielen und Fragen. Dadurch bleibt ein Thema offen genug für Ideen und zugleich geordnet genug für Orientierung.",
         "whenToUse": [
           "Wenn du ein Thema breit erfassen möchtest.",
           "Wenn du Inhalte für Vortrag, Artikel oder Workshop strukturierst.",
           "Wenn Ideen und Ordnung gleichzeitig entstehen sollen.",
-          "Wenn Zusammenhänge noch flexibel bleiben sollen."
+          "Wenn Zusammenhänge flexibel sichtbar bleiben sollen."
         ],
         "howToUse": [
           "Schreibe das Thema in die Mitte.",
           "Lege 4–7 Hauptäste für zentrale Bereiche an.",
           "Ergänze Unteräste mit Details, Beispielen und Fragen.",
           "Nutze kurze Begriffe statt langer Sätze.",
-          "Überarbeite die Äste nach Mustern oder Prioritäten."
+          "Überarbeite die Äste nach Mustern, Lücken oder Prioritäten."
         ],
         "pitfalls": [
           "Zu viele Hauptäste erzeugen.",
@@ -521,12 +521,12 @@
           "Numerische Bewertung",
           "Lineare Schritt-für-Schritt-Anleitungen"
         ],
-        "output": "Eine visuelle Themenstruktur mit Haupt- und Unterbereichen."
+        "output": "Eine visuelle Themenstruktur mit Hauptbereichen, Unterpunkten und möglichen Querverbindungen."
       },
       "visual": {
         "headline": "Vom Zentrum in die Struktur",
         "metaphor": "Ein Baum oder Nervensystem aus Gedankenästen.",
-        "layoutHint": "Zentrales Thema als Kreis, fünf farbige Hauptäste mit kurzen Labels und kleinen Unterpunkten.",
+        "layoutHint": "Zentrales Thema als Kreis, 4–7 Hauptäste mit kurzen Labels und kleinen Unterpunkten.",
         "elements": [
           "Zentrum",
           "Hauptäste",
@@ -593,37 +593,37 @@
           },
           {
             "label": "Beziehungslabels",
-            "helperText": "Welche Verben beschreiben die Verbindung?",
+            "helperText": "Welche Verben oder kurzen Sätze beschreiben die Verbindung?",
             "value": ""
           },
           {
             "label": "Offene Fragen",
-            "helperText": "Wo fehlen noch Verbindungen oder Begriffe?",
+            "helperText": "Wo fehlen noch Verbindungen, Begriffe oder Belege?",
             "value": ""
           }
         ],
         "categoryFocus": "Strukturieren"
       },
-      "shortDescription": "Begriffe werden mit beschrifteten Beziehungen zu einem Wissensnetz verbunden.",
+      "shortDescription": "Begriffe werden als Knoten dargestellt und über beschriftete Beziehungen zu einem Wissensnetz verbunden.",
       "detail": {
-        "whatItIs": "Eine Concept Map zeigt nicht nur Begriffe, sondern auch die Art ihrer Beziehung. Knoten stehen für Konzepte, Verbindungslinien beschreiben, wie diese Konzepte zusammenhängen. Dadurch eignet sie sich besonders für komplexes Wissen.",
+        "whatItIs": "Eine Concept Map zeigt nicht nur Begriffe, sondern auch die Art ihrer Beziehung. Knoten stehen für Konzepte, Verbindungslinien beschreiben, wie diese Konzepte zusammenhängen. Dadurch eignet sie sich besonders für komplexes Wissen und fachliche Erklärungen.",
         "whenToUse": [
           "Wenn Zusammenhänge wichtiger sind als reine Listen.",
-          "Wenn ein komplexes Thema erklärt werden soll.",
+          "Wenn ein komplexes Thema erklärt oder dokumentiert werden soll.",
           "Wenn Begriffe sauber voneinander abgegrenzt werden müssen.",
-          "Wenn Wissen dokumentiert oder geteilt werden soll."
+          "Wenn Wissen geteilt, geprüft oder weiterentwickelt werden soll."
         ],
         "howToUse": [
           "Sammle die wichtigsten Konzepte.",
-          "Schreibe jedes Konzept als Knoten auf.",
-          "Verbinde Knoten mit Linien.",
-          "Beschrifte jede Verbindung mit einem Verb oder Beziehungssatz.",
+          "Schreibe jedes Konzept als eigenen Knoten auf.",
+          "Verbinde Knoten mit Linien oder Pfeilen.",
+          "Beschrifte jede Verbindung mit einem Verb oder kurzen Beziehungssatz.",
           "Prüfe, ob die Map als lesbare Aussagen funktioniert."
         ],
         "pitfalls": [
           "Linien ohne Beschriftung verwenden.",
           "Zu viele Begriffe auf einmal einbauen.",
-          "Hierarchien und Beziehungen vermischen."
+          "Hierarchien und Beziehungen unklar vermischen."
         ],
         "goodFor": [
           "Wissensmanagement",
@@ -641,7 +641,7 @@
       "visual": {
         "headline": "Wissen als Netz",
         "metaphor": "Ein Stadtplan aus Begriffen und Verbindungsstraßen.",
-        "layoutHint": "Knoten-Netzwerk mit klar beschrifteten Pfeilen; wenige, gut lesbare Verbindungen.",
+        "layoutHint": "Knoten-Netzwerk mit wenigen, gut lesbaren Pfeilen und klaren Beziehungslabels.",
         "elements": [
           "Konzept-Knoten",
           "beschriftete Pfeile",
@@ -718,14 +718,14 @@
         ],
         "categoryFocus": "Strukturieren"
       },
-      "shortDescription": "Ideen werden einzeln gesammelt und anschließend zu sinnvollen Gruppen sortiert.",
+      "shortDescription": "Viele Einzelgedanken werden gesammelt, sichtbar gemacht und zu Themenclustern verdichtet.",
       "detail": {
-        "whatItIs": "Bei der Kartenabfrage schreibt jede Person Ideen oder Aussagen einzeln auf Karten. Danach werden ähnliche Karten geclustert und benannt. So entstehen Muster aus vielen Einzelbeiträgen.",
+        "whatItIs": "Bei der Kartenabfrage schreibt jede Person Ideen, Beobachtungen oder Aussagen einzeln auf Karten. Danach werden ähnliche Karten geclustert und benannt. Aus vielen Einzelbeiträgen entstehen so Muster, Themenfelder und erste Schwerpunkte.",
         "whenToUse": [
           "Wenn Gruppenwissen sichtbar werden soll.",
-          "Wenn viele Beiträge fair gesammelt werden sollen.",
+          "Wenn viele Beiträge fair und parallel gesammelt werden sollen.",
           "Wenn ein Thema noch ungeordnet ist.",
-          "Wenn aus Einzelideen Themencluster entstehen sollen."
+          "Wenn aus Einzelideen belastbare Themencluster entstehen sollen."
         ],
         "howToUse": [
           "Formuliere eine klare Sammelfrage.",
@@ -750,12 +750,12 @@
           "Tiefe Ursachenanalyse",
           "Finale Entscheidung ohne weitere Bewertung"
         ],
-        "output": "Eine gruppierte Sammlung mit Themenclustern und Cluster-Überschriften."
+        "output": "Eine gruppierte Sammlung mit Themenclustern und prägnanten Cluster-Überschriften."
       },
       "visual": {
         "headline": "Aus Karten werden Muster",
-        "metaphor": "Ein Tisch voller Post-its, die zu Inseln sortiert werden.",
-        "layoutHint": "Viele kleine Karten, gruppiert in 4–6 Cluster mit Überschriften.",
+        "metaphor": "Ein Tisch voller Post-its, die zu Themeninseln sortiert werden.",
+        "layoutHint": "Viele kleine Karten, gruppiert in 4–6 Clusterflächen mit klaren Überschriften.",
         "elements": [
           "Post-it-Karten",
           "Cluster-Flächen",
@@ -805,7 +805,7 @@
           },
           {
             "label": "Kandidatenliste",
-            "helperText": "Sammle mehr als zehn mögliche Punkte.",
+            "helperText": "Sammle bewusst mehr als zehn mögliche Punkte.",
             "value": ""
           },
           {
@@ -826,26 +826,26 @@
         ],
         "categoryFocus": "Reduzieren"
       },
-      "shortDescription": "Eine bewusste Begrenzung auf die wichtigsten Punkte zwingt zur Auswahl.",
+      "shortDescription": "Eine bewusste Begrenzung auf zehn Punkte zwingt dazu, Wesentliches von Nebensächlichem zu trennen.",
       "detail": {
-        "whatItIs": "Die Top-10-Liste reduziert ein Thema auf die zehn wichtigsten Punkte. Sie ist einfach, aber wirkungsvoll: Die Begrenzung zwingt dazu, Wesentliches von Nebensächlichem zu trennen.",
+        "whatItIs": "Die Top-10-Liste reduziert ein Thema auf die zehn wichtigsten Punkte. Sie ist einfach, aber wirkungsvoll: Die feste Begrenzung zwingt zur Auswahl und macht Inhalte schneller verständlich.",
         "whenToUse": [
-          "Wenn zu viele Ideen oder Argumente vorliegen.",
+          "Wenn zu viele Ideen, Argumente oder Beispiele vorliegen.",
           "Wenn Inhalte für Kommunikation verdichtet werden sollen.",
           "Wenn ein Thema schnell konsumierbar werden muss.",
-          "Wenn eine erste Priorisierung ohne komplexe Methodik reicht."
+          "Wenn eine erste Priorisierung ohne komplexe Bewertungsmethode reicht."
         ],
         "howToUse": [
           "Sammle zunächst mehr als zehn Kandidaten.",
           "Formuliere jeden Punkt klar und knapp.",
-          "Streiche Dopplungen und Nebenaspekte.",
+          "Streiche Dopplungen und Nebenpunkte.",
           "Wähle die zehn stärksten Punkte aus.",
-          "Sortiere die Liste nach Relevanz oder Dramaturgie."
+          "Sortiere die Liste nach Relevanz, Wirkung oder Dramaturgie."
         ],
         "pitfalls": [
           "Nur zehn Punkte sammeln, statt aus einer größeren Menge auszuwählen.",
           "Die Liste als objektive Entscheidung ausgeben.",
-          "Zu lange und unscharfe Punkte formulieren."
+          "Zu lange oder unscharfe Punkte formulieren."
         ],
         "goodFor": [
           "Reduktion",
@@ -863,7 +863,7 @@
       "visual": {
         "headline": "Die zehn wichtigsten Punkte",
         "metaphor": "Ein Countdown oder Ranking-Board.",
-        "layoutHint": "Nummerierte Liste 1–10 mit hervorgehobenen Top 3.",
+        "layoutHint": "Nummerierte Liste 1–10 mit hervorgehobenen Top 3 und knappen Labels.",
         "elements": [
           "Ranking-Zahlen",
           "Top-3-Hervorhebung",
@@ -939,9 +939,9 @@
         ],
         "categoryFocus": "Analysieren"
       },
-      "shortDescription": "Argumente für und gegen eine Option werden sichtbar gegenübergestellt.",
+      "shortDescription": "Argumente für und gegen eine Option werden sichtbar gegenübergestellt und dadurch besser diskutierbar.",
       "detail": {
-        "whatItIs": "Die Pro-und-Contra-Liste stellt positive und negative Argumente nebeneinander. Sie ist ein einfaches Werkzeug, um Optionen transparenter zu bewerten und Diskussionen zu versachlichen.",
+        "whatItIs": "Die Pro-und-Contra-Liste stellt positive und negative Argumente nebeneinander. Sie ist ein einfaches Werkzeug, um Optionen transparenter zu bewerten, Diskussionen zu versachlichen und offene Fragen sichtbar zu machen.",
         "whenToUse": [
           "Wenn eine Entscheidung vorbereitet werden soll.",
           "Wenn Argumente im Raum stehen, aber ungeordnet sind.",
@@ -953,11 +953,11 @@
           "Sammle alle Pro-Argumente.",
           "Sammle alle Contra-Argumente.",
           "Bewerte die Stärke der Argumente, nicht nur ihre Anzahl.",
-          "Leite offene Fragen oder nächste Schritte ab."
+          "Leite offene Fragen, Entscheidungsbedarf oder nächste Schritte ab."
         ],
         "pitfalls": [
           "Argumente nur zählen statt gewichten.",
-          "Scheinargumente und Fakten vermischen.",
+          "Scheinargumente und belegbare Fakten vermischen.",
           "Nur eine Option betrachten, obwohl mehrere Alternativen existieren."
         ],
         "goodFor": [
@@ -971,12 +971,12 @@
           "Komplexe Risiken",
           "Tiefe Ursachenanalyse"
         ],
-        "output": "Eine transparente Gegenüberstellung der wichtigsten Argumente und offenen Fragen."
+        "output": "Eine transparente Gegenüberstellung der wichtigsten Argumente, Gewichte und offenen Fragen."
       },
       "visual": {
         "headline": "Zwei Seiten einer Entscheidung",
         "metaphor": "Eine Waage mit Pro- und Contra-Gewichten.",
-        "layoutHint": "Zweispaltiges Layout mit Waage-Icon in der Mitte und starken Argumenten hervorgehoben.",
+        "layoutHint": "Zweispaltiges Layout mit Waage-Icon in der Mitte; starke Argumente und offene Fragen gesondert hervorheben.",
         "elements": [
           "Pro-Spalte",
           "Contra-Spalte",
@@ -1046,9 +1046,10 @@
             "helperText": "Was ist die wichtigste Botschaft?",
             "value": ""
           }
-        ]
+        ],
+        "categoryFocus": "Reduzieren"
       },
-      "shortDescription": "Dos & Don’ts verdichten gute und schlechte Praktiken in eine leicht verständliche Gegenüberstellung.",
+      "shortDescription": "Gute und schlechte Praktiken werden in klare, leicht merkbare Handlungsregeln übersetzt.",
       "detail": {
         "whatItIs": "Dos & Don’ts übersetzen Erfahrungswissen in klare Verhaltenshinweise. Das Werkzeug zeigt auf einen Blick, was empfohlen wird und was vermieden werden sollte.",
         "whenToUse": [
@@ -1062,11 +1063,11 @@
           "Sammle gute und schlechte Beispiele.",
           "Formuliere jede Regel konkret und beobachtbar.",
           "Halte die Liste kurz und ausgewogen.",
-          "Ergänze bei Bedarf ein Beispiel pro Regel."
+          "Ergänze bei Bedarf ein kurzes Beispiel pro Regel."
         ],
         "pitfalls": [
           "Zu viele Regeln aufnehmen.",
-          "Don’ts moralisierend formulieren.",
+          "Don’ts moralisierend oder belehrend formulieren.",
           "Regeln ohne Kontext oder Beispiel stehen lassen."
         ],
         "goodFor": [
@@ -1085,7 +1086,7 @@
       "visual": {
         "headline": "Gute und schlechte Praxis auf einen Blick",
         "metaphor": "Zwei Spuren: eine führt zur besseren Praxis, die andere in typische Fallen.",
-        "layoutHint": "Zweispaltiges Layout mit grüner Do-Seite, roter Don’t-Seite und kurzen Beispielkarten.",
+        "layoutHint": "Zweispaltiges Layout mit Do- und Don’t-Seite; kurze Beispielkarten sorgen für Verständlichkeit.",
         "elements": [
           "Do-Spalte",
           "Don’t-Spalte",
@@ -1162,14 +1163,14 @@
         ],
         "categoryFocus": "Reduzieren"
       },
-      "shortDescription": "Wiederkehrende Schritte werden explizit gemacht und zuverlässig abgearbeitet.",
+      "shortDescription": "Wiederkehrende Schritte werden explizit gemacht, überprüfbar formuliert und zuverlässig abgearbeitet.",
       "detail": {
         "whatItIs": "Eine Checkliste macht wiederkehrende Schritte sichtbar und überprüfbar. Sie entlastet das Gedächtnis, reduziert Fehler und hilft, Standards zuverlässig einzuhalten.",
         "whenToUse": [
           "Wenn ein Prozess wiederholt durchgeführt wird.",
           "Wenn Fehler durch Vergessen vermieden werden sollen.",
           "Wenn Qualität vor Übergaben oder Go-lives gesichert werden muss.",
-          "Wenn Aufgaben an andere übergeben werden."
+          "Wenn Aufgaben an andere Personen übergeben werden."
         ],
         "howToUse": [
           "Definiere den konkreten Anwendungsfall.",
@@ -1181,7 +1182,7 @@
         "pitfalls": [
           "Zu viele Punkte aufnehmen.",
           "Unklare Formulierungen verwenden.",
-          "Die Checkliste nie aktualisieren, obwohl sich der Prozess ändert."
+          "Die Checkliste nicht aktualisieren, obwohl sich der Prozess verändert."
         ],
         "goodFor": [
           "Qualitätssicherung",
@@ -1199,7 +1200,7 @@
       "visual": {
         "headline": "Nichts Wichtiges vergessen",
         "metaphor": "Ein Klemmbrett mit klaren Häkchen.",
-        "layoutHint": "Checklisten-Karte mit 6–8 Zeilen, Checkboxen und einem Abschluss-Haken.",
+        "layoutHint": "Checklisten-Karte mit 6–8 Zeilen, Checkboxen und einem hervorgehobenen Abschluss-Haken.",
         "elements": [
           "Checkboxen",
           "Klemmbrett",
