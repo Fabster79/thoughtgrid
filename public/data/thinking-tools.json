@@ -1,0 +1,2615 @@
+{
+  "metadata": {
+    "title": "Denkwerkzeug-Finder",
+    "description": "Datenbasis für eine statische Web-App mit 50 Denkwerkzeugen, Kategorien, Scores und Templates.",
+    "version": "1.0.0",
+    "language": "de",
+    "scoreScale": {
+      "min": 1,
+      "max": 10
+    }
+  },
+  "categories": {
+    "generate": {
+      "label": "Generieren",
+      "description": "Neue Gedanken, Ideen, Optionen oder Perspektiven erzeugen",
+      "thinkingMove": "Was fällt uns alles ein?",
+      "examples": [
+        "Brainstorming",
+        "ABC-Liste",
+        "KaWa",
+        "SCAMPER",
+        "Brainwriting"
+      ]
+    },
+    "structure": {
+      "label": "Strukturieren",
+      "description": "Gedanken ordnen, gruppieren und Zusammenhänge sichtbar machen",
+      "thinkingMove": "Wie hängt das zusammen?",
+      "examples": [
+        "Mindmap",
+        "Concept Map",
+        "Canvas",
+        "Kartenabfrage",
+        "5W1H"
+      ]
+    },
+    "analyze": {
+      "label": "Analysieren",
+      "description": "Ursachen, Muster, Risiken oder Annahmen untersuchen",
+      "thinkingMove": "Warum ist das so?",
+      "examples": [
+        "5 Whys",
+        "Fishbone",
+        "SWOT",
+        "Premortem",
+        "Rumsfeld-Matrix"
+      ]
+    },
+    "reduce": {
+      "label": "Reduzieren",
+      "description": "Komplexität verringern und das Wesentliche herausarbeiten",
+      "thinkingMove": "Was bleibt wirklich übrig?",
+      "examples": [
+        "Top-10-Liste",
+        "Pareto",
+        "Checkliste",
+        "Dos & Don’ts",
+        "A3"
+      ]
+    },
+    "prioritize": {
+      "label": "Priorisieren",
+      "description": "Wichtigkeit, Reihenfolge oder Entscheidungskriterien klären",
+      "thinkingMove": "Was kommt zuerst?",
+      "examples": [
+        "Eisenhower",
+        "Impact/Effort",
+        "MoSCoW",
+        "Entscheidungsmatrix"
+      ]
+    }
+  },
+  "tools": [
+    {
+      "id": "abc-liste",
+      "number": 1,
+      "name": "ABC-Liste",
+      "description": "Zu einem Thema Begriffe entlang des Alphabets sammeln.",
+      "applicationArea": "Wissen aktivieren, Ideen finden, Lernen",
+      "origin": "Vera F. Birkenbihl; als gehirngerechtes Denk-/Lernwerkzeug verbreitet.",
+      "sources": [
+        {
+          "url": "https://blog.brain-friendly.com/the-2-most-successful-thinking-tools-by-vera-f-birkenbihl-abc-lists-and-analograffiti/",
+          "title": "The 2 most successful thinking tools by Vera F. Birkenbihl"
+        }
+      ],
+      "example": "„KI“: A = Agenten, B = Bias, C = Copilot",
+      "scores": {
+        "generate": 9,
+        "structure": 5,
+        "analyze": 2,
+        "reduce": 3,
+        "prioritize": 2
+      },
+      "dominantCategory": "generate",
+      "dominantCategoryLabel": "Generieren",
+      "totalScore": 21,
+      "template": {
+        "title": "ABC-Liste anwenden",
+        "categoryFocus": "Generieren",
+        "intro": "Ein einfaches Starter-Template, um ABC-Liste für die Denkbewegung „Generieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsfrage oder Thema",
+            "value": ""
+          },
+          {
+            "label": "Erste spontane Gedanken",
+            "value": ""
+          },
+          {
+            "label": "Weitere Varianten und Perspektiven",
+            "value": ""
+          },
+          {
+            "label": "Auffällige Muster",
+            "value": ""
+          },
+          {
+            "label": "Interessanteste nächste Idee",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "kawa",
+      "number": 2,
+      "name": "KaWa",
+      "description": "Ein Schlüsselwort wird Buchstabe für Buchstabe mit Assoziationen gefüllt.",
+      "applicationArea": "Kreativität, Reflexion, Themenzugang",
+      "origin": "Vera F. Birkenbihl; „Kreative Analografie Wort-Assoziation“.",
+      "sources": [
+        {
+          "url": "https://akademie-fuer-lernmethoden.de/lernmethoden/birkenbihls-lieblinge/kawas-und-kagas/",
+          "title": "KAWAs und KAGAs -"
+        }
+      ],
+      "example": "DATA: D = Denken, A = Analyse, T = Transparenz, A = Aktion",
+      "scores": {
+        "generate": 8,
+        "structure": 5,
+        "analyze": 3,
+        "reduce": 3,
+        "prioritize": 2
+      },
+      "dominantCategory": "generate",
+      "dominantCategoryLabel": "Generieren",
+      "totalScore": 21,
+      "template": {
+        "title": "KaWa anwenden",
+        "categoryFocus": "Generieren",
+        "intro": "Ein einfaches Starter-Template, um KaWa für die Denkbewegung „Generieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsfrage oder Thema",
+            "value": ""
+          },
+          {
+            "label": "Erste spontane Gedanken",
+            "value": ""
+          },
+          {
+            "label": "Weitere Varianten und Perspektiven",
+            "value": ""
+          },
+          {
+            "label": "Auffällige Muster",
+            "value": ""
+          },
+          {
+            "label": "Interessanteste nächste Idee",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaga",
+      "number": 3,
+      "name": "KaGa",
+      "description": "Gedanken werden als kleine Skizzen, Symbole und Bilder notiert.",
+      "applicationArea": "Lernen, Erinnern, Präsentieren",
+      "origin": "Vera F. Birkenbihl; stärker visuelle Variante ihrer Assoziationsmethoden.",
+      "sources": [
+        {
+          "url": "https://akademie-fuer-lernmethoden.de/lernmethoden/birkenbihls-lieblinge/kawas-und-kagas/",
+          "title": "KAWAs und KAGAs -"
+        }
+      ],
+      "example": "Datenplattform als Stadt mit Straßen, Häusern und Marktplatz zeichnen",
+      "scores": {
+        "generate": 7,
+        "structure": 6,
+        "analyze": 3,
+        "reduce": 4,
+        "prioritize": 2
+      },
+      "dominantCategory": "generate",
+      "dominantCategoryLabel": "Generieren",
+      "totalScore": 22,
+      "template": {
+        "title": "KaGa anwenden",
+        "categoryFocus": "Generieren",
+        "intro": "Ein einfaches Starter-Template, um KaGa für die Denkbewegung „Generieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsfrage oder Thema",
+            "value": ""
+          },
+          {
+            "label": "Erste spontane Gedanken",
+            "value": ""
+          },
+          {
+            "label": "Weitere Varianten und Perspektiven",
+            "value": ""
+          },
+          {
+            "label": "Auffällige Muster",
+            "value": ""
+          },
+          {
+            "label": "Interessanteste nächste Idee",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "mindmap",
+      "number": 4,
+      "name": "Mindmap",
+      "description": "Zentrales Thema in die Mitte, Äste für Unterthemen.",
+      "applicationArea": "Strukturieren, Brainstorming, Vorträge",
+      "origin": "Stark durch Tony Buzan popularisiert; moderne Mindmap-Praxis seit den 1960ern/1970ern.",
+      "sources": [
+        {
+          "url": "https://mind-map.com/tony-buzan-the-man-who-invented-the-mind-map/",
+          "title": "Tony Buzan: The Man Who Invented the Mind Map"
+        }
+      ],
+      "example": "Mitte: „Datenprodukte“, Äste: Nutzen, Rollen, Qualität, Bereitstellung",
+      "scores": {
+        "generate": 8,
+        "structure": 9,
+        "analyze": 4,
+        "reduce": 4,
+        "prioritize": 3
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 28,
+      "template": {
+        "title": "Mindmap anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um Mindmap für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "concept-map",
+      "number": 5,
+      "name": "Concept Map",
+      "description": "Begriffe werden mit beschrifteten Beziehungen verbunden.",
+      "applicationArea": "Wissensstruktur, Lernen, komplexe Zusammenhänge",
+      "origin": "Joseph Novak / Cornell; 1972 im Forschungskontext entwickelt.",
+      "sources": [
+        {
+          "url": "https://cmap.ihmc.us/docs/origins.php",
+          "title": "The Origin and Development of Concept Maps - Cmap"
+        }
+      ],
+      "example": "„Datenqualität“ beeinflusst „Vertrauen“, ermöglicht „Nutzung“",
+      "scores": {
+        "generate": 5,
+        "structure": 9,
+        "analyze": 7,
+        "reduce": 5,
+        "prioritize": 3
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 29,
+      "template": {
+        "title": "Concept Map anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um Concept Map für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "kartenabfrage-clustering",
+      "number": 6,
+      "name": "Kartenabfrage / Clustering",
+      "description": "Ideen einzeln sammeln und anschließend gruppieren.",
+      "applicationArea": "Workshops, Retros, Strategie",
+      "origin": "Moderationspraxis / Metaplan-Tradition",
+      "sources": [],
+      "example": "30 Post-its zu KI-Problemen sammeln und zu Themenclustern sortieren",
+      "scores": {
+        "generate": 7,
+        "structure": 8,
+        "analyze": 4,
+        "reduce": 5,
+        "prioritize": 4
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 28,
+      "template": {
+        "title": "Kartenabfrage / Clustering anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um Kartenabfrage / Clustering für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "top-10-liste",
+      "number": 7,
+      "name": "Top-10-Liste",
+      "description": "Bewusste Begrenzung auf die wichtigsten Punkte.",
+      "applicationArea": "Priorisierung, Content, Entscheidungen",
+      "origin": "Allgemeines Listenformat",
+      "sources": [],
+      "example": "„Top 10 Gründe, warum Datenkataloge scheitern“",
+      "scores": {
+        "generate": 4,
+        "structure": 5,
+        "analyze": 3,
+        "reduce": 9,
+        "prioritize": 7
+      },
+      "dominantCategory": "reduce",
+      "dominantCategoryLabel": "Reduzieren",
+      "totalScore": 28,
+      "template": {
+        "title": "Top-10-Liste anwenden",
+        "categoryFocus": "Reduzieren",
+        "intro": "Ein einfaches Starter-Template, um Top-10-Liste für die Denkbewegung „Reduzieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsliste oder Themenmenge",
+            "value": ""
+          },
+          {
+            "label": "Kriterien für Relevanz",
+            "value": ""
+          },
+          {
+            "label": "Was wird gestrichen oder zusammengefasst?",
+            "value": ""
+          },
+          {
+            "label": "Essenz in einem Satz",
+            "value": ""
+          },
+          {
+            "label": "Nächster konkreter Schritt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "pro-und-contra-liste",
+      "number": 8,
+      "name": "Pro-und-Contra-Liste",
+      "description": "Argumente für und gegen eine Option gegenüberstellen.",
+      "applicationArea": "Entscheidungsvorbereitung",
+      "origin": "Klassisches Alltags- und Managementwerkzeug",
+      "sources": [],
+      "example": "„Power BI Migration: Pro = Standardisierung, Contra = Schulungsaufwand“",
+      "scores": {
+        "generate": 3,
+        "structure": 6,
+        "analyze": 7,
+        "reduce": 5,
+        "prioritize": 7
+      },
+      "dominantCategory": "analyze",
+      "dominantCategoryLabel": "Analysieren",
+      "totalScore": 28,
+      "template": {
+        "title": "Pro-und-Contra-Liste anwenden",
+        "categoryFocus": "Analysieren",
+        "intro": "Ein einfaches Starter-Template, um Pro-und-Contra-Liste für die Denkbewegung „Analysieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Problem, Risiko oder Annahme",
+            "value": ""
+          },
+          {
+            "label": "Beobachtungen und Fakten",
+            "value": ""
+          },
+          {
+            "label": "Mögliche Ursachen oder Muster",
+            "value": ""
+          },
+          {
+            "label": "Evidenz und Gegenargumente",
+            "value": ""
+          },
+          {
+            "label": "Erkenntnis und nächster Prüfpunkt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "dos-don-ts",
+      "number": 9,
+      "name": "Dos & Don’ts",
+      "description": "Gute und schlechte Praktiken nebeneinanderstellen.",
+      "applicationArea": "Enablement, Guidelines, Kommunikation",
+      "origin": "Allgemeines Praxisformat",
+      "sources": [],
+      "example": "„Do: klare Prompts. Don’t: vertrauliche Daten ungeprüft eingeben.“",
+      "scores": {
+        "generate": 3,
+        "structure": 6,
+        "analyze": 4,
+        "reduce": 8,
+        "prioritize": 5
+      },
+      "dominantCategory": "reduce",
+      "dominantCategoryLabel": "Reduzieren",
+      "totalScore": 26,
+      "template": {
+        "title": "Dos & Don’ts anwenden",
+        "categoryFocus": "Reduzieren",
+        "intro": "Ein einfaches Starter-Template, um Dos & Don’ts für die Denkbewegung „Reduzieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsliste oder Themenmenge",
+            "value": ""
+          },
+          {
+            "label": "Kriterien für Relevanz",
+            "value": ""
+          },
+          {
+            "label": "Was wird gestrichen oder zusammengefasst?",
+            "value": ""
+          },
+          {
+            "label": "Essenz in einem Satz",
+            "value": ""
+          },
+          {
+            "label": "Nächster konkreter Schritt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "checkliste",
+      "number": 10,
+      "name": "Checkliste",
+      "description": "Wiederkehrende Schritte explizit abhaken.",
+      "applicationArea": "Qualitätssicherung, Routinen, Übergaben",
+      "origin": "Praxiswerkzeug, u. a. Medizin, Luftfahrt, Projektarbeit",
+      "sources": [],
+      "example": "„Vor Go-live: RLS geprüft, Daten aktualisiert, Owner benannt“",
+      "scores": {
+        "generate": 2,
+        "structure": 7,
+        "analyze": 3,
+        "reduce": 8,
+        "prioritize": 5
+      },
+      "dominantCategory": "reduce",
+      "dominantCategoryLabel": "Reduzieren",
+      "totalScore": 25,
+      "template": {
+        "title": "Checkliste anwenden",
+        "categoryFocus": "Reduzieren",
+        "intro": "Ein einfaches Starter-Template, um Checkliste für die Denkbewegung „Reduzieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsliste oder Themenmenge",
+            "value": ""
+          },
+          {
+            "label": "Kriterien für Relevanz",
+            "value": ""
+          },
+          {
+            "label": "Was wird gestrichen oder zusammengefasst?",
+            "value": ""
+          },
+          {
+            "label": "Essenz in einem Satz",
+            "value": ""
+          },
+          {
+            "label": "Nächster konkreter Schritt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "leitfragenkatalog",
+      "number": 11,
+      "name": "Leitfragenkatalog",
+      "description": "Ein Thema wird über wiederkehrende Fragen erschlossen.",
+      "applicationArea": "Analyse, Beratung, Workshops",
+      "origin": "Allgemeines Denk- und Moderationswerkzeug",
+      "sources": [],
+      "example": "„Wer nutzt es? Wofür? Wie oft? Mit welchem Risiko?“",
+      "scores": {
+        "generate": 6,
+        "structure": 7,
+        "analyze": 7,
+        "reduce": 4,
+        "prioritize": 4
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 28,
+      "template": {
+        "title": "Leitfragenkatalog anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um Leitfragenkatalog für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "5w1h",
+      "number": 12,
+      "name": "5W1H",
+      "description": "Wer, was, wann, wo, warum, wie.",
+      "applicationArea": "Problembeschreibung, Journalismus, Prozessanalyse",
+      "origin": "Klassische Informationsstruktur",
+      "sources": [],
+      "example": "„Wer braucht welchen Report bis wann und warum?“",
+      "scores": {
+        "generate": 4,
+        "structure": 8,
+        "analyze": 6,
+        "reduce": 5,
+        "prioritize": 3
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 26,
+      "template": {
+        "title": "5W1H anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um 5W1H für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "5-whys",
+      "number": 13,
+      "name": "5 Whys",
+      "description": "Mehrfach „Warum?“ fragen, um Ursachen statt Symptome zu finden.",
+      "applicationArea": "Root-Cause-Analyse, Lean, Qualität",
+      "origin": "Toyota / Lean; Taiichi Ohno beschreibt wiederholtes Warum-Fragen als Kern von TPS-Denken.",
+      "sources": [
+        {
+          "url": "https://www.lean.org/lexicon-terms/5-whys/",
+          "title": "5 Whys - What is it? | Lean Enterprise ..."
+        }
+      ],
+      "example": "„Warum ist der Report falsch?“ → Quelle, Transformation, Verantwortung prüfen",
+      "scores": {
+        "generate": 2,
+        "structure": 5,
+        "analyze": 9,
+        "reduce": 5,
+        "prioritize": 3
+      },
+      "dominantCategory": "analyze",
+      "dominantCategoryLabel": "Analysieren",
+      "totalScore": 24,
+      "template": {
+        "title": "5 Whys anwenden",
+        "categoryFocus": "Analysieren",
+        "intro": "Ein einfaches Starter-Template, um 5 Whys für die Denkbewegung „Analysieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Problem, Risiko oder Annahme",
+            "value": ""
+          },
+          {
+            "label": "Beobachtungen und Fakten",
+            "value": ""
+          },
+          {
+            "label": "Mögliche Ursachen oder Muster",
+            "value": ""
+          },
+          {
+            "label": "Evidenz und Gegenargumente",
+            "value": ""
+          },
+          {
+            "label": "Erkenntnis und nächster Prüfpunkt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "first-principles-thinking",
+      "number": 14,
+      "name": "First Principles Thinking",
+      "description": "Annahmen zerlegen und vom Fundament neu denken.",
+      "applicationArea": "Innovation, Strategie, Problemlösung",
+      "origin": "Philosophisch älter; modern oft mit Tech-/Produktdenken verbunden",
+      "sources": [],
+      "example": "„Brauchen wir ein Dashboard — oder eigentlich eine Entscheidungshilfe?“",
+      "scores": {
+        "generate": 5,
+        "structure": 6,
+        "analyze": 9,
+        "reduce": 7,
+        "prioritize": 5
+      },
+      "dominantCategory": "analyze",
+      "dominantCategoryLabel": "Analysieren",
+      "totalScore": 32,
+      "template": {
+        "title": "First Principles Thinking anwenden",
+        "categoryFocus": "Analysieren",
+        "intro": "Ein einfaches Starter-Template, um First Principles Thinking für die Denkbewegung „Analysieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Problem, Risiko oder Annahme",
+            "value": ""
+          },
+          {
+            "label": "Beobachtungen und Fakten",
+            "value": ""
+          },
+          {
+            "label": "Mögliche Ursachen oder Muster",
+            "value": ""
+          },
+          {
+            "label": "Evidenz und Gegenargumente",
+            "value": ""
+          },
+          {
+            "label": "Erkenntnis und nächster Prüfpunkt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "inversion",
+      "number": 15,
+      "name": "Inversion",
+      "description": "Problem umdrehen: Was müsste passieren, damit es scheitert?",
+      "applicationArea": "Risikoanalyse, Strategie, persönliche Produktivität",
+      "origin": "Bekannt aus Logik, Mathematik, Charlie-Munger-Denken",
+      "sources": [],
+      "example": "„Wie würden wir ein Data-Governance-Projekt garantiert ruinieren?“",
+      "scores": {
+        "generate": 6,
+        "structure": 5,
+        "analyze": 8,
+        "reduce": 5,
+        "prioritize": 4
+      },
+      "dominantCategory": "analyze",
+      "dominantCategoryLabel": "Analysieren",
+      "totalScore": 28,
+      "template": {
+        "title": "Inversion anwenden",
+        "categoryFocus": "Analysieren",
+        "intro": "Ein einfaches Starter-Template, um Inversion für die Denkbewegung „Analysieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Problem, Risiko oder Annahme",
+            "value": ""
+          },
+          {
+            "label": "Beobachtungen und Fakten",
+            "value": ""
+          },
+          {
+            "label": "Mögliche Ursachen oder Muster",
+            "value": ""
+          },
+          {
+            "label": "Evidenz und Gegenargumente",
+            "value": ""
+          },
+          {
+            "label": "Erkenntnis und nächster Prüfpunkt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "premortem",
+      "number": 16,
+      "name": "Premortem",
+      "description": "So tun, als sei das Projekt gescheitert, und Gründe sammeln.",
+      "applicationArea": "Projektplanung, Risikomanagement",
+      "origin": "Gary Klein; HBR-Artikel „Performing a Project Premortem“.",
+      "sources": [
+        {
+          "url": "https://hbr.org/2007/09/performing-a-project-premortem",
+          "title": "Performing a Project Premortem"
+        }
+      ],
+      "example": "„Ein Jahr später ist die Migration gescheitert. Warum?“",
+      "scores": {
+        "generate": 5,
+        "structure": 6,
+        "analyze": 9,
+        "reduce": 6,
+        "prioritize": 6
+      },
+      "dominantCategory": "analyze",
+      "dominantCategoryLabel": "Analysieren",
+      "totalScore": 32,
+      "template": {
+        "title": "Premortem anwenden",
+        "categoryFocus": "Analysieren",
+        "intro": "Ein einfaches Starter-Template, um Premortem für die Denkbewegung „Analysieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Problem, Risiko oder Annahme",
+            "value": ""
+          },
+          {
+            "label": "Beobachtungen und Fakten",
+            "value": ""
+          },
+          {
+            "label": "Mögliche Ursachen oder Muster",
+            "value": ""
+          },
+          {
+            "label": "Evidenz und Gegenargumente",
+            "value": ""
+          },
+          {
+            "label": "Erkenntnis und nächster Prüfpunkt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "rumsfeld-matrix",
+      "number": 17,
+      "name": "Rumsfeld-Matrix",
+      "description": "Wissen nach known/unknown knowns/unknowns einordnen.",
+      "applicationArea": "Unsicherheit, Strategie, Risiko, Lernen",
+      "origin": "Bekannt durch Donald Rumsfelds Aussage 2002; später als Matrix popularisiert.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/There_are_unknown_unknowns",
+          "title": "There are unknown unknowns"
+        }
+      ],
+      "example": "„Wir wissen, welche Datenquellen fehlen — aber nicht, welche Annahmen falsch sind.“",
+      "scores": {
+        "generate": 4,
+        "structure": 8,
+        "analyze": 8,
+        "reduce": 6,
+        "prioritize": 5
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 31,
+      "template": {
+        "title": "Rumsfeld-Matrix anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um Rumsfeld-Matrix für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "eisenhower-matrix",
+      "number": 18,
+      "name": "Eisenhower-Matrix",
+      "description": "Aufgaben nach wichtig/unwichtig und dringend/nicht dringend sortieren.",
+      "applicationArea": "Zeitmanagement, Priorisierung",
+      "origin": "Auf Eisenhowers Dringlichkeits-/Wichtigkeitsgedanken zurückgeführt, später u. a. durch Covey popularisiert.",
+      "sources": [
+        {
+          "url": "https://www.todoist.com/productivity-methods/eisenhower-matrix",
+          "title": "Avoid the \\"
+        }
+      ],
+      "example": "„Angebot heute fertigstellen = wichtig und dringend“",
+      "scores": {
+        "generate": 2,
+        "structure": 7,
+        "analyze": 4,
+        "reduce": 6,
+        "prioritize": 10
+      },
+      "dominantCategory": "prioritize",
+      "dominantCategoryLabel": "Priorisieren",
+      "totalScore": 29,
+      "template": {
+        "title": "Eisenhower-Matrix anwenden",
+        "categoryFocus": "Priorisieren",
+        "intro": "Ein einfaches Starter-Template, um Eisenhower-Matrix für die Denkbewegung „Priorisieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Optionen oder Aufgaben",
+            "value": ""
+          },
+          {
+            "label": "Bewertungskriterien",
+            "value": ""
+          },
+          {
+            "label": "Bewertung je Option",
+            "value": ""
+          },
+          {
+            "label": "Empfohlene Reihenfolge",
+            "value": ""
+          },
+          {
+            "label": "Entscheidung und Begründung",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "impact-effort-matrix",
+      "number": 19,
+      "name": "Impact-Effort-Matrix",
+      "description": "Nutzen und Aufwand gegenüberstellen.",
+      "applicationArea": "Priorisierung, Roadmaps, Use Cases",
+      "origin": "Allgemeines Produkt-/Projektmanagement-Werkzeug",
+      "sources": [],
+      "example": "„Hoher Nutzen, geringer Aufwand = Quick Win“",
+      "scores": {
+        "generate": 2,
+        "structure": 7,
+        "analyze": 5,
+        "reduce": 6,
+        "prioritize": 10
+      },
+      "dominantCategory": "prioritize",
+      "dominantCategoryLabel": "Priorisieren",
+      "totalScore": 30,
+      "template": {
+        "title": "Impact-Effort-Matrix anwenden",
+        "categoryFocus": "Priorisieren",
+        "intro": "Ein einfaches Starter-Template, um Impact-Effort-Matrix für die Denkbewegung „Priorisieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Optionen oder Aufgaben",
+            "value": ""
+          },
+          {
+            "label": "Bewertungskriterien",
+            "value": ""
+          },
+          {
+            "label": "Bewertung je Option",
+            "value": ""
+          },
+          {
+            "label": "Empfohlene Reihenfolge",
+            "value": ""
+          },
+          {
+            "label": "Entscheidung und Begründung",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "moscow",
+      "number": 20,
+      "name": "MoSCoW",
+      "description": "Anforderungen in Must, Should, Could, Won’t priorisieren.",
+      "applicationArea": "Produktentwicklung, Requirements, agile Projekte",
+      "origin": "Dai Clegg / Oracle; später stark im DSDM-Kontext genutzt.",
+      "sources": [
+        {
+          "url": "https://www.productplan.com/glossary/moscow-prioritization",
+          "title": "MoSCoW Prioritization | Glossary - ProductPlan"
+        }
+      ],
+      "example": "„Must: Security. Should: Export. Could: Dark Mode.“",
+      "scores": {
+        "generate": 2,
+        "structure": 6,
+        "analyze": 4,
+        "reduce": 7,
+        "prioritize": 10
+      },
+      "dominantCategory": "prioritize",
+      "dominantCategoryLabel": "Priorisieren",
+      "totalScore": 29,
+      "template": {
+        "title": "MoSCoW anwenden",
+        "categoryFocus": "Priorisieren",
+        "intro": "Ein einfaches Starter-Template, um MoSCoW für die Denkbewegung „Priorisieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Optionen oder Aufgaben",
+            "value": ""
+          },
+          {
+            "label": "Bewertungskriterien",
+            "value": ""
+          },
+          {
+            "label": "Bewertung je Option",
+            "value": ""
+          },
+          {
+            "label": "Empfohlene Reihenfolge",
+            "value": ""
+          },
+          {
+            "label": "Entscheidung und Begründung",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "gewichtete-entscheidungsmatrix",
+      "number": 21,
+      "name": "Gewichtete Entscheidungsmatrix",
+      "description": "Kriterien gewichten und Optionen bewerten.",
+      "applicationArea": "Toolauswahl, Anbieterbewertung, Architektur",
+      "origin": "Allgemeines Entscheidungswerkzeug",
+      "sources": [],
+      "example": "Kriterien: Kosten 30 %, Usability 25 %, Integration 45 %",
+      "scores": {
+        "generate": 2,
+        "structure": 8,
+        "analyze": 7,
+        "reduce": 6,
+        "prioritize": 10
+      },
+      "dominantCategory": "prioritize",
+      "dominantCategoryLabel": "Priorisieren",
+      "totalScore": 33,
+      "template": {
+        "title": "Gewichtete Entscheidungsmatrix anwenden",
+        "categoryFocus": "Priorisieren",
+        "intro": "Ein einfaches Starter-Template, um Gewichtete Entscheidungsmatrix für die Denkbewegung „Priorisieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Optionen oder Aufgaben",
+            "value": ""
+          },
+          {
+            "label": "Bewertungskriterien",
+            "value": ""
+          },
+          {
+            "label": "Bewertung je Option",
+            "value": ""
+          },
+          {
+            "label": "Empfohlene Reihenfolge",
+            "value": ""
+          },
+          {
+            "label": "Entscheidung und Begründung",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "entscheidungsbaum",
+      "number": 22,
+      "name": "Entscheidungsbaum",
+      "description": "Entscheidungen, Unsicherheiten und Folgen als Baum darstellen.",
+      "applicationArea": "Risiko, Investitionen, Optionen",
+      "origin": "Operations Research / Entscheidungsanalyse",
+      "sources": [],
+      "example": "„Wenn Kunde A zusagt, dann Team X; wenn nicht, Alternative Y“",
+      "scores": {
+        "generate": 3,
+        "structure": 8,
+        "analyze": 8,
+        "reduce": 5,
+        "prioritize": 8
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 32,
+      "template": {
+        "title": "Entscheidungsbaum anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um Entscheidungsbaum für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "swot",
+      "number": 23,
+      "name": "SWOT",
+      "description": "Stärken, Schwächen, Chancen, Risiken strukturieren.",
+      "applicationArea": "Strategie, Positionierung, Marktanalyse",
+      "origin": "Häufig auf SRI-Forschung 1960–1970 zurückgeführt; Herkunft im Detail diskutiert.",
+      "sources": [
+        {
+          "url": "https://www.researchgate.net/publication/368734936_The_origins_of_SWOT_analysis",
+          "title": "(PDF) The origins of SWOT analysis"
+        }
+      ],
+      "example": "„Stärke: BI-Know-how. Risiko: geringe Datenqualität.“",
+      "scores": {
+        "generate": 5,
+        "structure": 8,
+        "analyze": 8,
+        "reduce": 5,
+        "prioritize": 6
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 32,
+      "template": {
+        "title": "SWOT anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um SWOT für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "pestel",
+      "number": 24,
+      "name": "PESTEL",
+      "description": "Umfeld nach Political, Economic, Social, Technological, Environmental, Legal analysieren.",
+      "applicationArea": "Strategie, Markt, Branchenanalyse",
+      "origin": "Aus PEST/ETPS; Francis Aguilar, 1967, gilt als wichtiger Ursprung.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/PEST_analysis",
+          "title": "PEST analysis"
+        }
+      ],
+      "example": "„Regulierung, Fachkräftemangel, Cloud-Trends, ESG“",
+      "scores": {
+        "generate": 4,
+        "structure": 9,
+        "analyze": 8,
+        "reduce": 4,
+        "prioritize": 4
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 29,
+      "template": {
+        "title": "PESTEL anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um PESTEL für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "stakeholder-map",
+      "number": 25,
+      "name": "Stakeholder Map",
+      "description": "Beteiligte nach Einfluss, Interesse oder Haltung ordnen.",
+      "applicationArea": "Change, Kommunikation, Projektsteuerung",
+      "origin": "Oft als Power/Interest- oder Mendelow-Matrix genutzt.",
+      "sources": [
+        {
+          "url": "https://www.professionalacademy.com/blogs/mendelows-matrix-marketing-theories/",
+          "title": "Mendelow's Matrix - Marketing Theories"
+        }
+      ],
+      "example": "„CFO: hoher Einfluss, hohes Interesse → eng einbinden“",
+      "scores": {
+        "generate": 3,
+        "structure": 8,
+        "analyze": 7,
+        "reduce": 5,
+        "prioritize": 7
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 30,
+      "template": {
+        "title": "Stakeholder Map anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um Stakeholder Map für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "business-model-canvas",
+      "number": 26,
+      "name": "Business Model Canvas",
+      "description": "Geschäftsmodell in neun Bausteinen sichtbar machen.",
+      "applicationArea": "Strategie, Innovation, Startups, Produktdenken",
+      "origin": "Alexander Osterwalder / Yves Pigneur; aus Osterwalders Business-Model-Ontology-Arbeit.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Business_model_canvas",
+          "title": "Business model canvas"
+        }
+      ],
+      "example": "Kundensegmente, Nutzenversprechen, Kanäle, Einnahmen, Kosten",
+      "scores": {
+        "generate": 5,
+        "structure": 9,
+        "analyze": 6,
+        "reduce": 7,
+        "prioritize": 5
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 32,
+      "template": {
+        "title": "Business Model Canvas anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um Business Model Canvas für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "value-proposition-canvas",
+      "number": 27,
+      "name": "Value Proposition Canvas",
+      "description": "Kundenjobs, pains/gains und Wertangebot abgleichen.",
+      "applicationArea": "Produktentwicklung, Angebot, Positionierung",
+      "origin": "Strategyzer / Osterwalder, Pigneur u. a.; Ergänzung zum Business Model Canvas.",
+      "sources": [
+        {
+          "url": "https://www.strategyzer.com/library/the-value-proposition-canvas",
+          "title": "Value Proposition Canvas – Download the Official Template"
+        }
+      ],
+      "example": "„Pain: manuelle Excel-Arbeit. Gain: verlässliche Self-Service-Auswertung.“",
+      "scores": {
+        "generate": 5,
+        "structure": 8,
+        "analyze": 7,
+        "reduce": 6,
+        "prioritize": 6
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 32,
+      "template": {
+        "title": "Value Proposition Canvas anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um Value Proposition Canvas für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "jobs-to-be-done",
+      "number": 28,
+      "name": "Jobs-to-be-Done",
+      "description": "Fragt, welchen „Job“ ein Kunde wirklich erledigen will.",
+      "applicationArea": "Produktstrategie, Kundenverständnis, Innovation",
+      "origin": "Stark mit Clayton Christensen und dem Christensen Institute verbunden.",
+      "sources": [
+        {
+          "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+          "title": "Jobs to Be Done Theory"
+        }
+      ],
+      "example": "„Der Kunde will keinen Report, sondern eine sichere Entscheidung.“",
+      "scores": {
+        "generate": 5,
+        "structure": 6,
+        "analyze": 8,
+        "reduce": 6,
+        "prioritize": 5
+      },
+      "dominantCategory": "analyze",
+      "dominantCategoryLabel": "Analysieren",
+      "totalScore": 30,
+      "template": {
+        "title": "Jobs-to-be-Done anwenden",
+        "categoryFocus": "Analysieren",
+        "intro": "Ein einfaches Starter-Template, um Jobs-to-be-Done für die Denkbewegung „Analysieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Problem, Risiko oder Annahme",
+            "value": ""
+          },
+          {
+            "label": "Beobachtungen und Fakten",
+            "value": ""
+          },
+          {
+            "label": "Mögliche Ursachen oder Muster",
+            "value": ""
+          },
+          {
+            "label": "Evidenz und Gegenargumente",
+            "value": ""
+          },
+          {
+            "label": "Erkenntnis und nächster Prüfpunkt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "empathy-map",
+      "number": 29,
+      "name": "Empathy Map",
+      "description": "Nutzerperspektive über Denken, Fühlen, Sehen, Hören, Sagen, Tun strukturieren.",
+      "applicationArea": "UX, Design Thinking, Workshops",
+      "origin": "Dave Gray / XPLANE; im Gamestorming-Kontext bekannt geworden.",
+      "sources": [
+        {
+          "url": "https://medium.com/%40davegray/updated-empathy-map-canvas-46df22df3c8a",
+          "title": "Updated Empathy Map Canvas - by Dave Gray"
+        }
+      ],
+      "example": "„Was sagt der Controller? Was fühlt er beim Monatsabschluss?“",
+      "scores": {
+        "generate": 6,
+        "structure": 7,
+        "analyze": 7,
+        "reduce": 5,
+        "prioritize": 4
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 29,
+      "template": {
+        "title": "Empathy Map anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um Empathy Map für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "customer-journey-map",
+      "number": 30,
+      "name": "Customer Journey Map",
+      "description": "Schritte, Touchpoints, Emotionen und Pain Points einer Nutzerreise abbilden.",
+      "applicationArea": "CX, Service Design, Prozessverbesserung",
+      "origin": "Service-Design-Praxis; stellt Interaktion aus Nutzersicht dar.",
+      "sources": [
+        {
+          "url": "https://servicedesigntools.org/tools/journey-map",
+          "title": "Journey Map"
+        }
+      ],
+      "example": "„Von Datenbedarf bis fertiger Auswertung: Wo hakt es?“",
+      "scores": {
+        "generate": 5,
+        "structure": 9,
+        "analyze": 8,
+        "reduce": 5,
+        "prioritize": 6
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 33,
+      "template": {
+        "title": "Customer Journey Map anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um Customer Journey Map für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "design-thinking",
+      "number": 31,
+      "name": "Design Thinking",
+      "description": "Nutzerzentrierter Problemlösungsprozess von Verstehen bis Testen.",
+      "applicationArea": "Innovation, Produkte, Services",
+      "origin": "Stanford d.school / HPI / IDEO-Kontext; fünf Phasen häufig: Empathize, Define, Ideate, Prototype, Test.",
+      "sources": [
+        {
+          "url": "https://web.stanford.edu/~mshanks/MichaelShanks/files/509554.pdf",
+          "title": "An Introduction to Design Thinking PROCESS GUIDE"
+        }
+      ],
+      "example": "Erst Nutzerinterviews, dann Prototyp eines Dashboards",
+      "scores": {
+        "generate": 9,
+        "structure": 8,
+        "analyze": 7,
+        "reduce": 5,
+        "prioritize": 5
+      },
+      "dominantCategory": "generate",
+      "dominantCategoryLabel": "Generieren",
+      "totalScore": 34,
+      "template": {
+        "title": "Design Thinking anwenden",
+        "categoryFocus": "Generieren",
+        "intro": "Ein einfaches Starter-Template, um Design Thinking für die Denkbewegung „Generieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsfrage oder Thema",
+            "value": ""
+          },
+          {
+            "label": "Erste spontane Gedanken",
+            "value": ""
+          },
+          {
+            "label": "Weitere Varianten und Perspektiven",
+            "value": ""
+          },
+          {
+            "label": "Auffällige Muster",
+            "value": ""
+          },
+          {
+            "label": "Interessanteste nächste Idee",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "double-diamond",
+      "number": 32,
+      "name": "Double Diamond",
+      "description": "Divergieren und konvergieren: Problemraum und Lösungsraum getrennt bearbeiten.",
+      "applicationArea": "Innovation, Design, Workshops",
+      "origin": "British Design Council; als Designprozess-Modell bekannt.",
+      "sources": [
+        {
+          "url": "https://www.designcouncil.org.uk/resources/the-double-diamond/",
+          "title": "The Double Diamond"
+        }
+      ],
+      "example": "Erst Problem breit verstehen, dann Lösung fokussieren",
+      "scores": {
+        "generate": 8,
+        "structure": 9,
+        "analyze": 7,
+        "reduce": 7,
+        "prioritize": 6
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 37,
+      "template": {
+        "title": "Double Diamond anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um Double Diamond für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "brainstorming",
+      "number": 33,
+      "name": "Brainstorming",
+      "description": "Viele Ideen sammeln, Bewertung zunächst zurückstellen.",
+      "applicationArea": "Kreativität, Workshops, Kampagnen",
+      "origin": "Alex F. Osborn; Begriff und Methode durch „Applied Imagination“ verbreitet.",
+      "sources": [
+        {
+          "url": "https://www.regent.edu/journal/journal-of-transformative-innovation/the-history-of-brainstorming-alex-osborn/",
+          "title": "Alex Osborn and The Journey of Brainstorming"
+        }
+      ],
+      "example": "„20 Ideen für Datenprodukt-Marketing in 10 Minuten“",
+      "scores": {
+        "generate": 10,
+        "structure": 3,
+        "analyze": 1,
+        "reduce": 1,
+        "prioritize": 1
+      },
+      "dominantCategory": "generate",
+      "dominantCategoryLabel": "Generieren",
+      "totalScore": 16,
+      "template": {
+        "title": "Brainstorming anwenden",
+        "categoryFocus": "Generieren",
+        "intro": "Ein einfaches Starter-Template, um Brainstorming für die Denkbewegung „Generieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsfrage oder Thema",
+            "value": ""
+          },
+          {
+            "label": "Erste spontane Gedanken",
+            "value": ""
+          },
+          {
+            "label": "Weitere Varianten und Perspektiven",
+            "value": ""
+          },
+          {
+            "label": "Auffällige Muster",
+            "value": ""
+          },
+          {
+            "label": "Interessanteste nächste Idee",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "brainwriting-6-3-5",
+      "number": 34,
+      "name": "Brainwriting 6-3-5",
+      "description": "6 Personen schreiben je 3 Ideen in 5 Minuten, dann wird weitergegeben.",
+      "applicationArea": "Ideation, stille Gruppenarbeit",
+      "origin": "Bernd Rohrbach; 1968/1969 als Methode 635 veröffentlicht.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/6-3-5_Brainwriting",
+          "title": "6-3-5 Brainwriting"
+        }
+      ],
+      "example": "6 Personen erzeugen theoretisch 108 Ideen in 30 Minuten",
+      "scores": {
+        "generate": 10,
+        "structure": 4,
+        "analyze": 1,
+        "reduce": 1,
+        "prioritize": 1
+      },
+      "dominantCategory": "generate",
+      "dominantCategoryLabel": "Generieren",
+      "totalScore": 17,
+      "template": {
+        "title": "Brainwriting 6-3-5 anwenden",
+        "categoryFocus": "Generieren",
+        "intro": "Ein einfaches Starter-Template, um Brainwriting 6-3-5 für die Denkbewegung „Generieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsfrage oder Thema",
+            "value": ""
+          },
+          {
+            "label": "Erste spontane Gedanken",
+            "value": ""
+          },
+          {
+            "label": "Weitere Varianten und Perspektiven",
+            "value": ""
+          },
+          {
+            "label": "Auffällige Muster",
+            "value": ""
+          },
+          {
+            "label": "Interessanteste nächste Idee",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "scamper",
+      "number": 35,
+      "name": "SCAMPER",
+      "description": "Ideen über Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse entwickeln.",
+      "applicationArea": "Produktideen, Innovation, Verbesserung",
+      "origin": "Auf Osborns Kreativfragen basierend, als Akronym durch Bob Eberle verbreitet.",
+      "sources": [
+        {
+          "url": "https://www.researchgate.net/publication/318018918_The_SCAMPER_Technique",
+          "title": "(PDF) The SCAMPER Technique"
+        }
+      ],
+      "example": "„Was können wir am Dashboard eliminieren, kombinieren oder umdrehen?“",
+      "scores": {
+        "generate": 10,
+        "structure": 5,
+        "analyze": 4,
+        "reduce": 3,
+        "prioritize": 2
+      },
+      "dominantCategory": "generate",
+      "dominantCategoryLabel": "Generieren",
+      "totalScore": 24,
+      "template": {
+        "title": "SCAMPER anwenden",
+        "categoryFocus": "Generieren",
+        "intro": "Ein einfaches Starter-Template, um SCAMPER für die Denkbewegung „Generieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsfrage oder Thema",
+            "value": ""
+          },
+          {
+            "label": "Erste spontane Gedanken",
+            "value": ""
+          },
+          {
+            "label": "Weitere Varianten und Perspektiven",
+            "value": ""
+          },
+          {
+            "label": "Auffällige Muster",
+            "value": ""
+          },
+          {
+            "label": "Interessanteste nächste Idee",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "six-thinking-hats",
+      "number": 36,
+      "name": "Six Thinking Hats",
+      "description": "Denken in sechs Perspektiven trennen: Fakten, Gefühle, Risiken, Nutzen, Kreativität, Prozess.",
+      "applicationArea": "Meetings, Entscheidungen, Diskussionen",
+      "origin": "Edward de Bono; Buch/Methode aus den 1980ern.",
+      "sources": [
+        {
+          "url": "https://www.debonogroup.com/services/core-programs/six-thinking-hats/",
+          "title": "Six Thinking Hats"
+        }
+      ],
+      "example": "Erst nur Risiken sammeln, dann erst Chancen",
+      "scores": {
+        "generate": 7,
+        "structure": 8,
+        "analyze": 7,
+        "reduce": 5,
+        "prioritize": 5
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 32,
+      "template": {
+        "title": "Six Thinking Hats anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um Six Thinking Hats für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "lateral-thinking",
+      "number": 37,
+      "name": "Lateral Thinking",
+      "description": "Bewusst nicht-lineare, überraschende Lösungswege suchen.",
+      "applicationArea": "Kreativität, Innovation, festgefahrene Probleme",
+      "origin": "Edward de Bono prägte den Begriff „Lateral Thinking“.",
+      "sources": [
+        {
+          "url": "https://www.debono.com/",
+          "title": "de Bono: Thinking as a skill"
+        }
+      ],
+      "example": "„Wie würde ein Restaurant unser Datenprodukt bereitstellen?“",
+      "scores": {
+        "generate": 10,
+        "structure": 3,
+        "analyze": 3,
+        "reduce": 2,
+        "prioritize": 1
+      },
+      "dominantCategory": "generate",
+      "dominantCategoryLabel": "Generieren",
+      "totalScore": 19,
+      "template": {
+        "title": "Lateral Thinking anwenden",
+        "categoryFocus": "Generieren",
+        "intro": "Ein einfaches Starter-Template, um Lateral Thinking für die Denkbewegung „Generieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsfrage oder Thema",
+            "value": ""
+          },
+          {
+            "label": "Erste spontane Gedanken",
+            "value": ""
+          },
+          {
+            "label": "Weitere Varianten und Perspektiven",
+            "value": ""
+          },
+          {
+            "label": "Auffällige Muster",
+            "value": ""
+          },
+          {
+            "label": "Interessanteste nächste Idee",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "morphologischer-kasten",
+      "number": 38,
+      "name": "Morphologischer Kasten",
+      "description": "Merkmale eines Problems auflisten und Varianten kombinieren.",
+      "applicationArea": "Produktdesign, Innovation, Szenarien",
+      "origin": "Fritz Zwicky; General Morphological Analysis.",
+      "sources": [
+        {
+          "url": "https://www.swemorph.com/pdf/gma.pdf",
+          "title": "Fritz Zwicky, Morphological Analysis and Futures Studies"
+        }
+      ],
+      "example": "Dimensionen: Nutzergruppe, Kanal, Datenart, Aktualität kombinieren",
+      "scores": {
+        "generate": 9,
+        "structure": 9,
+        "analyze": 6,
+        "reduce": 4,
+        "prioritize": 3
+      },
+      "dominantCategory": "generate",
+      "dominantCategoryLabel": "Generieren",
+      "totalScore": 31,
+      "template": {
+        "title": "Morphologischer Kasten anwenden",
+        "categoryFocus": "Generieren",
+        "intro": "Ein einfaches Starter-Template, um Morphologischer Kasten für die Denkbewegung „Generieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsfrage oder Thema",
+            "value": ""
+          },
+          {
+            "label": "Erste spontane Gedanken",
+            "value": ""
+          },
+          {
+            "label": "Weitere Varianten und Perspektiven",
+            "value": ""
+          },
+          {
+            "label": "Auffällige Muster",
+            "value": ""
+          },
+          {
+            "label": "Interessanteste nächste Idee",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "triz",
+      "number": 39,
+      "name": "TRIZ",
+      "description": "Systematische Innovationsmethode auf Basis wiederkehrender Erfindungsmuster.",
+      "applicationArea": "Technische Innovation, Widersprüche lösen",
+      "origin": "Genrich Altshuller; Entwicklung begann 1946 auf Basis von Patentanalysen.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/TRIZ",
+          "title": "TRIZ"
+        }
+      ],
+      "example": "„Mehr Stabilität ohne mehr Gewicht“ als technischer Widerspruch",
+      "scores": {
+        "generate": 7,
+        "structure": 8,
+        "analyze": 9,
+        "reduce": 5,
+        "prioritize": 5
+      },
+      "dominantCategory": "analyze",
+      "dominantCategoryLabel": "Analysieren",
+      "totalScore": 34,
+      "template": {
+        "title": "TRIZ anwenden",
+        "categoryFocus": "Analysieren",
+        "intro": "Ein einfaches Starter-Template, um TRIZ für die Denkbewegung „Analysieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Problem, Risiko oder Annahme",
+            "value": ""
+          },
+          {
+            "label": "Beobachtungen und Fakten",
+            "value": ""
+          },
+          {
+            "label": "Mögliche Ursachen oder Muster",
+            "value": ""
+          },
+          {
+            "label": "Evidenz und Gegenargumente",
+            "value": ""
+          },
+          {
+            "label": "Erkenntnis und nächster Prüfpunkt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "ishikawa-fishbone",
+      "number": 40,
+      "name": "Ishikawa / Fishbone",
+      "description": "Ursachen eines Problems in Kategorien als Fischgräte sammeln.",
+      "applicationArea": "Root-Cause-Analyse, Qualität, Prozesse",
+      "origin": "Kaoru Ishikawa; eines der klassischen Qualitätswerkzeuge.",
+      "sources": [
+        {
+          "url": "https://asq.org/quality-resources/fishbone?srsltid=AfmBOoqzAf3ZNfkSB0EBSDjvI4D2AT_x2MMmqhw3HBVcU2Mc2c1VkQRr&utm_source=chatgpt.com",
+          "title": "What is a Fishbone Diagram? Ishikawa Cause & Effect ..."
+        }
+      ],
+      "example": "Problem: „Report zu spät“; Ursachen: Mensch, Methode, Maschine, Material",
+      "scores": {
+        "generate": 3,
+        "structure": 8,
+        "analyze": 10,
+        "reduce": 5,
+        "prioritize": 4
+      },
+      "dominantCategory": "analyze",
+      "dominantCategoryLabel": "Analysieren",
+      "totalScore": 30,
+      "template": {
+        "title": "Ishikawa / Fishbone anwenden",
+        "categoryFocus": "Analysieren",
+        "intro": "Ein einfaches Starter-Template, um Ishikawa / Fishbone für die Denkbewegung „Analysieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Problem, Risiko oder Annahme",
+            "value": ""
+          },
+          {
+            "label": "Beobachtungen und Fakten",
+            "value": ""
+          },
+          {
+            "label": "Mögliche Ursachen oder Muster",
+            "value": ""
+          },
+          {
+            "label": "Evidenz und Gegenargumente",
+            "value": ""
+          },
+          {
+            "label": "Erkenntnis und nächster Prüfpunkt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "pareto-analyse",
+      "number": 41,
+      "name": "Pareto-Analyse",
+      "description": "Die wenigen wichtigen Ursachen von den vielen kleineren trennen.",
+      "applicationArea": "Qualität, Priorisierung, Prozessverbesserung",
+      "origin": "Pareto-Prinzip; in Qualitätsmanagement u. a. durch Juran stark genutzt.",
+      "sources": [
+        {
+          "url": "https://asq.org/quality-resources/pareto?srsltid=AfmBOoqeFNQTq6tW0SqGGgyWBsVneqYfWEqH05_T7DEKodp35BrBK0aM&utm_source=chatgpt.com",
+          "title": "What is a Pareto Chart? Analysis & Diagram"
+        }
+      ],
+      "example": "„20 % der Fehlerarten verursachen 80 % der Tickets“",
+      "scores": {
+        "generate": 2,
+        "structure": 6,
+        "analyze": 7,
+        "reduce": 9,
+        "prioritize": 9
+      },
+      "dominantCategory": "reduce",
+      "dominantCategoryLabel": "Reduzieren",
+      "totalScore": 33,
+      "template": {
+        "title": "Pareto-Analyse anwenden",
+        "categoryFocus": "Reduzieren",
+        "intro": "Ein einfaches Starter-Template, um Pareto-Analyse für die Denkbewegung „Reduzieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsliste oder Themenmenge",
+            "value": ""
+          },
+          {
+            "label": "Kriterien für Relevanz",
+            "value": ""
+          },
+          {
+            "label": "Was wird gestrichen oder zusammengefasst?",
+            "value": ""
+          },
+          {
+            "label": "Essenz in einem Satz",
+            "value": ""
+          },
+          {
+            "label": "Nächster konkreter Schritt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "fmea",
+      "number": 42,
+      "name": "FMEA",
+      "description": "Potenzielle Fehler, Ursachen, Auswirkungen und Risiken systematisch bewerten.",
+      "applicationArea": "Qualität, Engineering, Risikomanagement",
+      "origin": "Frühe Standards u. a. US-Militär, MIL-P-1629 von 1949; später Raumfahrt/Automotive.",
+      "sources": [
+        {
+          "url": "https://prensipjournals.com/ojs/index.php/actanatsci/article/download/370/310",
+          "title": "The Origin and Development of FMEAs in the North ..."
+        }
+      ],
+      "example": "„Was passiert, wenn die Datenladung nachts fehlschlägt?“",
+      "scores": {
+        "generate": 2,
+        "structure": 8,
+        "analyze": 10,
+        "reduce": 5,
+        "prioritize": 8
+      },
+      "dominantCategory": "analyze",
+      "dominantCategoryLabel": "Analysieren",
+      "totalScore": 33,
+      "template": {
+        "title": "FMEA anwenden",
+        "categoryFocus": "Analysieren",
+        "intro": "Ein einfaches Starter-Template, um FMEA für die Denkbewegung „Analysieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Problem, Risiko oder Annahme",
+            "value": ""
+          },
+          {
+            "label": "Beobachtungen und Fakten",
+            "value": ""
+          },
+          {
+            "label": "Mögliche Ursachen oder Muster",
+            "value": ""
+          },
+          {
+            "label": "Evidenz und Gegenargumente",
+            "value": ""
+          },
+          {
+            "label": "Erkenntnis und nächster Prüfpunkt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "pdca",
+      "number": 43,
+      "name": "PDCA",
+      "description": "Plan, Do, Check, Act als Verbesserungszyklus.",
+      "applicationArea": "Kontinuierliche Verbesserung, Qualität, Lernen",
+      "origin": "Shewhart/Deming-Zyklus; stark im Qualitätsmanagement verankert.",
+      "sources": [
+        {
+          "url": "https://asq.org/quality-resources/pdca-cycle?srsltid=AfmBOopxOf7NOiYOHm5nBQPXhR_g-sZhOPXZ2Pnt56CuInh225WgcicP&utm_source=chatgpt.com",
+          "title": "PDCA Cycle - What is the Plan-Do-Check-Act Cycle?"
+        }
+      ],
+      "example": "Kleine Änderung testen, Ergebnis prüfen, Standard anpassen",
+      "scores": {
+        "generate": 3,
+        "structure": 7,
+        "analyze": 7,
+        "reduce": 5,
+        "prioritize": 6
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 28,
+      "template": {
+        "title": "PDCA anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um PDCA für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "a3-report",
+      "number": 44,
+      "name": "A3-Report",
+      "description": "Problem, Analyse, Maßnahmen und Plan auf einem A3-Blatt verdichten.",
+      "applicationArea": "Lean, Problemlösung, Managementkommunikation",
+      "origin": "Toyota-pionierte Praxis im Lean Management.",
+      "sources": [
+        {
+          "url": "https://www.lean.org/lexicon-terms/a3-report/",
+          "title": "A3 Problem-Solving - A Resource Guide"
+        }
+      ],
+      "example": "Eine Seite für Problem, Ist-Zustand, Ursache, Maßnahmen, Owner",
+      "scores": {
+        "generate": 3,
+        "structure": 9,
+        "analyze": 8,
+        "reduce": 9,
+        "prioritize": 7
+      },
+      "dominantCategory": "structure",
+      "dominantCategoryLabel": "Strukturieren",
+      "totalScore": 36,
+      "template": {
+        "title": "A3-Report anwenden",
+        "categoryFocus": "Strukturieren",
+        "intro": "Ein einfaches Starter-Template, um A3-Report für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Ausgangsthema",
+            "value": ""
+          },
+          {
+            "label": "Einzelelemente",
+            "value": ""
+          },
+          {
+            "label": "Gruppen, Ebenen oder Beziehungen",
+            "value": ""
+          },
+          {
+            "label": "Erkennbarer Gesamtzusammenhang",
+            "value": ""
+          },
+          {
+            "label": "Offene Punkte",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "dmaic",
+      "number": 45,
+      "name": "DMAIC",
+      "description": "Define, Measure, Analyze, Improve, Control.",
+      "applicationArea": "Six Sigma, Prozessverbesserung, Qualität",
+      "origin": "Lean Six Sigma / Six Sigma; strukturierter Verbesserungsprozess.",
+      "sources": [
+        {
+          "url": "https://asq.org/quality-resources/dmaic?srsltid=AfmBOooHisGpjI5F8iht_V5nThXY9s1zWrgHC9VZu80Q4LynQ6AtEfw6&utm_source=chatgpt.com",
+          "title": "DMAIC Process: Define, Measure, Analyze, Improve, Control"
+        }
+      ],
+      "example": "Datenfehlerquote messen, Ursachen analysieren, Prozess stabilisieren",
+      "scores": {
+        "generate": 3,
+        "structure": 9,
+        "analyze": 10,
+        "reduce": 6,
+        "prioritize": 7
+      },
+      "dominantCategory": "analyze",
+      "dominantCategoryLabel": "Analysieren",
+      "totalScore": 35,
+      "template": {
+        "title": "DMAIC anwenden",
+        "categoryFocus": "Analysieren",
+        "intro": "Ein einfaches Starter-Template, um DMAIC für die Denkbewegung „Analysieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Problem, Risiko oder Annahme",
+            "value": ""
+          },
+          {
+            "label": "Beobachtungen und Fakten",
+            "value": ""
+          },
+          {
+            "label": "Mögliche Ursachen oder Muster",
+            "value": ""
+          },
+          {
+            "label": "Evidenz und Gegenargumente",
+            "value": ""
+          },
+          {
+            "label": "Erkenntnis und nächster Prüfpunkt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "cynefin-framework",
+      "number": 46,
+      "name": "Cynefin Framework",
+      "description": "Situationen nach klar, kompliziert, komplex, chaotisch und unklar einordnen.",
+      "applicationArea": "Führung, Strategie, Krisen, Komplexität",
+      "origin": "Dave Snowden; seit 1999 entwickelt, u. a. IBM-/Knowledge-Management-Kontext.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Cynefin_framework",
+          "title": "Cynefin framework"
+        }
+      ],
+      "example": "„Ist das Problem lösbar durch Best Practice — oder brauchen wir Experimente?“",
+      "scores": {
+        "generate": 4,
+        "structure": 8,
+        "analyze": 9,
+        "reduce": 6,
+        "prioritize": 6
+      },
+      "dominantCategory": "analyze",
+      "dominantCategoryLabel": "Analysieren",
+      "totalScore": 33,
+      "template": {
+        "title": "Cynefin Framework anwenden",
+        "categoryFocus": "Analysieren",
+        "intro": "Ein einfaches Starter-Template, um Cynefin Framework für die Denkbewegung „Analysieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Problem, Risiko oder Annahme",
+            "value": ""
+          },
+          {
+            "label": "Beobachtungen und Fakten",
+            "value": ""
+          },
+          {
+            "label": "Mögliche Ursachen oder Muster",
+            "value": ""
+          },
+          {
+            "label": "Evidenz und Gegenargumente",
+            "value": ""
+          },
+          {
+            "label": "Erkenntnis und nächster Prüfpunkt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "ooda-loop",
+      "number": 47,
+      "name": "OODA Loop",
+      "description": "Observe, Orient, Decide, Act als schneller Entscheidungszyklus.",
+      "applicationArea": "Strategie, Wettbewerb, Sicherheit, agile Entscheidungen",
+      "origin": "John Boyd, US Air Force; militärischer Ursprung, heute breiter angewendet.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/OODA_loop",
+          "title": "OODA loop"
+        }
+      ],
+      "example": "Markt beobachten, Lage interpretieren, entscheiden, handeln",
+      "scores": {
+        "generate": 3,
+        "structure": 6,
+        "analyze": 7,
+        "reduce": 5,
+        "prioritize": 8
+      },
+      "dominantCategory": "prioritize",
+      "dominantCategoryLabel": "Priorisieren",
+      "totalScore": 29,
+      "template": {
+        "title": "OODA Loop anwenden",
+        "categoryFocus": "Priorisieren",
+        "intro": "Ein einfaches Starter-Template, um OODA Loop für die Denkbewegung „Priorisieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Optionen oder Aufgaben",
+            "value": ""
+          },
+          {
+            "label": "Bewertungskriterien",
+            "value": ""
+          },
+          {
+            "label": "Bewertung je Option",
+            "value": ""
+          },
+          {
+            "label": "Empfohlene Reihenfolge",
+            "value": ""
+          },
+          {
+            "label": "Entscheidung und Begründung",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "theory-of-constraints",
+      "number": 48,
+      "name": "Theory of Constraints",
+      "description": "Engpass identifizieren und das System darauf ausrichten.",
+      "applicationArea": "Produktion, Prozesse, Projektmanagement",
+      "origin": "Eliyahu M. Goldratt; Engpass-/Bottleneck-Denken.",
+      "sources": [
+        {
+          "url": "https://www.tocinstitute.org/theory-of-constraints.html",
+          "title": "Theory of Constraints of Eliyahu M. Goldratt"
+        }
+      ],
+      "example": "„Nicht das Dashboard-Team ist der Engpass, sondern die Datenfreigabe.“",
+      "scores": {
+        "generate": 2,
+        "structure": 7,
+        "analyze": 10,
+        "reduce": 8,
+        "prioritize": 9
+      },
+      "dominantCategory": "analyze",
+      "dominantCategoryLabel": "Analysieren",
+      "totalScore": 36,
+      "template": {
+        "title": "Theory of Constraints anwenden",
+        "categoryFocus": "Analysieren",
+        "intro": "Ein einfaches Starter-Template, um Theory of Constraints für die Denkbewegung „Analysieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Problem, Risiko oder Annahme",
+            "value": ""
+          },
+          {
+            "label": "Beobachtungen und Fakten",
+            "value": ""
+          },
+          {
+            "label": "Mögliche Ursachen oder Muster",
+            "value": ""
+          },
+          {
+            "label": "Evidenz und Gegenargumente",
+            "value": ""
+          },
+          {
+            "label": "Erkenntnis und nächster Prüfpunkt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "force-field-analysis",
+      "number": 49,
+      "name": "Force Field Analysis",
+      "description": "Treibende und bremsende Kräfte einer Veränderung sichtbar machen.",
+      "applicationArea": "Change Management, Strategie, Umsetzung",
+      "origin": "Kurt Lewin; Mitte des 20. Jahrhunderts.",
+      "sources": [
+        {
+          "url": "https://www.open.edu/openlearn/mod/oucontent/view.php?id=19244&section=1.1&utm_source=chatgpt.com",
+          "title": "1.1 Force-field analysis"
+        }
+      ],
+      "example": "Treiber: Managementdruck; Bremser: Angst vor Transparenz",
+      "scores": {
+        "generate": 4,
+        "structure": 7,
+        "analyze": 8,
+        "reduce": 5,
+        "prioritize": 7
+      },
+      "dominantCategory": "analyze",
+      "dominantCategoryLabel": "Analysieren",
+      "totalScore": 31,
+      "template": {
+        "title": "Force Field Analysis anwenden",
+        "categoryFocus": "Analysieren",
+        "intro": "Ein einfaches Starter-Template, um Force Field Analysis für die Denkbewegung „Analysieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Problem, Risiko oder Annahme",
+            "value": ""
+          },
+          {
+            "label": "Beobachtungen und Fakten",
+            "value": ""
+          },
+          {
+            "label": "Mögliche Ursachen oder Muster",
+            "value": ""
+          },
+          {
+            "label": "Evidenz und Gegenargumente",
+            "value": ""
+          },
+          {
+            "label": "Erkenntnis und nächster Prüfpunkt",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "delphi-methode",
+      "number": 50,
+      "name": "Delphi-Methode",
+      "description": "Mehrstufige Expertenbefragung mit Feedbackrunden zur Konsensbildung.",
+      "applicationArea": "Prognosen, Strategie, Forschung, Unsicherheit",
+      "origin": "RAND Corporation, 1950er Jahre; ursprünglich Technologie-/Militärprognosen.",
+      "sources": [
+        {
+          "url": "https://www.rand.org/topics/delphi-method.html",
+          "title": "Delphi Method"
+        }
+      ],
+      "example": "Expertengruppe schätzt KI-Auswirkungen in drei anonymen Runden",
+      "scores": {
+        "generate": 4,
+        "structure": 7,
+        "analyze": 8,
+        "reduce": 6,
+        "prioritize": 8
+      },
+      "dominantCategory": "analyze",
+      "dominantCategoryLabel": "Analysieren",
+      "totalScore": 33,
+      "template": {
+        "title": "Delphi-Methode anwenden",
+        "categoryFocus": "Analysieren",
+        "intro": "Ein einfaches Starter-Template, um Delphi-Methode für die Denkbewegung „Analysieren“ zu nutzen.",
+        "fields": [
+          {
+            "label": "Problem, Risiko oder Annahme",
+            "value": ""
+          },
+          {
+            "label": "Beobachtungen und Fakten",
+            "value": ""
+          },
+          {
+            "label": "Mögliche Ursachen oder Muster",
+            "value": ""
+          },
+          {
+            "label": "Evidenz und Gegenargumente",
+            "value": ""
+          },
+          {
+            "label": "Erkenntnis und nächster Prüfpunkt",
+            "value": ""
+          }
+        ]
+      }
+    }
+  ]
+}
