@@ -22,10 +22,13 @@ npm run build
 
 ## Deployment auf GitHub Pages
 
-Die App nutzt `HashRouter`, damit Detailseiten auch auf GitHub Pages ohne Server-Rewrite funktionieren. Für ein Repository-Deployment kann der Vite-Base-Pfad beim Build gesetzt werden:
+Die App nutzt `HashRouter`, damit Detailseiten auch auf GitHub Pages ohne Server-Rewrite funktionieren. Der Vite-Base-Pfad ist in `vite.config.ts` auf `/thoughtgrid/` gesetzt.
+
+Das Deployment läuft über GitHub Actions in `.github/workflows/deploy.yml`. Bei jedem Push auf `main` wird:
 
 ```bash
-VITE_BASE=/thoughtgrid/ npm run build
+npm ci
+npm run build
 ```
 
-Falls das Repository anders heißt, ersetze `thoughtgrid` durch den Repository-Namen. Die fertigen Dateien liegen danach in `dist/`.
+ausgeführt und der Build-Output aus `dist/` nach GitHub Pages veröffentlicht.
