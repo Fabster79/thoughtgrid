@@ -227,7 +227,7 @@ function ToolCard({ categories, tool }: ToolCardProps) {
         <strong>{tool.dominantCategoryLabel}</strong>
       </div>
       <h3>{tool.name}</h3>
-      <p>{tool.description}</p>
+      <p>{tool.shortDescription ?? tool.description}</p>
       <ScoreBars categories={categories} scores={tool.scores} />
       <Link className="detail-link" to={`/tools/${tool.id}`}>
         Details ansehen
@@ -257,6 +257,9 @@ function ToolDetailPage({ data }: DataPageProps) {
     category: data.categories[key].label,
     score: tool.scores[key],
   }))
+  const relatedTools = (tool.relatedTools ?? [])
+    .map((relatedToolId) => data.tools.find((item) => item.id === relatedToolId))
+    .filter((item): item is ThinkingTool => Boolean(item))
 
   return (
     <main className="app-shell detail-shell">
@@ -270,7 +273,7 @@ function ToolDetailPage({ data }: DataPageProps) {
             #{tool.number} · {tool.dominantCategoryLabel}
           </p>
           <h1>{tool.name}</h1>
-          <p className="lead">{tool.description}</p>
+          <p className="lead">{tool.shortDescription ?? tool.description}</p>
         </div>
         <div className="score-total">
           <span>{tool.totalScore}</span>
@@ -279,6 +282,35 @@ function ToolDetailPage({ data }: DataPageProps) {
       </section>
 
       <section className="detail-grid">
+        {tool.detail && (
+          <article className="detail-panel content-panel">
+            <h2>Was ist das?</h2>
+            <p>{tool.detail.whatItIs}</p>
+
+            <div className="content-sections">
+              <InfoList title="Wann nutzen?" items={tool.detail.whenToUse} />
+              <InfoList title="So funktioniert's" items={tool.detail.howToUse} ordered />
+              <InfoList
+                title="Typische Stolperfallen"
+                items={tool.detail.pitfalls}
+              />
+            </div>
+
+            <div className="fit-grid">
+              <InfoList title="Gut geeignet für" items={tool.detail.goodFor} />
+              <InfoList
+                title="Weniger geeignet für"
+                items={tool.detail.notIdealFor}
+              />
+            </div>
+
+            <div className="output-box">
+              <strong>Ergebnis</strong>
+              <p>{tool.detail.output}</p>
+            </div>
+          </article>
+        )}
+
         <article className="detail-panel">
           <h2>Anwendung</h2>
           <dl className="fact-list">
@@ -296,6 +328,20 @@ function ToolDetailPage({ data }: DataPageProps) {
             </div>
           </dl>
         </article>
+
+        {tool.visual && (
+          <article className="detail-panel visual-panel">
+            <p className="eyebrow">Visual Preview</p>
+            <h2>{tool.visual.headline}</h2>
+            <p>{tool.visual.metaphor}</p>
+            <p className="layout-hint">{tool.visual.layoutHint}</p>
+            <div className="tag-list">
+              {tool.visual.elements.map((element) => (
+                <span key={element}>{element}</span>
+              ))}
+            </div>
+          </article>
+        )}
 
         <article className="detail-panel chart-panel">
           <h2>Score-Profil</h2>
@@ -318,19 +364,53 @@ function ToolDetailPage({ data }: DataPageProps) {
           </div>
         </article>
 
-        <article className="detail-panel template-panel">
-          <p className="eyebrow">{tool.template.categoryFocus}</p>
-          <h2>{tool.template.title}</h2>
-          <p>{tool.template.intro}</p>
-          <div className="template-fields">
-            {tool.template.fields.map((field) => (
-              <label key={field.label}>
-                <span>{field.label}</span>
-                <textarea defaultValue={field.value} rows={3} />
-              </label>
-            ))}
-          </div>
-        </article>
+        {tool.template && (
+          <article className="detail-panel template-panel">
+            {tool.template.categoryFocus && (
+              <p className="eyebrow">{tool.template.categoryFocus}</p>
+            )}
+            <h2>{tool.template.title}</h2>
+            <p>{tool.template.intro}</p>
+            {tool.template.estimatedTime && (
+              <p className="template-meta">
+                Geschätzte Dauer: {tool.template.estimatedTime}
+              </p>
+            )}
+            {tool.template.steps && tool.template.steps.length > 0 && (
+              <div className="template-steps">
+                <h3>Schritte</h3>
+                <ol>
+                  {tool.template.steps.map((step) => (
+                    <li key={step}>{step}</li>
+                  ))}
+                </ol>
+              </div>
+            )}
+            <div className="template-fields">
+              {tool.template.fields.map((field) => (
+                <label key={field.label}>
+                  <span>{field.label}</span>
+                  {field.helperText && <small>{field.helperText}</small>}
+                  <textarea defaultValue={field.value} rows={3} />
+                </label>
+              ))}
+            </div>
+          </article>
+        )}
+
+        {relatedTools.length > 0 && (
+          <article className="detail-panel related-panel">
+            <h2>Verwandte Denkwerkzeuge</h2>
+            <div className="related-list">
+              {relatedTools.map((relatedTool) => (
+                <Link key={relatedTool.id} to={`/tools/${relatedTool.id}`}>
+                  <strong>{relatedTool.name}</strong>
+                  <span>{relatedTool.shortDescription ?? relatedTool.description}</span>
+                </Link>
+              ))}
+            </div>
+          </article>
+        )}
 
         {tool.sources.length > 0 && (
           <article className="detail-panel">
@@ -348,6 +428,31 @@ function ToolDetailPage({ data }: DataPageProps) {
         )}
       </section>
     </main>
+  )
+}
+
+interface InfoListProps {
+  items: string[]
+  ordered?: boolean
+  title: string
+}
+
+function InfoList({ items, ordered = false, title }: InfoListProps) {
+  if (items.length === 0) {
+    return null
+  }
+
+  const ListTag = ordered ? 'ol' : 'ul'
+
+  return (
+    <section className="info-list">
+      <h3>{title}</h3>
+      <ListTag>
+        {items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ListTag>
+    </section>
   )
 }
 

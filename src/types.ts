@@ -36,6 +36,7 @@ export interface ThinkingTool {
   id: string
   number: number
   name: string
+  shortDescription?: string
   description: string
   applicationArea: string
   origin: string
@@ -45,7 +46,10 @@ export interface ThinkingTool {
   dominantCategory: CategoryKey
   dominantCategoryLabel: string
   totalScore: number
-  template: ThinkingToolTemplate
+  detail?: ThinkingToolDetail | null
+  visual?: ThinkingToolVisual | null
+  template?: ThinkingToolTemplate
+  relatedTools?: string[]
 }
 
 export interface ThinkingToolSource {
@@ -55,14 +59,34 @@ export interface ThinkingToolSource {
 
 export interface ThinkingToolTemplate {
   title: string
-  categoryFocus: string
   intro: string
+  estimatedTime?: string
+  categoryFocus?: string
+  steps?: string[]
   fields: ThinkingToolTemplateField[]
 }
 
 export interface ThinkingToolTemplateField {
   label: string
+  helperText?: string
   value: string
+}
+
+export interface ThinkingToolDetail {
+  whatItIs: string
+  whenToUse: string[]
+  howToUse: string[]
+  pitfalls: string[]
+  goodFor: string[]
+  notIdealFor: string[]
+  output: string
+}
+
+export interface ThinkingToolVisual {
+  headline: string
+  metaphor: string
+  layoutHint: string
+  elements: string[]
 }
 
 export type SortOption = 'alphabetical' | 'totalScore' | 'selectedCategory'

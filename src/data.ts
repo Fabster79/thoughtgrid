@@ -59,11 +59,12 @@ function isThinkingTool(value: unknown): value is ThinkingTool {
     return false
   }
 
-  const { sources, scores, template } = value
+  const { detail, relatedTools, scores, sources, template, visual } = value
 
   return (
     typeof value.id === 'string' &&
     typeof value.number === 'number' &&
+    optionalString(value.shortDescription) &&
     typeof value.name === 'string' &&
     typeof value.description === 'string' &&
     typeof value.applicationArea === 'string' &&
@@ -76,7 +77,12 @@ function isThinkingTool(value: unknown): value is ThinkingTool {
     categoryKeys.includes(value.dominantCategory as never) &&
     typeof value.dominantCategoryLabel === 'string' &&
     typeof value.totalScore === 'number' &&
-    isTemplate(template)
+    (template === undefined || isTemplate(template)) &&
+    (detail === undefined || detail === null || isDetail(detail)) &&
+    (visual === undefined || visual === null || isVisual(visual)) &&
+    (relatedTools === undefined ||
+      (Array.isArray(relatedTools) &&
+        relatedTools.every((toolId) => typeof toolId === 'string')))
   )
 }
 
@@ -92,16 +98,52 @@ function isTemplate(value: unknown) {
   return (
     isRecord(value) &&
     typeof value.title === 'string' &&
-    typeof value.categoryFocus === 'string' &&
     typeof value.intro === 'string' &&
+    optionalString(value.estimatedTime) &&
+    optionalString(value.categoryFocus) &&
+    (value.steps === undefined ||
+      (Array.isArray(value.steps) &&
+        value.steps.every((step) => typeof step === 'string'))) &&
     Array.isArray(value.fields) &&
     value.fields.every(
       (field) =>
         isRecord(field) &&
         typeof field.label === 'string' &&
+        optionalString(field.helperText) &&
         typeof field.value === 'string',
     )
   )
+}
+
+function isDetail(value: unknown) {
+  return (
+    isRecord(value) &&
+    typeof value.whatItIs === 'string' &&
+    isStringList(value.whenToUse) &&
+    isStringList(value.howToUse) &&
+    isStringList(value.pitfalls) &&
+    isStringList(value.goodFor) &&
+    isStringList(value.notIdealFor) &&
+    typeof value.output === 'string'
+  )
+}
+
+function isVisual(value: unknown) {
+  return (
+    isRecord(value) &&
+    typeof value.headline === 'string' &&
+    typeof value.metaphor === 'string' &&
+    typeof value.layoutHint === 'string' &&
+    isStringList(value.elements)
+  )
+}
+
+function isStringList(value: unknown) {
+  return Array.isArray(value) && value.every((item) => typeof item === 'string')
+}
+
+function optionalString(value: unknown) {
+  return value === undefined || typeof value === 'string'
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {

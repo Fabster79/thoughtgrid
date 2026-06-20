@@ -1,13 +1,15 @@
 {
   "metadata": {
-    "title": "Denkwerkzeug-Finder",
-    "description": "Datenbasis für ThoughtGrid mit erweitertem Content-Schema für Detailseiten, PDF-Templates und Visuals. Erste 10 Werkzeuge sind angereichert.",
-    "version": "2.0.0-content-schema-draft",
+    "title": "ThoughtGrid",
+    "description": "Vollständige V2-Datenbasis für ThoughtGrid mit 50 angereicherten Denkwerkzeugen für Detailseiten, Visuals und spätere PDF-Templates.",
+    "version": "2.0.0-complete-content",
     "language": "de",
     "scoreScale": {
       "min": 1,
       "max": 10
-    }
+    },
+    "contentStatus": "all-50-tools-enriched",
+    "lastContentUpdate": "2026-06-20"
   },
   "categories": {
     "generate": {
@@ -762,8 +764,7 @@
       },
       "relatedTools": [
         "mindmap",
-        "top-10-liste",
-        "affinity-map"
+        "top-10-liste"
       ]
     },
     {
@@ -871,7 +872,6 @@
       },
       "relatedTools": [
         "pareto-analyse",
-        "dos-donts",
         "impact-effort-matrix"
       ]
     },
@@ -1010,36 +1010,93 @@
       "dominantCategoryLabel": "Reduzieren",
       "totalScore": 26,
       "template": {
-        "title": "Dos & Don’ts anwenden",
-        "categoryFocus": "Reduzieren",
-        "intro": "Ein einfaches Starter-Template, um Dos & Don’ts für die Denkbewegung „Reduzieren“ zu nutzen.",
+        "title": "Dos & Don’ts Template",
+        "intro": "Verdichte Erfahrungswissen in klare, gut merkbare Verhaltensregeln.",
+        "estimatedTime": "15–30 Minuten",
+        "steps": [
+          "Kontext klären",
+          "Dos sammeln",
+          "Don’ts sammeln",
+          "Regeln schärfen",
+          "Beispiele ergänzen"
+        ],
         "fields": [
           {
-            "label": "Ausgangsliste oder Themenmenge",
+            "label": "Anwendungsfall",
+            "helperText": "Wofür gelten die Dos & Don’ts?",
             "value": ""
           },
           {
-            "label": "Kriterien für Relevanz",
+            "label": "Dos",
+            "helperText": "Was soll bewusst getan werden?",
             "value": ""
           },
           {
-            "label": "Was wird gestrichen oder zusammengefasst?",
+            "label": "Don’ts",
+            "helperText": "Was sollte vermieden werden?",
             "value": ""
           },
           {
-            "label": "Essenz in einem Satz",
+            "label": "Beispiele",
+            "helperText": "Welche kurzen Beispiele machen die Regeln greifbar?",
             "value": ""
           },
           {
-            "label": "Nächster konkreter Schritt",
+            "label": "Kernregel",
+            "helperText": "Was ist die wichtigste Botschaft?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Gute und schlechte Praktiken nebeneinanderstellen.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Dos & Don’ts verdichten gute und schlechte Praktiken in eine leicht verständliche Gegenüberstellung.",
+      "detail": {
+        "whatItIs": "Dos & Don’ts übersetzen Erfahrungswissen in klare Verhaltenshinweise. Das Werkzeug zeigt auf einen Blick, was empfohlen wird und was vermieden werden sollte.",
+        "whenToUse": [
+          "Wenn Guidelines schnell verständlich werden sollen.",
+          "Wenn gute und schlechte Praktiken gegenübergestellt werden.",
+          "Wenn Enablement-Material oder Kommunikation vereinfacht werden soll.",
+          "Wenn aus Erfahrung konkrete Handlungsregeln werden sollen."
+        ],
+        "howToUse": [
+          "Definiere den Anwendungsfall.",
+          "Sammle gute und schlechte Beispiele.",
+          "Formuliere jede Regel konkret und beobachtbar.",
+          "Halte die Liste kurz und ausgewogen.",
+          "Ergänze bei Bedarf ein Beispiel pro Regel."
+        ],
+        "pitfalls": [
+          "Zu viele Regeln aufnehmen.",
+          "Don’ts moralisierend formulieren.",
+          "Regeln ohne Kontext oder Beispiel stehen lassen."
+        ],
+        "goodFor": [
+          "Guidelines",
+          "Enablement",
+          "Kommunikation",
+          "Qualitätsstandards"
+        ],
+        "notIdealFor": [
+          "Tiefe Ursachenanalyse",
+          "Komplexe Strategiearbeit",
+          "Feinpriorisierung mit Kriterien"
+        ],
+        "output": "Eine kompakte Gegenüberstellung von empfohlenem und zu vermeidendem Verhalten."
+      },
+      "visual": {
+        "headline": "Gute und schlechte Praxis auf einen Blick",
+        "metaphor": "Zwei Spuren: eine führt zur besseren Praxis, die andere in typische Fallen.",
+        "layoutHint": "Zweispaltiges Layout mit grüner Do-Seite, roter Don’t-Seite und kurzen Beispielkarten.",
+        "elements": [
+          "Do-Spalte",
+          "Don’t-Spalte",
+          "Beispielkarten"
+        ]
+      },
+      "relatedTools": [
+        "checkliste",
+        "top-10-liste",
+        "leitfragenkatalog"
+      ]
     },
     {
       "id": "checkliste",
@@ -1150,7 +1207,6 @@
         ]
       },
       "relatedTools": [
-        "dos-donts",
         "a3-report",
         "leitfragenkatalog"
       ]
@@ -1175,36 +1231,93 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 28,
       "template": {
-        "title": "Leitfragenkatalog anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um Leitfragenkatalog für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "Leitfragenkatalog Template",
+        "intro": "Entwickle einen kompakten Fragenkatalog, der ein Thema sauber erschließt und in Gesprächen wiederverwendet werden kann.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Ziel klären",
+          "Themenblöcke festlegen",
+          "Fragen sammeln",
+          "Fragen schärfen",
+          "Antworten auswertbar machen"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Ziel des Fragenkatalogs",
+            "helperText": "Was soll nach dem Gespräch klarer sein?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Kontextfragen",
+            "helperText": "Welche Rahmenbedingungen müssen verstanden werden?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Problemfragen",
+            "helperText": "Welche Schwierigkeiten, Ursachen oder Symptome sollen sichtbar werden?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Nutzenfragen",
+            "helperText": "Welcher gewünschte Zustand oder Mehrwert wird gesucht?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Auswertungslogik",
+            "helperText": "Wie werden Antworten später verdichtet?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Ein Thema wird über wiederkehrende Fragen erschlossen.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Ein Leitfragenkatalog erschließt ein Thema über wiederkehrende, gut formulierte Fragen.",
+      "detail": {
+        "whatItIs": "Ein Leitfragenkatalog ist ein Satz von Fragen, der ein Thema systematisch ausleuchtet. Er sorgt dafür, dass Gespräche, Analysen oder Workshops nicht zufällig verlaufen, sondern wiederholbar und vergleichbar werden.",
+        "whenToUse": [
+          "Wenn ein Thema strukturiert verstanden werden soll.",
+          "Wenn mehrere Gespräche vergleichbar geführt werden sollen.",
+          "Wenn Beratung, Analyse oder Workshop eine klare Spur brauchen.",
+          "Wenn wichtige Aspekte nicht vergessen werden dürfen."
+        ],
+        "howToUse": [
+          "Formuliere das Ziel der Analyse.",
+          "Sammle offene Fragen zu Nutzer, Kontext, Problem, Risiko und Zielbild.",
+          "Ordne die Fragen in sinnvolle Blöcke.",
+          "Teste die Fragen an einem konkreten Fall.",
+          "Streiche doppelte oder suggestive Fragen."
+        ],
+        "pitfalls": [
+          "Zu viele Fragen aufnehmen und dadurch das Gespräch überfrachten.",
+          "Fragen stellen, die bereits eine gewünschte Antwort nahelegen.",
+          "Antworten sammeln, aber keine Erkenntnisse verdichten."
+        ],
+        "goodFor": [
+          "Interviews",
+          "Workshops",
+          "Beratungsgespräche",
+          "Anforderungsanalyse"
+        ],
+        "notIdealFor": [
+          "Sehr kreative Ideensprints",
+          "Schnelle Bauchentscheidungen",
+          "Situationen mit bereits klarer Faktenlage"
+        ],
+        "output": "Ein strukturierter Fragenkatalog, der ein Thema wiederholbar untersuchbar macht."
+      },
+      "visual": {
+        "headline": "Fragen als Geländer",
+        "metaphor": "Ein Geländer, das sicher durch ein komplexes Thema führt.",
+        "layoutHint": "Mehrere Frageblöcke als vertikale Abschnitte, verbunden durch eine klare Gesprächslinie.",
+        "elements": [
+          "Frageblöcke",
+          "Gesprächslinie",
+          "Erkenntnisfeld"
+        ]
+      },
+      "relatedTools": [
+        "5w1h",
+        "empathy-map",
+        "jobs-to-be-done"
+      ]
     },
     {
       "id": "5w1h",
@@ -1226,36 +1339,98 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 26,
       "template": {
-        "title": "5W1H anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um 5W1H für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "5W1H Template",
+        "intro": "Nutze die sechs Leitfragen, um ein Thema schnell vollständig und verständlich zu beschreiben.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Sachverhalt notieren",
+          "Sechs Fragen beantworten",
+          "Lücken markieren",
+          "fehlende Informationen klären",
+          "Kurzfazit formulieren"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Wer?",
+            "helperText": "Welche Personen, Rollen oder Gruppen sind beteiligt?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Was?",
+            "helperText": "Was passiert oder soll erreicht werden?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Wann?",
+            "helperText": "Wann tritt es auf oder bis wann wird etwas benötigt?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Wo?",
+            "helperText": "In welchem Kontext, Bereich oder System passiert es?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Warum?",
+            "helperText": "Warum ist das wichtig oder problematisch?",
+            "value": ""
+          },
+          {
+            "label": "Wie?",
+            "helperText": "Wie läuft es ab oder wie soll es umgesetzt werden?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Wer, was, wann, wo, warum, wie.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "5W1H klärt die wichtigsten Grundinformationen: wer, was, wann, wo, warum und wie.",
+      "detail": {
+        "whatItIs": "5W1H ist ein einfaches Raster zur vollständigen Beschreibung einer Situation. Die Methode zwingt dazu, nicht nur das Was, sondern auch Beteiligte, Timing, Ort, Grund und Vorgehen zu klären.",
+        "whenToUse": [
+          "Wenn eine Aufgabe, ein Problem oder ein Vorhaben noch unscharf ist.",
+          "Wenn alle Beteiligten ein gemeinsames Verständnis brauchen.",
+          "Wenn Informationen für Analyse, Kommunikation oder Briefing gesammelt werden.",
+          "Wenn schnelle Struktur wichtiger ist als Tiefe."
+        ],
+        "howToUse": [
+          "Formuliere den Sachverhalt in einem Satz.",
+          "Beantworte nacheinander Wer, Was, Wann, Wo, Warum und Wie.",
+          "Markiere fehlende oder unsichere Antworten.",
+          "Ergänze offene Punkte durch Nachfragen.",
+          "Verdichte daraus eine klare Problembeschreibung."
+        ],
+        "pitfalls": [
+          "Das Warum zu oberflächlich beantworten.",
+          "Unklare Antworten stehen lassen.",
+          "Die Methode mit Ursachenanalyse verwechseln."
+        ],
+        "goodFor": [
+          "Briefings",
+          "Problembeschreibung",
+          "Meetingvorbereitung",
+          "Prozessklärung"
+        ],
+        "notIdealFor": [
+          "Tiefe Ursachenanalyse",
+          "Komplexe Strategiearbeit",
+          "Kreative Ideenentwicklung"
+        ],
+        "output": "Eine vollständige, gut verständliche Kurzbeschreibung des Sachverhalts."
+      },
+      "visual": {
+        "headline": "Sechs Fragen, ein klares Bild",
+        "metaphor": "Eine Taschenlampe mit sechs Lichtkegeln auf ein Thema.",
+        "layoutHint": "Zentrales Thema in der Mitte, sechs Fragefelder darum herum.",
+        "elements": [
+          "Zentrum",
+          "sechs Fragefelder",
+          "offene Punkte"
+        ]
+      },
+      "relatedTools": [
+        "leitfragenkatalog",
+        "5-whys",
+        "mindmap"
+      ]
     },
     {
       "id": "5-whys",
@@ -1282,36 +1457,104 @@
       "dominantCategoryLabel": "Analysieren",
       "totalScore": 24,
       "template": {
-        "title": "5 Whys anwenden",
-        "categoryFocus": "Analysieren",
-        "intro": "Ein einfaches Starter-Template, um 5 Whys für die Denkbewegung „Analysieren“ zu nutzen.",
+        "title": "5 Whys Template",
+        "intro": "Arbeite dich von einem sichtbaren Symptom zu einer tieferen, prüfbaren Ursache vor.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Problem konkret formulieren",
+          "Warum 1 beantworten",
+          "Antwort erneut hinterfragen",
+          "Ursache prüfen",
+          "Maßnahme ableiten"
+        ],
         "fields": [
           {
-            "label": "Problem, Risiko oder Annahme",
+            "label": "Ausgangsproblem",
+            "helperText": "Was ist konkret passiert?",
             "value": ""
           },
           {
-            "label": "Beobachtungen und Fakten",
+            "label": "Warum 1",
+            "helperText": "Warum ist dieses Problem aufgetreten?",
             "value": ""
           },
           {
-            "label": "Mögliche Ursachen oder Muster",
+            "label": "Warum 2",
+            "helperText": "Warum ist die Antwort aus Warum 1 möglich gewesen?",
             "value": ""
           },
           {
-            "label": "Evidenz und Gegenargumente",
+            "label": "Warum 3",
+            "helperText": "Welche tiefere Ursache steckt dahinter?",
             "value": ""
           },
           {
-            "label": "Erkenntnis und nächster Prüfpunkt",
+            "label": "Warum 4",
+            "helperText": "Welche Systembedingung hat dazu beigetragen?",
+            "value": ""
+          },
+          {
+            "label": "Warum 5",
+            "helperText": "Welche Grundursache ist wahrscheinlich?",
+            "value": ""
+          },
+          {
+            "label": "Nächster Schritt",
+            "helperText": "Was wird geprüft oder geändert?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Mehrfach „Warum?“ fragen, um Ursachen statt Symptome zu finden.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "5 Whys sucht durch wiederholtes Warum-Fragen nach der Ursache hinter einem Symptom.",
+      "detail": {
+        "whatItIs": "5 Whys ist eine Root-Cause-Methode. Ein Problem wird nicht sofort gelöst, sondern mehrfach hinterfragt, bis eine plausible Ursache sichtbar wird, die getestet oder behoben werden kann.",
+        "whenToUse": [
+          "Wenn ein Problem immer wieder auftritt.",
+          "Wenn Symptome von Ursachen getrennt werden sollen.",
+          "Wenn ein Team schnell in Ursachenlogik kommen soll.",
+          "Wenn eine einfache Methode für operative Probleme reicht."
+        ],
+        "howToUse": [
+          "Beschreibe das Problem konkret.",
+          "Frage: Warum ist das passiert?",
+          "Nutze die Antwort als Basis für das nächste Warum.",
+          "Wiederhole das, bis eine prüfbare Ursache sichtbar wird.",
+          "Leite eine konkrete Gegenmaßnahme oder einen Test ab."
+        ],
+        "pitfalls": [
+          "Nur eine Ursachenlinie verfolgen, obwohl es mehrere geben kann.",
+          "Schuldige suchen statt Systemursachen.",
+          "Bei Vermutungen stehen bleiben und nicht prüfen."
+        ],
+        "goodFor": [
+          "Root-Cause-Analyse",
+          "Qualitätsprobleme",
+          "Prozessfehler",
+          "Incident-Nachbereitung"
+        ],
+        "notIdealFor": [
+          "Sehr komplexe Ursachenbündel",
+          "Politisch sensible Schuldfragen",
+          "Probleme ohne Datenbasis"
+        ],
+        "output": "Eine plausible Ursachenhypothese mit nächstem Prüf- oder Verbesserungsschritt."
+      },
+      "visual": {
+        "headline": "Von Symptom zu Ursache",
+        "metaphor": "Eine Treppe, die von der Oberfläche in die Tiefe führt.",
+        "layoutHint": "Oben Problemkarte, darunter fünf Warum-Stufen bis zur Ursache.",
+        "elements": [
+          "Problem",
+          "Warum-Stufen",
+          "Ursache",
+          "Maßnahme"
+        ]
+      },
+      "relatedTools": [
+        "ishikawa-fishbone",
+        "a3-report",
+        "pdca"
+      ]
     },
     {
       "id": "first-principles-thinking",
@@ -1333,36 +1576,93 @@
       "dominantCategoryLabel": "Analysieren",
       "totalScore": 32,
       "template": {
-        "title": "First Principles Thinking anwenden",
-        "categoryFocus": "Analysieren",
-        "intro": "Ein einfaches Starter-Template, um First Principles Thinking für die Denkbewegung „Analysieren“ zu nutzen.",
+        "title": "First Principles Template",
+        "intro": "Zerlege ein Problem in Grundannahmen und baue daraus neue Lösungsoptionen.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Problem neutral formulieren",
+          "Annahmen sammeln",
+          "Fakten von Gewohnheiten trennen",
+          "Grundprinzipien festhalten",
+          "neue Lösung skizzieren"
+        ],
         "fields": [
           {
-            "label": "Problem, Risiko oder Annahme",
+            "label": "Problem",
+            "helperText": "Was soll gelöst werden, ohne schon eine Lösung vorzugeben?",
             "value": ""
           },
           {
-            "label": "Beobachtungen und Fakten",
+            "label": "Aktuelle Annahmen",
+            "helperText": "Was halten wir für selbstverständlich?",
             "value": ""
           },
           {
-            "label": "Mögliche Ursachen oder Muster",
+            "label": "Belastbare Fakten",
+            "helperText": "Was wissen wir wirklich?",
             "value": ""
           },
           {
-            "label": "Evidenz und Gegenargumente",
+            "label": "Nicht zwingende Konventionen",
+            "helperText": "Was ist nur Gewohnheit oder Historie?",
             "value": ""
           },
           {
-            "label": "Erkenntnis und nächster Prüfpunkt",
+            "label": "Neue Optionen",
+            "helperText": "Was wäre möglich, wenn wir vom Fundament aus neu denken?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Annahmen zerlegen und vom Fundament neu denken.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "First Principles Thinking zerlegt Annahmen und baut eine Lösung vom Fundament neu auf.",
+      "detail": {
+        "whatItIs": "First Principles Thinking fragt nicht, wie etwas üblicherweise gemacht wird, sondern was wirklich unveränderlich gilt. Bestehende Lösungen werden in Grundannahmen zerlegt, um neue Optionen zu ermöglichen.",
+        "whenToUse": [
+          "Wenn etablierte Lösungen nicht mehr überzeugen.",
+          "Wenn Annahmen den Lösungsraum begrenzen.",
+          "Wenn Innovation statt Optimierung gesucht wird.",
+          "Wenn ein Problem grundlegend neu gedacht werden soll."
+        ],
+        "howToUse": [
+          "Formuliere das Problem ohne Lösungsvorgabe.",
+          "Liste alle Annahmen und Gewohnheiten auf.",
+          "Trenne belegbare Fakten von Konventionen.",
+          "Baue aus den belastbaren Grundsätzen neue Optionen.",
+          "Prüfe, welche neue Lösung realistisch ist."
+        ],
+        "pitfalls": [
+          "Alles Bestehende vorschnell verwerfen.",
+          "Grundannahmen behaupten, aber nicht belegen.",
+          "Zu abstrakt bleiben und keine umsetzbare Option ableiten."
+        ],
+        "goodFor": [
+          "Innovation",
+          "Strategie",
+          "Produktdenken",
+          "Architekturentscheidungen"
+        ],
+        "notIdealFor": [
+          "Routineaufgaben",
+          "Schnelle operative Entscheidungen",
+          "Situationen mit engen Standardvorgaben"
+        ],
+        "output": "Eine neu gedachte Lösungsoption, die auf geprüften Grundannahmen basiert."
+      },
+      "visual": {
+        "headline": "Vom Fundament neu bauen",
+        "metaphor": "Ein Gebäude, dessen Fundament freigelegt und neu genutzt wird.",
+        "layoutHint": "Unten Grundprinzipien als Fundament, darüber neue Lösungsbausteine.",
+        "elements": [
+          "Annahmen",
+          "Fundament",
+          "neue Optionen"
+        ]
+      },
+      "relatedTools": [
+        "inversion",
+        "jobs-to-be-done",
+        "lateral-thinking"
+      ]
     },
     {
       "id": "inversion",
@@ -1384,36 +1684,94 @@
       "dominantCategoryLabel": "Analysieren",
       "totalScore": 28,
       "template": {
-        "title": "Inversion anwenden",
-        "categoryFocus": "Analysieren",
-        "intro": "Ein einfaches Starter-Template, um Inversion für die Denkbewegung „Analysieren“ zu nutzen.",
+        "title": "Inversion Template",
+        "intro": "Drehe dein Ziel bewusst um, um Risiken und Gegenmaßnahmen klarer zu erkennen.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Ziel formulieren",
+          "Scheitern beschreiben",
+          "Scheitergründe sammeln",
+          "Risiken übersetzen",
+          "Gegenmaßnahmen festlegen"
+        ],
         "fields": [
           {
-            "label": "Problem, Risiko oder Annahme",
+            "label": "Ziel",
+            "helperText": "Was soll eigentlich gelingen?",
             "value": ""
           },
           {
-            "label": "Beobachtungen und Fakten",
+            "label": "Umkehrfrage",
+            "helperText": "Wie würden wir das Vorhaben garantiert scheitern lassen?",
             "value": ""
           },
           {
-            "label": "Mögliche Ursachen oder Muster",
+            "label": "Scheitergründe",
+            "helperText": "Welche Handlungen, Annahmen oder Lücken würden schaden?",
             "value": ""
           },
           {
-            "label": "Evidenz und Gegenargumente",
+            "label": "Frühwarnsignale",
+            "helperText": "Woran merken wir früh, dass es kippt?",
             "value": ""
           },
           {
-            "label": "Erkenntnis und nächster Prüfpunkt",
+            "label": "Gegenmaßnahmen",
+            "helperText": "Was tun wir konkret, um das zu verhindern?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Problem umdrehen: Was müsste passieren, damit es scheitert?",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Inversion dreht die Frage um und macht sichtbar, was vermieden werden muss.",
+      "detail": {
+        "whatItIs": "Inversion fragt nicht nur, wie Erfolg entsteht, sondern wie Scheitern garantiert wäre. Dadurch werden Risiken, blinde Flecken und Gegenmaßnahmen oft schneller sichtbar als bei direkter Lösungsarbeit.",
+        "whenToUse": [
+          "Wenn Risiken greifbar gemacht werden sollen.",
+          "Wenn ein Plan zu optimistisch klingt.",
+          "Wenn ein Team festgefahren ist.",
+          "Wenn man aus Fehlervermeidung lernen möchte."
+        ],
+        "howToUse": [
+          "Formuliere das gewünschte Ziel.",
+          "Drehe die Frage um: Wie würden wir es garantiert ruinieren?",
+          "Sammle Scheitergründe ohne Beschönigung.",
+          "Übersetze die Gründe in Risiken und Frühwarnsignale.",
+          "Leite konkrete Gegenmaßnahmen ab."
+        ],
+        "pitfalls": [
+          "Zynisch werden und keine Maßnahmen ableiten.",
+          "Nur offensichtliche Risiken sammeln.",
+          "Die Umkehrfrage als Kritik an Personen verstehen."
+        ],
+        "goodFor": [
+          "Risikodenken",
+          "Strategie",
+          "Projektplanung",
+          "Produktivität"
+        ],
+        "notIdealFor": [
+          "Reine Ideensammlung",
+          "Situationen, in denen Motivation gerade wichtiger ist als Risiko",
+          "Sehr kleine Routineaufgaben"
+        ],
+        "output": "Eine Liste vermeidbarer Scheitergründe mit passenden Gegenmaßnahmen."
+      },
+      "visual": {
+        "headline": "Erfolg durch Umkehrung",
+        "metaphor": "Ein Wegweiser mit zwei Richtungen: Erfolg und garantiertes Scheitern.",
+        "layoutHint": "Links Ziel, rechts Anti-Ziel, dazwischen Risiken und Gegenmaßnahmen.",
+        "elements": [
+          "Ziel",
+          "Anti-Ziel",
+          "Risiken",
+          "Schutzmaßnahmen"
+        ]
+      },
+      "relatedTools": [
+        "premortem",
+        "rumsfeld-matrix",
+        "force-field-analysis"
+      ]
     },
     {
       "id": "premortem",
@@ -1440,36 +1798,99 @@
       "dominantCategoryLabel": "Analysieren",
       "totalScore": 32,
       "template": {
-        "title": "Premortem anwenden",
-        "categoryFocus": "Analysieren",
-        "intro": "Ein einfaches Starter-Template, um Premortem für die Denkbewegung „Analysieren“ zu nutzen.",
+        "title": "Premortem Template",
+        "intro": "Simuliere das Scheitern, bevor es passiert, und leite daraus Schutzmaßnahmen ab.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Projekt beschreiben",
+          "Scheitern imaginieren",
+          "Gründe sammeln",
+          "Risiken bewerten",
+          "Maßnahmen und Owner festlegen"
+        ],
         "fields": [
           {
-            "label": "Problem, Risiko oder Annahme",
+            "label": "Vorhaben",
+            "helperText": "Worum geht es?",
             "value": ""
           },
           {
-            "label": "Beobachtungen und Fakten",
+            "label": "Angenommener Fehlschlag",
+            "helperText": "Was ist in der Zukunft schiefgelaufen?",
             "value": ""
           },
           {
-            "label": "Mögliche Ursachen oder Muster",
+            "label": "Mögliche Gründe",
+            "helperText": "Welche Ursachen könnten dazu geführt haben?",
             "value": ""
           },
           {
-            "label": "Evidenz und Gegenargumente",
+            "label": "Frühwarnsignale",
+            "helperText": "Woran würden wir es früh erkennen?",
             "value": ""
           },
           {
-            "label": "Erkenntnis und nächster Prüfpunkt",
+            "label": "Gegenmaßnahmen",
+            "helperText": "Was tun wir jetzt vorbeugend?",
+            "value": ""
+          },
+          {
+            "label": "Owner",
+            "helperText": "Wer kümmert sich darum?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "So tun, als sei das Projekt gescheitert, und Gründe sammeln.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Ein Premortem nimmt das Scheitern vorweg, um Risiken vor Projektstart sichtbar zu machen.",
+      "detail": {
+        "whatItIs": "Beim Premortem stellt sich das Team vor, ein Projekt sei bereits gescheitert. Aus dieser Zukunftsperspektive werden Gründe gesammelt, damit Risiken vorab erkannt und entschärft werden können.",
+        "whenToUse": [
+          "Vor wichtigen Projekten oder Entscheidungen.",
+          "Wenn Risiken offen angesprochen werden sollen.",
+          "Wenn ein Team zu sicher wirkt.",
+          "Wenn frühe Warnsignale und Gegenmaßnahmen gebraucht werden."
+        ],
+        "howToUse": [
+          "Beschreibe das Projekt und den angenommenen Fehlschlag.",
+          "Bitte alle, mögliche Gründe unabhängig zu sammeln.",
+          "Clustere die Gründe nach Ursachenfeldern.",
+          "Bewerte Eintrittswahrscheinlichkeit und Wirkung grob.",
+          "Leite Frühwarnsignale und Gegenmaßnahmen ab."
+        ],
+        "pitfalls": [
+          "Das Format als Pessimismus missverstehen.",
+          "Risiken sammeln, aber keine Owner vergeben.",
+          "Nur technische Risiken betrachten und Change-/Akzeptanzthemen vergessen."
+        ],
+        "goodFor": [
+          "Projektplanung",
+          "Risikomanagement",
+          "Migrationen",
+          "Strategieworkshops"
+        ],
+        "notIdealFor": [
+          "Sehr einfache Aufgaben",
+          "Situationen ohne Handlungsspielraum",
+          "Reine Kreativphasen"
+        ],
+        "output": "Eine priorisierte Risikoliste mit Frühwarnsignalen und Gegenmaßnahmen."
+      },
+      "visual": {
+        "headline": "Blick aus der gescheiterten Zukunft",
+        "metaphor": "Eine Zeitmaschine, die vom Projektende zurück zum Start schaut.",
+        "layoutHint": "Timeline von Projektstart zu Fehlschlag, darunter Gründe und Gegenmaßnahmen.",
+        "elements": [
+          "Zukunftsszenario",
+          "Risikocluster",
+          "Frühwarnsignale",
+          "Maßnahmen"
+        ]
+      },
+      "relatedTools": [
+        "inversion",
+        "fmea",
+        "rumsfeld-matrix"
+      ]
     },
     {
       "id": "rumsfeld-matrix",
@@ -1496,36 +1917,98 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 31,
       "template": {
-        "title": "Rumsfeld-Matrix anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um Rumsfeld-Matrix für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "Rumsfeld-Matrix Template",
+        "intro": "Ordne ein Thema nach Wissen und Nichtwissen, um Unsicherheit gezielter zu bearbeiten.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Thema festlegen",
+          "Known Knowns sammeln",
+          "Known Unknowns formulieren",
+          "Unknown Knowns heben",
+          "Unknown Unknowns vorbereiten"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Thema",
+            "helperText": "Worum geht es?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Known Knowns",
+            "helperText": "Was wissen wir sicher?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Known Unknowns",
+            "helperText": "Welche offenen Fragen kennen wir?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Unknown Knowns",
+            "helperText": "Welches Erfahrungswissen steckt im Team?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Unknown Unknowns",
+            "helperText": "Wo könnten Überraschungen entstehen?",
+            "value": ""
+          },
+          {
+            "label": "Nächste Lernschritte",
+            "helperText": "Was recherchieren, testen oder beobachten wir?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Wissen nach known/unknown knowns/unknowns einordnen.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Die Rumsfeld-Matrix ordnet Wissen und Nichtwissen in vier Felder.",
+      "detail": {
+        "whatItIs": "Die Rumsfeld-Matrix unterscheidet bekanntes Wissen, bekannte Wissenslücken, unbewusstes Wissen und unbekannte Unbekannte. Sie hilft, Unsicherheit präziser zu benennen, statt alles als Risiko zu behandeln.",
+        "whenToUse": [
+          "Wenn ein Thema von Unsicherheit geprägt ist.",
+          "Wenn bekannte und unbekannte Lücken getrennt werden sollen.",
+          "Wenn Lernbedarf und Recherchebedarf sichtbar werden sollen.",
+          "Wenn Risiken nicht sauber greifbar sind."
+        ],
+        "howToUse": [
+          "Formuliere das Thema oder Vorhaben.",
+          "Sammle, was sicher bekannt ist.",
+          "Sammle bekannte offene Fragen.",
+          "Frage nach verborgenem Erfahrungswissen.",
+          "Überlege, wo unbekannte Überraschungen lauern könnten."
+        ],
+        "pitfalls": [
+          "Unknown Unknowns scheinbar vollständig auflisten wollen.",
+          "Unbewusstes Wissen nicht aktiv aus dem Team holen.",
+          "Die Matrix füllen, aber keine Lernaktionen ableiten."
+        ],
+        "goodFor": [
+          "Unsicherheit",
+          "Strategie",
+          "Lernen",
+          "Risikovorbereitung"
+        ],
+        "notIdealFor": [
+          "Klare Standardentscheidungen",
+          "Reine Priorisierung nach Aufwand und Nutzen",
+          "Ideensammlung ohne Analysebedarf"
+        ],
+        "output": "Eine Landkarte des Wissens, der Wissenslücken und der nötigen Lernschritte."
+      },
+      "visual": {
+        "headline": "Wissen und Nichtwissen sichtbar machen",
+        "metaphor": "Eine Nebelkarte mit hellen, halbdunklen und unbekannten Bereichen.",
+        "layoutHint": "2x2-Matrix mit vier Feldern und kleinen Karten pro Erkenntnis.",
+        "elements": [
+          "2x2-Matrix",
+          "Wissenskarten",
+          "Lernschritte"
+        ]
+      },
+      "relatedTools": [
+        "premortem",
+        "cynefin-framework",
+        "leitfragenkatalog"
+      ]
     },
     {
       "id": "eisenhower-matrix",
@@ -1552,36 +2035,93 @@
       "dominantCategoryLabel": "Priorisieren",
       "totalScore": 29,
       "template": {
-        "title": "Eisenhower-Matrix anwenden",
-        "categoryFocus": "Priorisieren",
-        "intro": "Ein einfaches Starter-Template, um Eisenhower-Matrix für die Denkbewegung „Priorisieren“ zu nutzen.",
+        "title": "Eisenhower-Matrix Template",
+        "intro": "Sortiere Aufgaben nach Wichtigkeit und Dringlichkeit, um Fokus und nächste Schritte zu klären.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Aufgaben sammeln",
+          "Wichtigkeit bewerten",
+          "Dringlichkeit bewerten",
+          "Quadranten füllen",
+          "Handlung ableiten"
+        ],
         "fields": [
           {
-            "label": "Optionen oder Aufgaben",
+            "label": "Wichtig und dringend",
+            "helperText": "Was muss jetzt erledigt werden?",
             "value": ""
           },
           {
-            "label": "Bewertungskriterien",
+            "label": "Wichtig, nicht dringend",
+            "helperText": "Was braucht geplante Fokuszeit?",
             "value": ""
           },
           {
-            "label": "Bewertung je Option",
+            "label": "Nicht wichtig, dringend",
+            "helperText": "Was kann delegiert oder begrenzt werden?",
             "value": ""
           },
           {
-            "label": "Empfohlene Reihenfolge",
+            "label": "Nicht wichtig, nicht dringend",
+            "helperText": "Was kann weg?",
             "value": ""
           },
           {
-            "label": "Entscheidung und Begründung",
+            "label": "Nächste 3 Aktionen",
+            "helperText": "Welche konkreten Schritte folgen?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Aufgaben nach wichtig/unwichtig und dringend/nicht dringend sortieren.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Die Eisenhower-Matrix sortiert Aufgaben nach Wichtigkeit und Dringlichkeit.",
+      "detail": {
+        "whatItIs": "Die Eisenhower-Matrix trennt wichtige von dringenden Aufgaben. Dadurch wird sichtbar, was sofort erledigt, geplant, delegiert oder bewusst nicht getan werden sollte.",
+        "whenToUse": [
+          "Wenn zu viele Aufgaben gleichzeitig Aufmerksamkeit ziehen.",
+          "Wenn Dringlichkeit wichtige Arbeit verdrängt.",
+          "Wenn Tages- oder Wochenplanung klarer werden soll.",
+          "Wenn Delegation oder Nein-Sagen leichter werden soll."
+        ],
+        "howToUse": [
+          "Liste alle Aufgaben ungefiltert auf.",
+          "Bewerte jede Aufgabe nach Wichtigkeit.",
+          "Bewerte jede Aufgabe nach Dringlichkeit.",
+          "Ordne sie in die vier Quadranten ein.",
+          "Lege Handlung fest: tun, planen, delegieren, streichen."
+        ],
+        "pitfalls": [
+          "Alles als wichtig markieren.",
+          "Dringlichkeit mit Lautstärke anderer Personen verwechseln.",
+          "Nicht wirklich streichen oder delegieren."
+        ],
+        "goodFor": [
+          "Zeitmanagement",
+          "Wochenplanung",
+          "Fokusarbeit",
+          "Aufgabenklärung"
+        ],
+        "notIdealFor": [
+          "Strategische Portfolioentscheidungen",
+          "Komplexe Bewertung mit vielen Kriterien",
+          "Kreative Ideenfindung"
+        ],
+        "output": "Eine klare Aufgabenordnung mit konkreten nächsten Handlungen."
+      },
+      "visual": {
+        "headline": "Dringend ist nicht automatisch wichtig",
+        "metaphor": "Eine 2x2-Prioritätenkarte mit vier klaren Handlungsfeldern.",
+        "layoutHint": "Quadrantenmatrix mit Action-Labels: tun, planen, delegieren, streichen.",
+        "elements": [
+          "2x2-Matrix",
+          "Aufgabenkarten",
+          "Action-Labels"
+        ]
+      },
+      "relatedTools": [
+        "impact-effort-matrix",
+        "moscow",
+        "top-10-liste"
+      ]
     },
     {
       "id": "impact-effort-matrix",
@@ -1603,36 +2143,99 @@
       "dominantCategoryLabel": "Priorisieren",
       "totalScore": 30,
       "template": {
-        "title": "Impact-Effort-Matrix anwenden",
-        "categoryFocus": "Priorisieren",
-        "intro": "Ein einfaches Starter-Template, um Impact-Effort-Matrix für die Denkbewegung „Priorisieren“ zu nutzen.",
+        "title": "Impact-Effort-Matrix Template",
+        "intro": "Ordne Optionen nach Wirkung und Aufwand, um sinnvolle nächste Schritte zu priorisieren.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Optionen sammeln",
+          "Impact einschätzen",
+          "Effort einschätzen",
+          "Matrix füllen",
+          "Prioritäten ableiten"
+        ],
         "fields": [
           {
-            "label": "Optionen oder Aufgaben",
+            "label": "Optionen",
+            "helperText": "Welche Ideen, Maßnahmen oder Use Cases stehen zur Auswahl?",
             "value": ""
           },
           {
-            "label": "Bewertungskriterien",
+            "label": "Impact-Kriterien",
+            "helperText": "Woran messen wir Nutzen oder Wirkung?",
             "value": ""
           },
           {
-            "label": "Bewertung je Option",
+            "label": "Effort-Kriterien",
+            "helperText": "Was zählt als Aufwand?",
             "value": ""
           },
           {
-            "label": "Empfohlene Reihenfolge",
+            "label": "Quick Wins",
+            "helperText": "Hoher Impact, niedriger Aufwand",
             "value": ""
           },
           {
-            "label": "Entscheidung und Begründung",
+            "label": "Strategische Projekte",
+            "helperText": "Hoher Impact, hoher Aufwand",
+            "value": ""
+          },
+          {
+            "label": "Nicht priorisieren",
+            "helperText": "Niedriger Impact oder unverhältnismäßiger Aufwand",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Nutzen und Aufwand gegenüberstellen.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Die Impact-Effort-Matrix priorisiert Optionen nach Nutzen und Aufwand.",
+      "detail": {
+        "whatItIs": "Die Impact-Effort-Matrix macht sichtbar, welche Ideen oder Maßnahmen viel Wirkung bei wenig Aufwand versprechen und welche eher teuer, klein oder strategisch zu prüfen sind.",
+        "whenToUse": [
+          "Wenn viele Ideen oder Maßnahmen vorliegen.",
+          "Wenn Quick Wins gefunden werden sollen.",
+          "Wenn Roadmaps vorbereitet werden.",
+          "Wenn Aufwand und Nutzen transparent diskutiert werden sollen."
+        ],
+        "howToUse": [
+          "Sammle Optionen als einzelne Karten.",
+          "Bewerte grob den erwarteten Nutzen.",
+          "Bewerte grob den Umsetzungsaufwand.",
+          "Platziere die Optionen in der Matrix.",
+          "Entscheide, welche Optionen zuerst, später oder gar nicht verfolgt werden."
+        ],
+        "pitfalls": [
+          "Nutzen und Aufwand ohne gemeinsame Kriterien schätzen.",
+          "Politisch gewünschte Maßnahmen künstlich hoch bewerten.",
+          "Abhängigkeiten zwischen Maßnahmen ignorieren."
+        ],
+        "goodFor": [
+          "Use-Case-Priorisierung",
+          "Roadmaps",
+          "Workshop-Ergebnisse",
+          "Produktideen"
+        ],
+        "notIdealFor": [
+          "Entscheidungen mit sehr vielen harten Kriterien",
+          "Risikoanalysen",
+          "Ursachenanalyse"
+        ],
+        "output": "Eine priorisierte Optionslandkarte mit Quick Wins und größeren Initiativen."
+      },
+      "visual": {
+        "headline": "Wirkung gegen Aufwand",
+        "metaphor": "Eine Landkarte mit Quick-Win-Zone oben links.",
+        "layoutHint": "2x2-Matrix mit farblich unterscheidbaren Zonen und Optionskarten.",
+        "elements": [
+          "Impact-Achse",
+          "Effort-Achse",
+          "Optionskarten",
+          "Quick Wins"
+        ]
+      },
+      "relatedTools": [
+        "eisenhower-matrix",
+        "gewichtete-entscheidungsmatrix",
+        "moscow"
+      ]
     },
     {
       "id": "moscow",
@@ -1659,36 +2262,93 @@
       "dominantCategoryLabel": "Priorisieren",
       "totalScore": 29,
       "template": {
-        "title": "MoSCoW anwenden",
-        "categoryFocus": "Priorisieren",
-        "intro": "Ein einfaches Starter-Template, um MoSCoW für die Denkbewegung „Priorisieren“ zu nutzen.",
+        "title": "MoSCoW Template",
+        "intro": "Sortiere Anforderungen nach Muss, Soll, Kann und bewusst Nicht-Jetzt.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Anforderungen sammeln",
+          "Kriterien definieren",
+          "Einordnen",
+          "Must-Liste prüfen",
+          "Scope festlegen"
+        ],
         "fields": [
           {
-            "label": "Optionen oder Aufgaben",
+            "label": "Must",
+            "helperText": "Was ist zwingend erforderlich, damit es funktioniert?",
             "value": ""
           },
           {
-            "label": "Bewertungskriterien",
+            "label": "Should",
+            "helperText": "Was ist wichtig, aber notfalls verschiebbar?",
             "value": ""
           },
           {
-            "label": "Bewertung je Option",
+            "label": "Could",
+            "helperText": "Was wäre hilfreich, wenn Kapazität bleibt?",
             "value": ""
           },
           {
-            "label": "Empfohlene Reihenfolge",
+            "label": "Won’t",
+            "helperText": "Was wird in diesem Scope bewusst nicht umgesetzt?",
             "value": ""
           },
           {
-            "label": "Entscheidung und Begründung",
+            "label": "Entscheidungsregel",
+            "helperText": "Nach welchen Kriterien wurde eingeordnet?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Anforderungen in Must, Should, Could, Won’t priorisieren.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "MoSCoW priorisiert Anforderungen in Must, Should, Could und Won’t.",
+      "detail": {
+        "whatItIs": "MoSCoW ist eine einfache Priorisierung für Anforderungen. Sie trennt zwingende Bestandteile von sinnvollen, optionalen und bewusst ausgeschlossenen Anforderungen.",
+        "whenToUse": [
+          "Wenn ein MVP oder Release zugeschnitten werden soll.",
+          "Wenn Anforderungen ausufern.",
+          "Wenn Stakeholder ein gemeinsames Priorisierungsraster brauchen.",
+          "Wenn Scope transparent begrenzt werden muss."
+        ],
+        "howToUse": [
+          "Sammle alle Anforderungen.",
+          "Definiere klare Kriterien für Must, Should, Could und Won’t.",
+          "Ordne jede Anforderung gemeinsam ein.",
+          "Prüfe, ob zu viele Anforderungen Must sind.",
+          "Dokumentiere bewusste Won’t-Entscheidungen."
+        ],
+        "pitfalls": [
+          "Zu viele Must-haves zulassen.",
+          "Won’t als endgültige Ablehnung statt als Scope-Entscheidung missverstehen.",
+          "Keine Kriterien für die Kategorien definieren."
+        ],
+        "goodFor": [
+          "MVP-Schnitt",
+          "Requirements",
+          "Releaseplanung",
+          "Stakeholder-Abstimmung"
+        ],
+        "notIdealFor": [
+          "Feinbewertung vieler Kriterien",
+          "Strategische Investitionsentscheidungen",
+          "Ursachenanalyse"
+        ],
+        "output": "Ein klarer, verhandelbarer Scope für Produkt, Projekt oder Release."
+      },
+      "visual": {
+        "headline": "Scope sichtbar machen",
+        "metaphor": "Vier Regale für Anforderungen mit unterschiedlicher Verbindlichkeit.",
+        "layoutHint": "Vier Spalten Must, Should, Could, Won’t mit Karten und einer Scope-Linie.",
+        "elements": [
+          "vier Spalten",
+          "Anforderungskarten",
+          "Scope-Linie"
+        ]
+      },
+      "relatedTools": [
+        "impact-effort-matrix",
+        "gewichtete-entscheidungsmatrix",
+        "business-model-canvas"
+      ]
     },
     {
       "id": "gewichtete-entscheidungsmatrix",
@@ -1710,36 +2370,94 @@
       "dominantCategoryLabel": "Priorisieren",
       "totalScore": 33,
       "template": {
-        "title": "Gewichtete Entscheidungsmatrix anwenden",
-        "categoryFocus": "Priorisieren",
-        "intro": "Ein einfaches Starter-Template, um Gewichtete Entscheidungsmatrix für die Denkbewegung „Priorisieren“ zu nutzen.",
+        "title": "Gewichtete Entscheidungsmatrix Template",
+        "intro": "Vergleiche Optionen anhand gewichteter Kriterien und mache die Entscheidung nachvollziehbar.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Optionen definieren",
+          "Kriterien sammeln",
+          "Gewichte vergeben",
+          "Optionen bewerten",
+          "Ergebnis interpretieren"
+        ],
         "fields": [
           {
-            "label": "Optionen oder Aufgaben",
+            "label": "Optionen",
+            "helperText": "Welche Alternativen stehen zur Auswahl?",
             "value": ""
           },
           {
-            "label": "Bewertungskriterien",
+            "label": "Kriterien",
+            "helperText": "Nach welchen Aspekten wird entschieden?",
             "value": ""
           },
           {
-            "label": "Bewertung je Option",
+            "label": "Gewichtung",
+            "helperText": "Wie wichtig ist jedes Kriterium?",
             "value": ""
           },
           {
-            "label": "Empfohlene Reihenfolge",
+            "label": "Bewertung",
+            "helperText": "Wie gut erfüllt jede Option das Kriterium?",
             "value": ""
           },
           {
-            "label": "Entscheidung und Begründung",
+            "label": "Ergebnis und Entscheidung",
+            "helperText": "Welche Option führt und warum?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Kriterien gewichten und Optionen bewerten.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Die gewichtete Entscheidungsmatrix bewertet Optionen anhand gewichteter Kriterien.",
+      "detail": {
+        "whatItIs": "Eine gewichtete Entscheidungsmatrix macht Entscheidungen nachvollziehbar. Optionen werden anhand definierter Kriterien bewertet, deren Bedeutung vorher durch Gewichte festgelegt wird.",
+        "whenToUse": [
+          "Wenn mehrere Optionen objektiver verglichen werden sollen.",
+          "Wenn Kriterien unterschiedlich wichtig sind.",
+          "Wenn eine Entscheidung erklärbar dokumentiert werden muss.",
+          "Wenn Bauchgefühl durch Struktur ergänzt werden soll."
+        ],
+        "howToUse": [
+          "Definiere die Optionen.",
+          "Lege Entscheidungskriterien fest.",
+          "Gewichte die Kriterien.",
+          "Bewerte jede Option je Kriterium.",
+          "Berechne und diskutiere das Ergebnis."
+        ],
+        "pitfalls": [
+          "Scheingenauigkeit durch falsche Zahlen erzeugen.",
+          "Gewichte ohne Stakeholder-Abgleich festlegen.",
+          "Qualitative Aspekte vollständig wegdrücken."
+        ],
+        "goodFor": [
+          "Toolauswahl",
+          "Anbieterbewertung",
+          "Architekturentscheidungen",
+          "Priorisierung"
+        ],
+        "notIdealFor": [
+          "Sehr frühe Kreativphasen",
+          "Entscheidungen ohne klare Kriterien",
+          "Probleme mit unbekannten Optionen"
+        ],
+        "output": "Eine nachvollziehbare Rangfolge von Optionen mit Begründung."
+      },
+      "visual": {
+        "headline": "Entscheiden mit Gewicht",
+        "metaphor": "Eine Waage mit Kriterien-Gewichten und Optionskarten.",
+        "layoutHint": "Tabellarische Matrix mit Kriterien oben, Optionen links und Summenspalte rechts.",
+        "elements": [
+          "Kriterien",
+          "Gewichte",
+          "Optionen",
+          "Score"
+        ]
+      },
+      "relatedTools": [
+        "impact-effort-matrix",
+        "entscheidungsbaum",
+        "moscow"
+      ]
     },
     {
       "id": "entscheidungsbaum",
@@ -1761,36 +2479,94 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 32,
       "template": {
-        "title": "Entscheidungsbaum anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um Entscheidungsbaum für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "Entscheidungsbaum Template",
+        "intro": "Zerlege eine Entscheidung in Optionen, Ereignisse und Folgen.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Ausgangsentscheidung formulieren",
+          "Optionen als Äste zeichnen",
+          "Unsicherheiten ergänzen",
+          "Folgen bewerten",
+          "besten Pfad bestimmen"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Ausgangsentscheidung",
+            "helperText": "Welche Entscheidung steht an?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Option A/B/C",
+            "helperText": "Welche Wege sind möglich?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Unsicherheiten",
+            "helperText": "Welche Ereignisse beeinflussen die Pfade?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Folgen",
+            "helperText": "Welche Ergebnisse, Kosten, Nutzen oder Risiken entstehen?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Bevorzugter Pfad",
+            "helperText": "Welcher Weg ist unter den Annahmen sinnvoll?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Entscheidungen, Unsicherheiten und Folgen als Baum darstellen.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Ein Entscheidungsbaum zeigt Optionen, Unsicherheiten und mögliche Folgen als verzweigte Struktur.",
+      "detail": {
+        "whatItIs": "Ein Entscheidungsbaum macht sichtbar, welche Wege aus einer Entscheidung entstehen können. Er verbindet Optionen, Bedingungen, Wahrscheinlichkeiten und Folgen in einer nachvollziehbaren Struktur.",
+        "whenToUse": [
+          "Wenn Entscheidungen mehrere Folgepfade haben.",
+          "Wenn Unsicherheiten oder Szenarien berücksichtigt werden sollen.",
+          "Wenn Risiken und Konsequenzen explizit gemacht werden müssen.",
+          "Wenn eine Entscheidung visuell diskutiert werden soll."
+        ],
+        "howToUse": [
+          "Formuliere die Ausgangsentscheidung.",
+          "Zeichne die ersten Optionen als Äste.",
+          "Ergänze relevante Unsicherheiten und Ereignisse.",
+          "Beschreibe Folgen, Kosten, Nutzen oder Risiken.",
+          "Vergleiche die Pfade und entscheide bewusst."
+        ],
+        "pitfalls": [
+          "Den Baum zu detailliert und unlesbar machen.",
+          "Wahrscheinlichkeiten erfinden, ohne Unsicherheit sichtbar zu machen.",
+          "Nur finanzielle Folgen betrachten."
+        ],
+        "goodFor": [
+          "Investitionsentscheidungen",
+          "Szenarioplanung",
+          "Risikoabwägung",
+          "Optionenvergleich"
+        ],
+        "notIdealFor": [
+          "Sehr einfache Ja/Nein-Entscheidungen",
+          "Kreative Ideensammlung",
+          "Probleme ohne klare Optionen"
+        ],
+        "output": "Ein visueller Entscheidungsraum mit möglichen Pfaden und Konsequenzen."
+      },
+      "visual": {
+        "headline": "Entscheidung als verzweigter Weg",
+        "metaphor": "Ein Baum, dessen Äste verschiedene Zukunftspfade zeigen.",
+        "layoutHint": "Links Startentscheidung, rechts verzweigende Pfade mit Ergebnis-Knoten.",
+        "elements": [
+          "Startknoten",
+          "Optionen",
+          "Ereignisse",
+          "Ergebnisse"
+        ]
+      },
+      "relatedTools": [
+        "gewichtete-entscheidungsmatrix",
+        "swot",
+        "delphi-methode"
+      ]
     },
     {
       "id": "swot",
@@ -1817,36 +2593,94 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 32,
       "template": {
-        "title": "SWOT anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um SWOT für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "SWOT Template",
+        "intro": "Analysiere eine Situation anhand von Stärken, Schwächen, Chancen und Risiken.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Analysegegenstand klären",
+          "interne Faktoren sammeln",
+          "externe Faktoren sammeln",
+          "Muster erkennen",
+          "Handlungsoptionen ableiten"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Stärken",
+            "helperText": "Was spricht intern für uns oder die Option?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Schwächen",
+            "helperText": "Welche internen Begrenzungen oder Lücken gibt es?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Chancen",
+            "helperText": "Welche externen Entwicklungen könnten helfen?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Risiken",
+            "helperText": "Welche externen Entwicklungen könnten schaden?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Strategische Optionen",
+            "helperText": "Was folgt aus der Kombination der Felder?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Stärken, Schwächen, Chancen, Risiken strukturieren.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "SWOT betrachtet Stärken, Schwächen, Chancen und Risiken einer Situation.",
+      "detail": {
+        "whatItIs": "SWOT verbindet interne Perspektiven mit externem Umfeld. Stärken und Schwächen beschreiben die eigene Ausgangslage, Chancen und Risiken beschreiben mögliche Entwicklungen außerhalb des eigenen Einflussbereichs.",
+        "whenToUse": [
+          "Wenn eine Strategie oder Positionierung vorbereitet wird.",
+          "Wenn interne und externe Faktoren getrennt werden sollen.",
+          "Wenn ein gemeinsames Lagebild entsteht.",
+          "Wenn aus Analyse Handlungsoptionen abgeleitet werden sollen."
+        ],
+        "howToUse": [
+          "Definiere den Analysegegenstand.",
+          "Sammle interne Stärken und Schwächen.",
+          "Sammle externe Chancen und Risiken.",
+          "Prüfe Überschneidungen und Widersprüche.",
+          "Leite strategische Optionen ab."
+        ],
+        "pitfalls": [
+          "Nur Listen erstellen und keine Konsequenzen ableiten.",
+          "Interne und externe Faktoren vermischen.",
+          "Wunschdenken als Stärke oder Chance notieren."
+        ],
+        "goodFor": [
+          "Strategie",
+          "Positionierung",
+          "Produktanalyse",
+          "Team- oder Bereichsanalyse"
+        ],
+        "notIdealFor": [
+          "Tiefe Ursachenanalyse",
+          "Sehr operative Aufgabenplanung",
+          "Priorisierung mit harten Kriterien"
+        ],
+        "output": "Ein kompaktes Lagebild mit ersten strategischen Handlungsoptionen."
+      },
+      "visual": {
+        "headline": "Vier Felder für das Lagebild",
+        "metaphor": "Ein strategisches Fenster mit vier Blickrichtungen.",
+        "layoutHint": "2x2-Matrix mit internen und externen Faktoren.",
+        "elements": [
+          "Stärken",
+          "Schwächen",
+          "Chancen",
+          "Risiken"
+        ]
+      },
+      "relatedTools": [
+        "pestel",
+        "force-field-analysis",
+        "business-model-canvas"
+      ]
     },
     {
       "id": "pestel",
@@ -1873,36 +2707,103 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 29,
       "template": {
-        "title": "PESTEL anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um PESTEL für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "PESTEL Template",
+        "intro": "Untersuche externe Einflussfaktoren und übersetze sie in strategische Konsequenzen.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Kontext definieren",
+          "sechs Dimensionen füllen",
+          "Relevanz bewerten",
+          "Unsicherheit markieren",
+          "Implikationen ableiten"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Political",
+            "helperText": "Welche politischen Faktoren wirken auf das Thema?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Economic",
+            "helperText": "Welche wirtschaftlichen Entwicklungen sind relevant?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Social",
+            "helperText": "Welche gesellschaftlichen oder kulturellen Aspekte zählen?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Technological",
+            "helperText": "Welche technologischen Trends verändern die Lage?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Environmental",
+            "helperText": "Welche ökologischen Faktoren spielen eine Rolle?",
+            "value": ""
+          },
+          {
+            "label": "Legal",
+            "helperText": "Welche rechtlichen Rahmenbedingungen sind wichtig?",
+            "value": ""
+          },
+          {
+            "label": "Implikationen",
+            "helperText": "Was bedeutet das für Strategie oder Entscheidung?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Umfeld nach Political, Economic, Social, Technological, Environmental, Legal analysieren.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "PESTEL analysiert das Umfeld nach politischen, wirtschaftlichen, sozialen, technologischen, ökologischen und rechtlichen Faktoren.",
+      "detail": {
+        "whatItIs": "PESTEL strukturiert externe Einflussfaktoren. Die Methode hilft, Trends und Rahmenbedingungen systematisch zu erfassen, bevor strategische Entscheidungen getroffen werden.",
+        "whenToUse": [
+          "Wenn ein Markt, eine Branche oder ein Umfeld analysiert wird.",
+          "Wenn externe Trends die Strategie beeinflussen.",
+          "Wenn Chancen und Risiken fundierter verstanden werden sollen.",
+          "Wenn eine SWOT vorbereitet wird."
+        ],
+        "howToUse": [
+          "Definiere Markt, Branche oder Kontext.",
+          "Sammle Faktoren je PESTEL-Dimension.",
+          "Bewerte Relevanz und Unsicherheit.",
+          "Markiere Chancen, Risiken und offene Fragen.",
+          "Übersetze die Erkenntnisse in strategische Implikationen."
+        ],
+        "pitfalls": [
+          "Faktensammlung ohne Bewertung betreiben.",
+          "Nur offensichtliche Trends nennen.",
+          "Interne Stärken und Schwächen in PESTEL mischen."
+        ],
+        "goodFor": [
+          "Branchenanalyse",
+          "Strategie",
+          "Markteintritt",
+          "Trend-Scanning"
+        ],
+        "notIdealFor": [
+          "Interne Prozessanalyse",
+          "Schnelle Aufgabenpriorisierung",
+          "Kreative Ideensprints"
+        ],
+        "output": "Eine strukturierte Umfeldanalyse mit relevanten externen Einflussfaktoren."
+      },
+      "visual": {
+        "headline": "Das Umfeld in sechs Blickrichtungen",
+        "metaphor": "Ein Radar mit sechs externen Einflussfeldern.",
+        "layoutHint": "Zentrales Thema in der Mitte, sechs PESTEL-Segmente darum.",
+        "elements": [
+          "sechs Segmente",
+          "Trendkarten",
+          "Implikationen"
+        ]
+      },
+      "relatedTools": [
+        "swot",
+        "delphi-methode",
+        "cynefin-framework"
+      ]
     },
     {
       "id": "stakeholder-map",
@@ -1929,36 +2830,94 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 30,
       "template": {
-        "title": "Stakeholder Map anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um Stakeholder Map für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "Stakeholder Map Template",
+        "intro": "Erfasse relevante Stakeholder und leite passende Kommunikationsmaßnahmen ab.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Stakeholder sammeln",
+          "Einfluss bewerten",
+          "Interesse bewerten",
+          "Haltung ergänzen",
+          "Maßnahmen planen"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Stakeholder",
+            "helperText": "Welche Personen, Gruppen oder Rollen sind relevant?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Einfluss",
+            "helperText": "Wie stark können sie das Vorhaben beeinflussen?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Interesse",
+            "helperText": "Wie stark sind sie betroffen oder interessiert?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Haltung und Erwartung",
+            "helperText": "Unterstützend, neutral, kritisch? Was erwarten sie?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Maßnahme",
+            "helperText": "Wie werden sie informiert, beteiligt oder überzeugt?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Beteiligte nach Einfluss, Interesse oder Haltung ordnen.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Eine Stakeholder Map ordnet Beteiligte nach Einfluss, Interesse oder Haltung.",
+      "detail": {
+        "whatItIs": "Eine Stakeholder Map macht sichtbar, wer von einem Vorhaben betroffen ist, wer Einfluss hat und wie Kommunikation oder Einbindung gestaltet werden sollte.",
+        "whenToUse": [
+          "Wenn ein Projekt politisch oder organisatorisch relevant ist.",
+          "Wenn Kommunikation geplant werden muss.",
+          "Wenn Widerstände oder Unterstützer sichtbar werden sollen.",
+          "Wenn Rollen und Erwartungen unklar sind."
+        ],
+        "howToUse": [
+          "Sammle alle relevanten Stakeholder.",
+          "Bewerte Einfluss und Interesse.",
+          "Ergänze Haltung, Erwartungen und mögliche Beiträge.",
+          "Ordne die Stakeholder in eine Matrix ein.",
+          "Leite Kommunikations- und Einbindungsmaßnahmen ab."
+        ],
+        "pitfalls": [
+          "Stakeholder nur nach Hierarchie bewerten.",
+          "Haltung als feststehend betrachten.",
+          "Kommunikation planen, aber nicht nachhalten."
+        ],
+        "goodFor": [
+          "Change Management",
+          "Projektsteuerung",
+          "Kommunikation",
+          "Einführungen"
+        ],
+        "notIdealFor": [
+          "Reine technische Analyse",
+          "Individuelle Aufgabenplanung",
+          "Kreative Ideenfindung"
+        ],
+        "output": "Eine Einbindungs- und Kommunikationslandkarte für relevante Personen und Gruppen."
+      },
+      "visual": {
+        "headline": "Wer zählt wirklich?",
+        "metaphor": "Ein Beziehungsnetz mit unterschiedlich großen Knoten.",
+        "layoutHint": "Power-Interest-Matrix mit Stakeholder-Karten und Kommunikationshinweisen.",
+        "elements": [
+          "Stakeholder-Karten",
+          "Einflussachse",
+          "Interesseachse",
+          "Maßnahmen"
+        ]
+      },
+      "relatedTools": [
+        "empathy-map",
+        "force-field-analysis",
+        "customer-journey-map"
+      ]
     },
     {
       "id": "business-model-canvas",
@@ -1985,36 +2944,103 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 32,
       "template": {
-        "title": "Business Model Canvas anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um Business Model Canvas für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "Business Model Canvas Template",
+        "intro": "Beschreibe ein Geschäftsmodell in neun Bausteinen und mache kritische Annahmen sichtbar.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Gegenstand definieren",
+          "neun Felder füllen",
+          "Annahmen markieren",
+          "Zusammenhänge prüfen",
+          "nächste Tests ableiten"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Kundensegmente",
+            "helperText": "Für wen schaffen wir Wert?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Wertangebot",
+            "helperText": "Welches Problem lösen wir oder welchen Nutzen liefern wir?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Kanäle und Beziehungen",
+            "helperText": "Wie erreichen und betreuen wir Kunden?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Schlüsselaktivitäten und Ressourcen",
+            "helperText": "Was müssen wir können oder besitzen?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Partner",
+            "helperText": "Wer unterstützt das Modell?",
+            "value": ""
+          },
+          {
+            "label": "Kosten und Einnahmen",
+            "helperText": "Welche Kosten entstehen und wie kommt Wert zurück?",
+            "value": ""
+          },
+          {
+            "label": "Kritische Annahmen",
+            "helperText": "Was muss besonders geprüft werden?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Geschäftsmodell in neun Bausteinen sichtbar machen.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Der Business Model Canvas beschreibt ein Geschäftsmodell in neun Bausteinen.",
+      "detail": {
+        "whatItIs": "Der Business Model Canvas bringt die wichtigsten Elemente eines Geschäftsmodells auf eine gemeinsame Fläche. Er zeigt, wie Kundensegmente, Wertangebot, Kanäle, Aktivitäten, Ressourcen, Partner, Kosten und Einnahmen zusammenspielen.",
+        "whenToUse": [
+          "Wenn ein Geschäftsmodell beschrieben oder weiterentwickelt wird.",
+          "Wenn ein gemeinsames Bild für ein Produkt oder Angebot entstehen soll.",
+          "Wenn Annahmen sichtbar gemacht werden sollen.",
+          "Wenn Strategie in konkrete Bausteine übersetzt werden muss."
+        ],
+        "howToUse": [
+          "Definiere das Produkt, Angebot oder Geschäftsmodell.",
+          "Fülle die neun Felder grob aus.",
+          "Markiere unsichere Annahmen.",
+          "Prüfe Zusammenhänge zwischen Feldern.",
+          "Leite Experimente oder nächste Klärungen ab."
+        ],
+        "pitfalls": [
+          "Den Canvas als endgültigen Businessplan missverstehen.",
+          "Felder füllen, ohne Annahmen zu testen.",
+          "Kundensegmente und Wertangebot zu allgemein beschreiben."
+        ],
+        "goodFor": [
+          "Geschäftsmodellinnovation",
+          "Produktstrategie",
+          "Angebotsentwicklung",
+          "Startups"
+        ],
+        "notIdealFor": [
+          "Detailplanung",
+          "Root-Cause-Analyse",
+          "Operative Aufgabenpriorisierung"
+        ],
+        "output": "Ein kompaktes Bild des Geschäftsmodells mit sichtbaren Annahmen und Lücken."
+      },
+      "visual": {
+        "headline": "Geschäftsmodell auf einer Seite",
+        "metaphor": "Ein Bauplan mit neun verbundenen Räumen.",
+        "layoutHint": "Klassisches Canvas-Raster mit neun Feldern und markierten Annahmen.",
+        "elements": [
+          "neun Felder",
+          "Annahmen",
+          "Verbindungen"
+        ]
+      },
+      "relatedTools": [
+        "value-proposition-canvas",
+        "jobs-to-be-done",
+        "swot"
+      ]
     },
     {
       "id": "value-proposition-canvas",
@@ -2041,36 +3067,105 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 32,
       "template": {
-        "title": "Value Proposition Canvas anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um Value Proposition Canvas für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "Value Proposition Canvas Template",
+        "intro": "Gleiche Kundenbedarf und Wertangebot ab, um Nutzen klarer zu formulieren.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Zielgruppe definieren",
+          "Jobs sammeln",
+          "Pains und Gains ergänzen",
+          "Wertangebot beschreiben",
+          "Passung prüfen"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Zielgruppe",
+            "helperText": "Für wen ist das Angebot gedacht?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Customer Jobs",
+            "helperText": "Welche Aufgaben wollen Kunden erledigen?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Pains",
+            "helperText": "Was macht die Aufgabe schwierig, teuer oder riskant?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Gains",
+            "helperText": "Welche gewünschten Ergebnisse oder Vorteile zählen?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Pain Relievers",
+            "helperText": "Wie reduziert das Angebot konkrete Schmerzen?",
+            "value": ""
+          },
+          {
+            "label": "Gain Creators",
+            "helperText": "Wie erzeugt das Angebot messbaren Mehrwert?",
+            "value": ""
+          },
+          {
+            "label": "Fit-Hypothese",
+            "helperText": "Wo passt Angebot und Bedarf wirklich zusammen?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Kundenjobs, pains/gains und Wertangebot abgleichen.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Der Value Proposition Canvas gleicht Kundenjobs, Pains und Gains mit dem Wertangebot ab.",
+      "detail": {
+        "whatItIs": "Der Value Proposition Canvas prüft, ob ein Angebot wirklich zu den Aufgaben, Schmerzen und gewünschten Gewinnen einer Zielgruppe passt. Er verbindet Kundenverständnis mit Produkt- oder Servicegestaltung.",
+        "whenToUse": [
+          "Wenn ein Angebot geschärft werden soll.",
+          "Wenn Kundennutzen konkreter formuliert werden muss.",
+          "Wenn Features nicht automatisch Wert erzeugen.",
+          "Wenn Product-Market-Fit geprüft wird."
+        ],
+        "howToUse": [
+          "Beschreibe die Zielgruppe.",
+          "Sammle Jobs, Pains und Gains.",
+          "Beschreibe Produkte, Pain Relievers und Gain Creators.",
+          "Prüfe, welche Punkte wirklich zusammenpassen.",
+          "Leite Anpassungen oder Tests ab."
+        ],
+        "pitfalls": [
+          "Kundenjobs zu oberflächlich formulieren.",
+          "Eigene Features statt Kundennutzen in den Vordergrund stellen.",
+          "Jeden Pain bedienen wollen."
+        ],
+        "goodFor": [
+          "Positionierung",
+          "Produktentwicklung",
+          "Angebotsdesign",
+          "Kundenverständnis"
+        ],
+        "notIdealFor": [
+          "Interne Prozessanalyse",
+          "Reine Aufgabenpriorisierung",
+          "Technische Fehleranalyse"
+        ],
+        "output": "Ein klares Nutzenprofil mit Abgleich zwischen Kundenbedarf und Angebot."
+      },
+      "visual": {
+        "headline": "Nutzen trifft Bedarf",
+        "metaphor": "Zwei Puzzleteile: Kundenprofil und Wertangebot.",
+        "layoutHint": "Linke Seite Kundenprofil, rechte Seite Value Map, in der Mitte Fit-Markierungen.",
+        "elements": [
+          "Customer Jobs",
+          "Pains",
+          "Gains",
+          "Pain Relievers",
+          "Gain Creators"
+        ]
+      },
+      "relatedTools": [
+        "jobs-to-be-done",
+        "empathy-map",
+        "business-model-canvas"
+      ]
     },
     {
       "id": "jobs-to-be-done",
@@ -2097,36 +3192,99 @@
       "dominantCategoryLabel": "Analysieren",
       "totalScore": 30,
       "template": {
-        "title": "Jobs-to-be-Done anwenden",
-        "categoryFocus": "Analysieren",
-        "intro": "Ein einfaches Starter-Template, um Jobs-to-be-Done für die Denkbewegung „Analysieren“ zu nutzen.",
+        "title": "Jobs-to-be-Done Template",
+        "intro": "Beschreibe, welchen Fortschritt Nutzer wirklich erreichen wollen.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Situation wählen",
+          "Job formulieren",
+          "Kontext ergänzen",
+          "Alternativen betrachten",
+          "Job-Story schreiben"
+        ],
         "fields": [
           {
-            "label": "Problem, Risiko oder Annahme",
+            "label": "Zielgruppe",
+            "helperText": "Wer versucht etwas zu erreichen?",
             "value": ""
           },
           {
-            "label": "Beobachtungen und Fakten",
+            "label": "Situation",
+            "helperText": "In welchem Moment entsteht der Bedarf?",
             "value": ""
           },
           {
-            "label": "Mögliche Ursachen oder Muster",
+            "label": "Job",
+            "helperText": "Welche Aufgabe oder welcher Fortschritt wird gesucht?",
             "value": ""
           },
           {
-            "label": "Evidenz und Gegenargumente",
+            "label": "Hindernisse",
+            "helperText": "Was macht es heute schwer?",
             "value": ""
           },
           {
-            "label": "Erkenntnis und nächster Prüfpunkt",
+            "label": "Bisherige Alternativen",
+            "helperText": "Wie lösen Menschen es aktuell?",
+            "value": ""
+          },
+          {
+            "label": "Job-Story",
+            "helperText": "Wenn ..., möchte ich ..., damit ...",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Fragt, welchen „Job“ ein Kunde wirklich erledigen will.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Jobs-to-be-Done fragt, welche Aufgabe ein Mensch wirklich erledigen will.",
+      "detail": {
+        "whatItIs": "Jobs-to-be-Done verschiebt den Blick vom Produkt auf den Fortschritt, den Menschen erreichen wollen. Entscheidend ist nicht, was gekauft oder genutzt wird, sondern wofür es im Leben oder Arbeitskontext gebraucht wird.",
+        "whenToUse": [
+          "Wenn Produktnutzen unscharf ist.",
+          "Wenn Kundenverhalten besser verstanden werden soll.",
+          "Wenn Alternativen nicht nur als direkte Wettbewerber betrachtet werden sollen.",
+          "Wenn ein Angebot auf echte Bedürfnisse ausgerichtet werden soll."
+        ],
+        "howToUse": [
+          "Wähle eine konkrete Zielgruppe oder Situation.",
+          "Beschreibe die Aufgabe, die erledigt werden soll.",
+          "Ergänze Auslöser, Kontext und gewünschtes Ergebnis.",
+          "Frage nach bisherigen Alternativen und Workarounds.",
+          "Formuliere eine Job-Story."
+        ],
+        "pitfalls": [
+          "Jobs als Feature-Wünsche formulieren.",
+          "Kontext und Auslöser ignorieren.",
+          "Zu abstrakte Zielgruppen verwenden."
+        ],
+        "goodFor": [
+          "Produktstrategie",
+          "Kundeninterviews",
+          "Innovation",
+          "Positionierung"
+        ],
+        "notIdealFor": [
+          "Technische Ursachenanalyse",
+          "Operative Checklisten",
+          "Reine Roadmap-Priorisierung"
+        ],
+        "output": "Eine konkrete Job-Story, die Bedarf, Situation und gewünschten Fortschritt beschreibt."
+      },
+      "visual": {
+        "headline": "Der eigentliche Job hinter dem Produkt",
+        "metaphor": "Ein Werkzeugkasten, bei dem das Ergebnis wichtiger ist als das Werkzeug.",
+        "layoutHint": "Nutzer-Situation links, gewünschter Fortschritt rechts, dazwischen Job-Statement.",
+        "elements": [
+          "Situation",
+          "Job",
+          "Hindernisse",
+          "Fortschritt"
+        ]
+      },
+      "relatedTools": [
+        "value-proposition-canvas",
+        "empathy-map",
+        "customer-journey-map"
+      ]
     },
     {
       "id": "empathy-map",
@@ -2153,36 +3311,105 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 29,
       "template": {
-        "title": "Empathy Map anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um Empathy Map für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "Empathy Map Template",
+        "intro": "Strukturiere die Perspektive einer Zielgruppe und leite Bedürfnisse ab.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Zielgruppe definieren",
+          "Beobachtungen sammeln",
+          "Felder füllen",
+          "Pains und Gains ableiten",
+          "Annahmen prüfen"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Persona oder Zielgruppe",
+            "helperText": "Wessen Perspektive betrachten wir?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Sagt und tut",
+            "helperText": "Was äußert oder macht die Person sichtbar?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Denkt und fühlt",
+            "helperText": "Welche Sorgen, Wünsche oder Motive könnten eine Rolle spielen?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Sieht und hört",
+            "helperText": "Welche Umgebung, Signale oder Meinungen wirken auf sie?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Pains",
+            "helperText": "Was frustriert oder bremst?",
+            "value": ""
+          },
+          {
+            "label": "Gains",
+            "helperText": "Was würde helfen oder begeistern?",
+            "value": ""
+          },
+          {
+            "label": "Offene Annahmen",
+            "helperText": "Was müssen wir noch validieren?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Nutzerperspektive über Denken, Fühlen, Sehen, Hören, Sagen, Tun strukturieren.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Die Empathy Map strukturiert die Perspektive einer Nutzergruppe.",
+      "detail": {
+        "whatItIs": "Eine Empathy Map hilft, Nutzer nicht nur über Rollen oder Anforderungen zu beschreiben, sondern über Wahrnehmungen, Aussagen, Handlungen, Gedanken und Gefühle. Dadurch werden Bedürfnisse und Spannungen greifbarer.",
+        "whenToUse": [
+          "Wenn Nutzerperspektiven verstanden werden sollen.",
+          "Wenn ein Team Empathie für Zielgruppen entwickeln muss.",
+          "Wenn Interviews oder Beobachtungen verdichtet werden.",
+          "Wenn Kommunikation oder Produktdesign verbessert werden soll."
+        ],
+        "howToUse": [
+          "Definiere Persona oder Zielgruppe.",
+          "Sammle Beobachtungen und Aussagen.",
+          "Ordne Inhalte in Denken, Fühlen, Sehen, Hören, Sagen und Tun.",
+          "Leite Pains, Gains und Bedürfnisse ab.",
+          "Prüfe Annahmen mit echten Nutzern."
+        ],
+        "pitfalls": [
+          "Stereotype statt Beobachtungen eintragen.",
+          "Gefühle erfinden, ohne Evidenz zu markieren.",
+          "Aus der Map keine Design- oder Kommunikationsentscheidung ableiten."
+        ],
+        "goodFor": [
+          "UX",
+          "Design Thinking",
+          "Kundenverständnis",
+          "Change-Kommunikation"
+        ],
+        "notIdealFor": [
+          "Harte technische Bewertung",
+          "Aufgabenpriorisierung",
+          "Root-Cause-Analyse"
+        ],
+        "output": "Ein verdichtetes Nutzerbild mit Bedürfnissen, Spannungen und Ansatzpunkten."
+      },
+      "visual": {
+        "headline": "In die Nutzerperspektive wechseln",
+        "metaphor": "Ein Kopf-Symbol mit Feldern für Wahrnehmung, Gedanken und Verhalten.",
+        "layoutHint": "Zentrale Persona in der Mitte, sechs Empathy-Felder darum herum.",
+        "elements": [
+          "Persona",
+          "Sagen/Tun",
+          "Denken/Fühlen",
+          "Pains",
+          "Gains"
+        ]
+      },
+      "relatedTools": [
+        "value-proposition-canvas",
+        "jobs-to-be-done",
+        "customer-journey-map"
+      ]
     },
     {
       "id": "customer-journey-map",
@@ -2209,36 +3436,98 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 33,
       "template": {
-        "title": "Customer Journey Map anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um Customer Journey Map für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "Customer Journey Map Template",
+        "intro": "Visualisiere eine Nutzerreise und identifiziere Reibungspunkte und Chancen.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Persona und Ziel klären",
+          "Phasen definieren",
+          "Touchpoints ergänzen",
+          "Pain Points markieren",
+          "Verbesserungen ableiten"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Persona und Ziel",
+            "helperText": "Wer durchläuft welche Reise?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Phasen",
+            "helperText": "Welche Hauptabschnitte gibt es?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Schritte und Touchpoints",
+            "helperText": "Was passiert in jeder Phase?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Emotionen und Fragen",
+            "helperText": "Was erlebt oder fragt sich die Person?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Pain Points",
+            "helperText": "Wo entsteht Reibung?",
+            "value": ""
+          },
+          {
+            "label": "Chancen",
+            "helperText": "Welche Verbesserungen wären besonders wirksam?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Schritte, Touchpoints, Emotionen und Pain Points einer Nutzerreise abbilden.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Die Customer Journey Map zeigt Schritte, Touchpoints, Emotionen und Pain Points einer Nutzerreise.",
+      "detail": {
+        "whatItIs": "Eine Customer Journey Map betrachtet einen Prozess aus Nutzersicht. Sie zeigt, welche Schritte Menschen durchlaufen, wo sie Kontaktpunkte erleben, was sie dabei fühlen und wo Reibung entsteht.",
+        "whenToUse": [
+          "Wenn ein Service oder Prozess verbessert werden soll.",
+          "Wenn Silos die Nutzererfahrung verdecken.",
+          "Wenn Pain Points entlang einer Reise sichtbar werden sollen.",
+          "Wenn Touchpoints und Verantwortlichkeiten geklärt werden müssen."
+        ],
+        "howToUse": [
+          "Definiere Persona und Ziel der Reise.",
+          "Lege Phasen und Schritte fest.",
+          "Ergänze Touchpoints, Fragen und Emotionen.",
+          "Markiere Pain Points und Moments of Truth.",
+          "Leite Verbesserungsmaßnahmen ab."
+        ],
+        "pitfalls": [
+          "Interne Prozesssicht mit Nutzerreise verwechseln.",
+          "Zu viele Details ohne klare Phasen eintragen.",
+          "Emotionen behaupten, aber nicht validieren."
+        ],
+        "goodFor": [
+          "Service Design",
+          "CX",
+          "Prozessverbesserung",
+          "Onboarding"
+        ],
+        "notIdealFor": [
+          "Reine Systemarchitektur",
+          "Einzelentscheidungen",
+          "Kreative Ideengenerierung ohne Kontext"
+        ],
+        "output": "Eine nutzerzentrierte Prozesslandkarte mit Pain Points und Verbesserungsansätzen."
+      },
+      "visual": {
+        "headline": "Die Reise aus Nutzersicht",
+        "metaphor": "Eine Route mit Stationen, Höhen und Tiefen.",
+        "layoutHint": "Horizontale Timeline mit Phasen, Touchpoints, Emotionskurve und Pain Points.",
+        "elements": [
+          "Phasen",
+          "Touchpoints",
+          "Emotionskurve",
+          "Pain Points"
+        ]
+      },
+      "relatedTools": [
+        "empathy-map",
+        "stakeholder-map"
+      ]
     },
     {
       "id": "design-thinking",
@@ -2265,36 +3554,100 @@
       "dominantCategoryLabel": "Generieren",
       "totalScore": 34,
       "template": {
-        "title": "Design Thinking anwenden",
-        "categoryFocus": "Generieren",
-        "intro": "Ein einfaches Starter-Template, um Design Thinking für die Denkbewegung „Generieren“ zu nutzen.",
+        "title": "Design Thinking Sprint Template",
+        "intro": "Führe ein Problem nutzerzentriert durch Verstehen, Ideen, Prototyping und Test.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Empathize",
+          "Define",
+          "Ideate",
+          "Prototype",
+          "Test"
+        ],
         "fields": [
           {
-            "label": "Ausgangsfrage oder Thema",
+            "label": "Nutzer und Kontext",
+            "helperText": "Wer ist betroffen und in welcher Situation?",
             "value": ""
           },
           {
-            "label": "Erste spontane Gedanken",
+            "label": "Problemstatement",
+            "helperText": "Welches Problem lösen wir wirklich?",
             "value": ""
           },
           {
-            "label": "Weitere Varianten und Perspektiven",
+            "label": "Ideen",
+            "helperText": "Welche Lösungsansätze sind möglich?",
             "value": ""
           },
           {
-            "label": "Auffällige Muster",
+            "label": "Prototyp",
+            "helperText": "Was können wir schnell sichtbar oder testbar machen?",
             "value": ""
           },
           {
-            "label": "Interessanteste nächste Idee",
+            "label": "Testfeedback",
+            "helperText": "Was lernen wir aus Reaktionen?",
+            "value": ""
+          },
+          {
+            "label": "Nächste Iteration",
+            "helperText": "Was wird angepasst oder verworfen?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Nutzerzentrierter Problemlösungsprozess von Verstehen bis Testen.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Design Thinking ist ein nutzerzentrierter Prozess vom Verstehen bis zum Testen.",
+      "detail": {
+        "whatItIs": "Design Thinking kombiniert Nutzerverständnis, Problemdefinition, Ideenentwicklung, Prototyping und Testen. Der Fokus liegt darauf, schnell zu lernen, statt zu früh die perfekte Lösung zu planen.",
+        "whenToUse": [
+          "Wenn komplexe, nutzernahe Probleme gelöst werden sollen.",
+          "Wenn Teams interdisziplinär arbeiten.",
+          "Wenn schnelle Prototypen helfen, Annahmen zu prüfen.",
+          "Wenn Innovation strukturiert, aber offen entstehen soll."
+        ],
+        "howToUse": [
+          "Verstehe Nutzer und Kontext.",
+          "Definiere das eigentliche Problem.",
+          "Entwickle viele Lösungsideen.",
+          "Baue einfache Prototypen.",
+          "Teste mit Nutzern und lerne daraus."
+        ],
+        "pitfalls": [
+          "Direkt in Lösungen springen.",
+          "Prototypen zu perfekt bauen.",
+          "Nutzerfeedback nur zur Bestätigung nutzen."
+        ],
+        "goodFor": [
+          "Innovation",
+          "UX",
+          "Service Design",
+          "Produktentwicklung"
+        ],
+        "notIdealFor": [
+          "Reine Effizienzoptimierung",
+          "Harte Priorisierungsentscheidungen",
+          "Probleme ohne Nutzerbezug"
+        ],
+        "output": "Ein getesteter Lösungsansatz oder ein klarer Lernfortschritt über Nutzer und Problem."
+      },
+      "visual": {
+        "headline": "Vom Verstehen zum Testen",
+        "metaphor": "Eine Werkstatt mit fünf Stationen.",
+        "layoutHint": "Prozessband mit fünf Phasen und Feedbackschleifen.",
+        "elements": [
+          "Verstehen",
+          "Definieren",
+          "Ideen",
+          "Prototyp",
+          "Test"
+        ]
+      },
+      "relatedTools": [
+        "double-diamond",
+        "empathy-map",
+        "brainstorming"
+      ]
     },
     {
       "id": "double-diamond",
@@ -2321,36 +3674,99 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 37,
       "template": {
-        "title": "Double Diamond anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um Double Diamond für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "Double Diamond Template",
+        "intro": "Plane deine Arbeit entlang von Problemraum und Lösungsraum.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Discover",
+          "Define",
+          "Develop",
+          "Deliver",
+          "Lernen festhalten"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Discover",
+            "helperText": "Was müssen wir über Nutzer, Kontext und Problem lernen?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Define",
+            "helperText": "Welche Problemdefinition wählen wir?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Develop",
+            "helperText": "Welche Lösungsoptionen entwickeln wir?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Deliver",
+            "helperText": "Welche Lösung testen oder liefern wir zuerst?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Entscheidungspunkte",
+            "helperText": "Wo wird bewusst geöffnet oder fokussiert?",
+            "value": ""
+          },
+          {
+            "label": "Lernfragen",
+            "helperText": "Was bleibt zu prüfen?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Divergieren und konvergieren: Problemraum und Lösungsraum getrennt bearbeiten.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Der Double Diamond trennt Problemraum und Lösungsraum in divergentes und konvergentes Denken.",
+      "detail": {
+        "whatItIs": "Der Double Diamond zeigt, dass gute Lösungen zwei Bewegungen brauchen: erst das richtige Problem breit verstehen und fokussieren, dann mögliche Lösungen breit entwickeln und auswählen.",
+        "whenToUse": [
+          "Wenn Teams zu schnell in Lösungen springen.",
+          "Wenn Problemklärung und Lösungsfindung getrennt werden sollen.",
+          "Wenn ein Workshop eine klare Dramaturgie braucht.",
+          "Wenn explorative und fokussierende Phasen kombiniert werden müssen."
+        ],
+        "howToUse": [
+          "Öffne den Problemraum durch Recherche und Beobachtung.",
+          "Verdichte zur klaren Problemdefinition.",
+          "Öffne den Lösungsraum durch Ideation.",
+          "Wähle und schärfe passende Lösungsansätze.",
+          "Teste und iteriere."
+        ],
+        "pitfalls": [
+          "Den ersten Diamanten überspringen.",
+          "Divergieren ohne danach zu fokussieren.",
+          "Den Prozess als starre Wasserfalllogik nutzen."
+        ],
+        "goodFor": [
+          "Workshopdesign",
+          "Innovation",
+          "Produktentwicklung",
+          "Problemklärung"
+        ],
+        "notIdealFor": [
+          "Sehr kleine Routineentscheidungen",
+          "Reine Ursachenanalyse",
+          "Sofortige Krisenreaktion"
+        ],
+        "output": "Eine klare Struktur, die Problemverständnis und Lösungsentwicklung sauber verbindet."
+      },
+      "visual": {
+        "headline": "Zweimal öffnen, zweimal fokussieren",
+        "metaphor": "Zwei Diamanten als Denkbewegung.",
+        "layoutHint": "Doppelter Diamant mit vier Phasen und Markierung der Konvergenzpunkte.",
+        "elements": [
+          "Problemraum",
+          "Lösungsraum",
+          "Divergenz",
+          "Konvergenz"
+        ]
+      },
+      "relatedTools": [
+        "design-thinking",
+        "brainstorming",
+        "impact-effort-matrix"
+      ]
     },
     {
       "id": "brainstorming",
@@ -2377,36 +3793,93 @@
       "dominantCategoryLabel": "Generieren",
       "totalScore": 16,
       "template": {
-        "title": "Brainstorming anwenden",
-        "categoryFocus": "Generieren",
-        "intro": "Ein einfaches Starter-Template, um Brainstorming für die Denkbewegung „Generieren“ zu nutzen.",
+        "title": "Brainstorming Template",
+        "intro": "Erzeuge viele Ideen zu einer klaren Fragestellung, ohne sie sofort zu bewerten.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Kreativfrage formulieren",
+          "Regeln klären",
+          "Ideen sammeln",
+          "Ideen clustern",
+          "nächste Auswahl vorbereiten"
+        ],
         "fields": [
           {
-            "label": "Ausgangsfrage oder Thema",
+            "label": "Kreativfrage",
+            "helperText": "Zu welcher Frage sammeln wir Ideen?",
             "value": ""
           },
           {
-            "label": "Erste spontane Gedanken",
+            "label": "Ideen roh",
+            "helperText": "Welche Ideen entstehen ohne Bewertung?",
             "value": ""
           },
           {
-            "label": "Weitere Varianten und Perspektiven",
+            "label": "Wilde Ideen",
+            "helperText": "Welche ungewöhnlichen oder übertriebenen Ansätze gibt es?",
             "value": ""
           },
           {
-            "label": "Auffällige Muster",
+            "label": "Cluster",
+            "helperText": "Welche Themenfelder entstehen?",
             "value": ""
           },
           {
-            "label": "Interessanteste nächste Idee",
+            "label": "Kandidaten für Bewertung",
+            "helperText": "Welche Ideen sollen weiter betrachtet werden?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Viele Ideen sammeln, Bewertung zunächst zurückstellen.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Brainstorming erzeugt viele Ideen, bevor bewertet oder ausgewählt wird.",
+      "detail": {
+        "whatItIs": "Brainstorming trennt Ideengenerierung von Bewertung. In kurzer Zeit werden möglichst viele Vorschläge gesammelt, damit der Lösungsraum breit genug wird.",
+        "whenToUse": [
+          "Wenn viele Ideen gebraucht werden.",
+          "Wenn ein Team aus gewohnten Denkmustern herauskommen soll.",
+          "Wenn Bewertung bewusst später stattfinden soll.",
+          "Wenn ein kreativer Einstieg gebraucht wird."
+        ],
+        "howToUse": [
+          "Formuliere eine klare Kreativfrage.",
+          "Setze einen kurzen Zeitrahmen.",
+          "Sammle Ideen ohne Bewertung.",
+          "Baue auf Ideen anderer auf.",
+          "Clustere und bewerte erst danach."
+        ],
+        "pitfalls": [
+          "Ideen sofort kritisieren.",
+          "Unklare Fragestellung wählen.",
+          "Dominante Stimmen den Raum übernehmen lassen."
+        ],
+        "goodFor": [
+          "Ideation",
+          "Kampagnen",
+          "Workshop-Warm-up",
+          "Lösungsoptionen"
+        ],
+        "notIdealFor": [
+          "Ursachenanalyse",
+          "Priorisierung",
+          "Entscheidung mit Kriterien"
+        ],
+        "output": "Eine breite Ideensammlung als Rohmaterial für Bewertung und Auswahl."
+      },
+      "visual": {
+        "headline": "Quantität vor Qualität",
+        "metaphor": "Ein Ideenfeuerwerk mit späterer Sortierung.",
+        "layoutHint": "Große Ideensammlung als Wolke, darunter Cluster und markierte Kandidaten.",
+        "elements": [
+          "Ideenwolke",
+          "Cluster",
+          "Favoriten"
+        ]
+      },
+      "relatedTools": [
+        "brainwriting-6-3-5",
+        "scamper",
+        "kartenabfrage-clustering"
+      ]
     },
     {
       "id": "brainwriting-6-3-5",
@@ -2433,36 +3906,98 @@
       "dominantCategoryLabel": "Generieren",
       "totalScore": 17,
       "template": {
-        "title": "Brainwriting 6-3-5 anwenden",
-        "categoryFocus": "Generieren",
-        "intro": "Ein einfaches Starter-Template, um Brainwriting 6-3-5 für die Denkbewegung „Generieren“ zu nutzen.",
+        "title": "Brainwriting 6-3-5 Template",
+        "intro": "Sammle Ideen still und parallel, damit alle Beiträge sichtbar werden.",
+        "estimatedTime": "30–45 Minuten",
+        "steps": [
+          "Fragestellung klären",
+          "Runden erklären",
+          "Ideen schreiben",
+          "weitergeben und ergänzen",
+          "clustern und auswählen"
+        ],
         "fields": [
           {
-            "label": "Ausgangsfrage oder Thema",
+            "label": "Fragestellung",
+            "helperText": "Welche Herausforderung bearbeiten wir?",
             "value": ""
           },
           {
-            "label": "Erste spontane Gedanken",
+            "label": "Runde 1",
+            "helperText": "Drei erste Ideen",
             "value": ""
           },
           {
-            "label": "Weitere Varianten und Perspektiven",
+            "label": "Runde 2",
+            "helperText": "Ideen anderer weiterentwickeln",
             "value": ""
           },
           {
-            "label": "Auffällige Muster",
+            "label": "Runde 3",
+            "helperText": "Weitere Varianten oder Kombinationen",
             "value": ""
           },
           {
-            "label": "Interessanteste nächste Idee",
+            "label": "Cluster",
+            "helperText": "Welche Themen entstehen?",
+            "value": ""
+          },
+          {
+            "label": "Auswahl",
+            "helperText": "Welche Ideen gehen in die nächste Bewertung?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "6 Personen schreiben je 3 Ideen in 5 Minuten, dann wird weitergegeben.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Brainwriting 6-3-5 erzeugt Ideen schriftlich, strukturiert und parallel in der Gruppe.",
+      "detail": {
+        "whatItIs": "Bei Brainwriting 6-3-5 schreiben sechs Personen jeweils drei Ideen in fünf Minuten und geben sie weiter. Das Format reduziert Dominanz in Gruppen und erzeugt schnell viele Varianten.",
+        "whenToUse": [
+          "Wenn stille Ideengenerierung gewünscht ist.",
+          "Wenn alle gleich beteiligt werden sollen.",
+          "Wenn in kurzer Zeit viele Ideen entstehen sollen.",
+          "Wenn Brainstorming zu laut oder dominant wäre."
+        ],
+        "howToUse": [
+          "Formuliere eine klare Aufgabe.",
+          "Gib jeder Person ein Ideenblatt.",
+          "Alle schreiben drei Ideen in fünf Minuten.",
+          "Blätter werden weitergegeben und Ideen ergänzt.",
+          "Nach mehreren Runden werden Ideen geclustert und bewertet."
+        ],
+        "pitfalls": [
+          "Zu komplexe Fragestellung wählen.",
+          "Ideen während der Runden diskutieren.",
+          "Menge erzeugen, aber keine Auswertung anschließen."
+        ],
+        "goodFor": [
+          "Gruppen-Ideation",
+          "Workshops",
+          "Produktideen",
+          "Verbesserungsideen"
+        ],
+        "notIdealFor": [
+          "Tiefe Diskussion",
+          "Ursachenanalyse",
+          "Entscheidung unter Zeitdruck"
+        ],
+        "output": "Eine große, gleichberechtigt entstandene Ideensammlung."
+      },
+      "visual": {
+        "headline": "Stille Ideenmaschine",
+        "metaphor": "Ein Staffelstab, der von Blatt zu Blatt weitergegeben wird.",
+        "layoutHint": "Raster mit Runden und Teilnehmenden, Pfeile zeigen Weitergabe.",
+        "elements": [
+          "Rundenraster",
+          "Ideenfelder",
+          "Weitergabe-Pfeile"
+        ]
+      },
+      "relatedTools": [
+        "brainstorming",
+        "scamper",
+        "morphologischer-kasten"
+      ]
     },
     {
       "id": "scamper",
@@ -2489,36 +4024,108 @@
       "dominantCategoryLabel": "Generieren",
       "totalScore": 24,
       "template": {
-        "title": "SCAMPER anwenden",
-        "categoryFocus": "Generieren",
-        "intro": "Ein einfaches Starter-Template, um SCAMPER für die Denkbewegung „Generieren“ zu nutzen.",
+        "title": "SCAMPER Template",
+        "intro": "Variiere ein bestehendes Produkt, Angebot oder Vorgehen mit sieben Kreativfragen.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Ausgangsobjekt wählen",
+          "sieben Fragen durchgehen",
+          "Varianten notieren",
+          "Kombinationen suchen",
+          "Kandidaten auswählen"
+        ],
         "fields": [
           {
-            "label": "Ausgangsfrage oder Thema",
+            "label": "Ausgangsobjekt",
+            "helperText": "Was wollen wir verändern oder verbessern?",
             "value": ""
           },
           {
-            "label": "Erste spontane Gedanken",
+            "label": "Substitute",
+            "helperText": "Was könnten wir ersetzen?",
             "value": ""
           },
           {
-            "label": "Weitere Varianten und Perspektiven",
+            "label": "Combine",
+            "helperText": "Was könnten wir kombinieren?",
             "value": ""
           },
           {
-            "label": "Auffällige Muster",
+            "label": "Adapt",
+            "helperText": "Was könnten wir anpassen oder übernehmen?",
             "value": ""
           },
           {
-            "label": "Interessanteste nächste Idee",
+            "label": "Modify",
+            "helperText": "Was könnten wir vergrößern, verkleinern oder verändern?",
+            "value": ""
+          },
+          {
+            "label": "Put to another use",
+            "helperText": "Wofür könnte es noch genutzt werden?",
+            "value": ""
+          },
+          {
+            "label": "Eliminate",
+            "helperText": "Was könnten wir weglassen?",
+            "value": ""
+          },
+          {
+            "label": "Reverse",
+            "helperText": "Was könnten wir umdrehen?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Ideen über Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse entwickeln.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "SCAMPER erzeugt neue Ideen durch sieben gezielte Veränderungsfragen.",
+      "detail": {
+        "whatItIs": "SCAMPER nutzt sieben Kreativrichtungen: Substitute, Combine, Adapt, Modify, Put to another use, Eliminate und Reverse. Bestehende Produkte, Prozesse oder Ideen werden dadurch systematisch variiert.",
+        "whenToUse": [
+          "Wenn etwas Bestehendes verbessert werden soll.",
+          "Wenn Ideen nicht bei Null starten müssen.",
+          "Wenn Kreativität durch konkrete Fragen angeregt werden soll.",
+          "Wenn Produkt-, Service- oder Prozessvarianten gesucht werden."
+        ],
+        "howToUse": [
+          "Wähle ein bestehendes Objekt oder Konzept.",
+          "Gehe die sieben SCAMPER-Fragen durch.",
+          "Notiere pro Frage mehrere Varianten.",
+          "Kombiniere interessante Ansätze.",
+          "Wähle Ideen für Prototyping oder Bewertung aus."
+        ],
+        "pitfalls": [
+          "SCAMPER nur mechanisch ausfüllen.",
+          "Zu früh bewerten.",
+          "Nur kleine Änderungen zulassen und radikale Varianten vermeiden."
+        ],
+        "goodFor": [
+          "Produktideen",
+          "Innovation",
+          "Verbesserung",
+          "Workshop-Ideation"
+        ],
+        "notIdealFor": [
+          "Ursachenanalyse",
+          "Priorisierung",
+          "Situationen ohne konkretes Ausgangsobjekt"
+        ],
+        "output": "Eine Sammlung gezielter Varianten und Verbesserungsoptionen."
+      },
+      "visual": {
+        "headline": "Sieben Hebel für neue Ideen",
+        "metaphor": "Ein Kontrollpult mit sieben Kreativhebeln.",
+        "layoutHint": "Ausgangsidee in der Mitte, sieben SCAMPER-Hebel darum herum.",
+        "elements": [
+          "Ausgangsidee",
+          "sieben Hebel",
+          "Ideenvarianten"
+        ]
+      },
+      "relatedTools": [
+        "brainstorming",
+        "lateral-thinking",
+        "morphologischer-kasten"
+      ]
     },
     {
       "id": "six-thinking-hats",
@@ -2545,36 +4152,103 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 32,
       "template": {
-        "title": "Six Thinking Hats anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um Six Thinking Hats für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "Six Thinking Hats Template",
+        "intro": "Führe eine Diskussion bewusst durch sechs Denkperspektiven.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Thema klären",
+          "Hut-Reihenfolge festlegen",
+          "Perspektiven bearbeiten",
+          "Ergebnisse sammeln",
+          "Fazit ableiten"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Blau: Prozess",
+            "helperText": "Was ist Ziel, Ablauf und nächster Schritt?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Weiß: Fakten",
+            "helperText": "Was wissen wir? Was fehlt?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Rot: Gefühle",
+            "helperText": "Welche Intuitionen oder Bedenken gibt es?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Schwarz: Risiken",
+            "helperText": "Was könnte schiefgehen?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Gelb: Nutzen",
+            "helperText": "Was spricht dafür?",
+            "value": ""
+          },
+          {
+            "label": "Grün: Ideen",
+            "helperText": "Welche Alternativen oder neuen Möglichkeiten gibt es?",
+            "value": ""
+          },
+          {
+            "label": "Fazit",
+            "helperText": "Was folgt daraus?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Denken in sechs Perspektiven trennen: Fakten, Gefühle, Risiken, Nutzen, Kreativität, Prozess.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Six Thinking Hats trennt Diskussionen in sechs Denkperspektiven.",
+      "detail": {
+        "whatItIs": "Six Thinking Hats strukturiert gemeinsames Denken, indem alle nacheinander dieselbe Perspektive einnehmen: Fakten, Gefühle, Risiken, Nutzen, Kreativität und Prozess. Dadurch werden Diskussionen klarer und weniger vermischt.",
+        "whenToUse": [
+          "Wenn Meetings chaotisch oder polarisierend sind.",
+          "Wenn Entscheidungen mehrere Perspektiven brauchen.",
+          "Wenn Risiken und Chancen getrennt betrachtet werden sollen.",
+          "Wenn alle im gleichen Denkmodus arbeiten sollen."
+        ],
+        "howToUse": [
+          "Lege Thema und Ziel fest.",
+          "Erkläre die sechs Hüte und Reihenfolge.",
+          "Arbeite je Hut fokussiert eine Perspektive ab.",
+          "Dokumentiere Ergebnisse sichtbar.",
+          "Fasse Erkenntnisse und Entscheidung zusammen."
+        ],
+        "pitfalls": [
+          "Die Hüte als Rollen für einzelne Personen missverstehen.",
+          "Zu lange in einem Hut bleiben.",
+          "Kritik und Kreativität wieder vermischen."
+        ],
+        "goodFor": [
+          "Meetings",
+          "Entscheidungen",
+          "Workshops",
+          "Diskussionen"
+        ],
+        "notIdealFor": [
+          "Sehr schnelle Einzelentscheidungen",
+          "Tiefe Datenanalyse",
+          "Reine Ideengenerierung ohne Struktur"
+        ],
+        "output": "Eine balancierte Betrachtung eines Themas aus sechs klar getrennten Perspektiven."
+      },
+      "visual": {
+        "headline": "Sechs Hüte, sechs Denkmodi",
+        "metaphor": "Ein Meetingtisch mit sechs farblich gedachten Perspektiven.",
+        "layoutHint": "Sechs Segmente als Denkmodi um ein zentrales Thema.",
+        "elements": [
+          "sechs Hüte",
+          "zentrales Thema",
+          "Erkenntnisse je Perspektive"
+        ]
+      },
+      "relatedTools": [
+        "premortem",
+        "scamper",
+        "pro-und-contra-liste"
+      ]
     },
     {
       "id": "lateral-thinking",
@@ -2601,36 +4275,94 @@
       "dominantCategoryLabel": "Generieren",
       "totalScore": 19,
       "template": {
-        "title": "Lateral Thinking anwenden",
-        "categoryFocus": "Generieren",
-        "intro": "Ein einfaches Starter-Template, um Lateral Thinking für die Denkbewegung „Generieren“ zu nutzen.",
+        "title": "Lateral Thinking Template",
+        "intro": "Erzeuge neue Perspektiven durch Provokation, Umkehrung und Analogie.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Problem formulieren",
+          "Provokation setzen",
+          "Analogien suchen",
+          "Ideen ableiten",
+          "realistische Ansätze auswählen"
+        ],
         "fields": [
           {
-            "label": "Ausgangsfrage oder Thema",
+            "label": "Problem",
+            "helperText": "Woran hängen wir fest?",
             "value": ""
           },
           {
-            "label": "Erste spontane Gedanken",
+            "label": "Provokation",
+            "helperText": "Welche absurde oder umgekehrte Annahme testen wir?",
             "value": ""
           },
           {
-            "label": "Weitere Varianten und Perspektiven",
+            "label": "Analogie",
+            "helperText": "Wo gibt es ein ähnliches Muster in einem anderen Bereich?",
             "value": ""
           },
           {
-            "label": "Auffällige Muster",
+            "label": "Neue Ideen",
+            "helperText": "Welche Ansätze entstehen daraus?",
             "value": ""
           },
           {
-            "label": "Interessanteste nächste Idee",
+            "label": "Rückübersetzung",
+            "helperText": "Was davon lässt sich realistisch nutzen?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Bewusst nicht-lineare, überraschende Lösungswege suchen.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Lateral Thinking sucht bewusst überraschende, nicht-lineare Lösungswege.",
+      "detail": {
+        "whatItIs": "Lateral Thinking bricht gewohnte Denkmuster auf. Statt logisch Schritt für Schritt zu optimieren, werden Provokationen, Perspektivwechsel und ungewöhnliche Analogien genutzt.",
+        "whenToUse": [
+          "Wenn ein Problem festgefahren wirkt.",
+          "Wenn naheliegende Lösungen nicht reichen.",
+          "Wenn radikale Alternativen gesucht werden.",
+          "Wenn kreative Provokation erlaubt ist."
+        ],
+        "howToUse": [
+          "Formuliere das Problem knapp.",
+          "Setze eine Provokation oder absurde Annahme.",
+          "Suche Analogien aus anderen Bereichen.",
+          "Leite daraus neue Lösungsrichtungen ab.",
+          "Prüfe, welche Ideen realistisch nutzbar sind."
+        ],
+        "pitfalls": [
+          "Provokation mit Beliebigkeit verwechseln.",
+          "Ideen sofort als unrealistisch abtun.",
+          "Keine Rückübersetzung in nutzbare Ansätze machen."
+        ],
+        "goodFor": [
+          "Innovation",
+          "Kreativität",
+          "Perspektivwechsel",
+          "festgefahrene Probleme"
+        ],
+        "notIdealFor": [
+          "Compliance-kritische Entscheidungen",
+          "Detailanalyse",
+          "Priorisierung mit festen Kriterien"
+        ],
+        "output": "Ungewohnte Lösungsrichtungen, die neue Optionen öffnen."
+      },
+      "visual": {
+        "headline": "Seitwärts aus der Denkspur",
+        "metaphor": "Eine Straße mit einer unerwarteten Abzweigung ins Neue.",
+        "layoutHint": "Gerade Problemlinie, seitliche Sprünge zu Analogien und neuen Optionen.",
+        "elements": [
+          "Denkspur",
+          "Provokation",
+          "Analogie",
+          "neue Option"
+        ]
+      },
+      "relatedTools": [
+        "scamper",
+        "first-principles-thinking",
+        "brainstorming"
+      ]
     },
     {
       "id": "morphologischer-kasten",
@@ -2657,36 +4389,98 @@
       "dominantCategoryLabel": "Generieren",
       "totalScore": 31,
       "template": {
-        "title": "Morphologischer Kasten anwenden",
-        "categoryFocus": "Generieren",
-        "intro": "Ein einfaches Starter-Template, um Morphologischer Kasten für die Denkbewegung „Generieren“ zu nutzen.",
+        "title": "Morphologischer Kasten Template",
+        "intro": "Zerlege ein Problem in Dimensionen und kombiniere Varianten zu neuen Lösungen.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Problem definieren",
+          "Dimensionen wählen",
+          "Ausprägungen sammeln",
+          "Kombinationen bilden",
+          "Favoriten prüfen"
+        ],
         "fields": [
           {
-            "label": "Ausgangsfrage oder Thema",
+            "label": "Gestaltungsproblem",
+            "helperText": "Welche Lösung oder Variante suchen wir?",
             "value": ""
           },
           {
-            "label": "Erste spontane Gedanken",
+            "label": "Dimensionen",
+            "helperText": "Welche Merkmale bestimmen die Lösung?",
             "value": ""
           },
           {
-            "label": "Weitere Varianten und Perspektiven",
+            "label": "Ausprägungen",
+            "helperText": "Welche Optionen gibt es je Dimension?",
             "value": ""
           },
           {
-            "label": "Auffällige Muster",
+            "label": "Kombinationen",
+            "helperText": "Welche Ausprägungen lassen sich verbinden?",
             "value": ""
           },
           {
-            "label": "Interessanteste nächste Idee",
+            "label": "Spannende Varianten",
+            "helperText": "Welche Kombinationen sind vielversprechend?",
+            "value": ""
+          },
+          {
+            "label": "Prüfkriterien",
+            "helperText": "Woran bewerten wir die Varianten?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Merkmale eines Problems auflisten und Varianten kombinieren.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Der morphologische Kasten kombiniert Merkmale und Ausprägungen zu neuen Lösungsvarianten.",
+      "detail": {
+        "whatItIs": "Der morphologische Kasten zerlegt ein Problem in relevante Dimensionen und sammelt pro Dimension mögliche Ausprägungen. Durch Kombination entstehen systematisch neue Varianten.",
+        "whenToUse": [
+          "Wenn ein Lösungsraum systematisch erkundet werden soll.",
+          "Wenn viele Produkt- oder Prozessvarianten denkbar sind.",
+          "Wenn Kreativität und Struktur verbunden werden sollen.",
+          "Wenn Kombinationen sichtbar gemacht werden sollen."
+        ],
+        "howToUse": [
+          "Definiere das Gestaltungsproblem.",
+          "Bestimme zentrale Dimensionen.",
+          "Sammle pro Dimension mehrere Ausprägungen.",
+          "Kombiniere Ausprägungen zu Varianten.",
+          "Bewerte interessante Kombinationen."
+        ],
+        "pitfalls": [
+          "Zu viele Dimensionen aufnehmen.",
+          "Dimensionen wählen, die sich überschneiden.",
+          "Kombinationen erzeugen, aber nicht auf Plausibilität prüfen."
+        ],
+        "goodFor": [
+          "Produktdesign",
+          "Innovation",
+          "Szenarien",
+          "Servicevarianten"
+        ],
+        "notIdealFor": [
+          "Einfache Aufgabenlisten",
+          "Ursachenanalyse",
+          "Harte Priorisierung"
+        ],
+        "output": "Ein systematischer Variantenraum mit ausgewählten Lösungskombinationen."
+      },
+      "visual": {
+        "headline": "Kombinationsmaschine für Lösungen",
+        "metaphor": "Ein Baukasten mit kombinierbaren Modulen.",
+        "layoutHint": "Tabelle mit Dimensionen als Zeilen, Ausprägungen als Spalten und markierten Kombinationen.",
+        "elements": [
+          "Dimensionen",
+          "Ausprägungen",
+          "Kombinationspfad"
+        ]
+      },
+      "relatedTools": [
+        "scamper",
+        "brainwriting-6-3-5",
+        "gewichtete-entscheidungsmatrix"
+      ]
     },
     {
       "id": "triz",
@@ -2713,36 +4507,98 @@
       "dominantCategoryLabel": "Analysieren",
       "totalScore": 34,
       "template": {
-        "title": "TRIZ anwenden",
-        "categoryFocus": "Analysieren",
-        "intro": "Ein einfaches Starter-Template, um TRIZ für die Denkbewegung „Analysieren“ zu nutzen.",
+        "title": "TRIZ Starter Template",
+        "intro": "Formuliere einen Widerspruch und leite systematische Lösungsrichtungen ab.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Problem beschreiben",
+          "Widerspruch formulieren",
+          "Lösungsprinzipien suchen",
+          "Ideen ableiten",
+          "Umsetzbarkeit prüfen"
+        ],
         "fields": [
           {
-            "label": "Problem, Risiko oder Annahme",
+            "label": "Problem",
+            "helperText": "Was soll verbessert werden?",
             "value": ""
           },
           {
-            "label": "Beobachtungen und Fakten",
+            "label": "Widerspruch",
+            "helperText": "Was wird schlechter, wenn wir etwas verbessern?",
             "value": ""
           },
           {
-            "label": "Mögliche Ursachen oder Muster",
+            "label": "Ideales Ergebnis",
+            "helperText": "Wie sähe eine Lösung ohne Nachteile aus?",
             "value": ""
           },
           {
-            "label": "Evidenz und Gegenargumente",
+            "label": "Lösungsprinzipien",
+            "helperText": "Welche allgemeinen Prinzipien könnten helfen?",
             "value": ""
           },
           {
-            "label": "Erkenntnis und nächster Prüfpunkt",
+            "label": "Konkrete Ideen",
+            "helperText": "Wie lassen sich die Prinzipien übertragen?",
+            "value": ""
+          },
+          {
+            "label": "Prüfung",
+            "helperText": "Welche Idee wird getestet?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Systematische Innovationsmethode auf Basis wiederkehrender Erfindungsmuster.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "TRIZ löst Innovationsprobleme über wiederkehrende Muster und technische Widersprüche.",
+      "detail": {
+        "whatItIs": "TRIZ ist eine systematische Innovationsmethode. Sie betrachtet Probleme als Widersprüche und nutzt bewährte Lösungsprinzipien aus vielen Erfindungen, um neue Ansätze abzuleiten.",
+        "whenToUse": [
+          "Wenn technische oder systemische Widersprüche auftreten.",
+          "Wenn Optimierung an Grenzen stößt.",
+          "Wenn systematische Innovationsprinzipien helfen sollen.",
+          "Wenn Lösungen nicht nur per Brainstorming entstehen sollen."
+        ],
+        "howToUse": [
+          "Beschreibe das Problem und den Zielkonflikt.",
+          "Formuliere den Widerspruch präzise.",
+          "Suche passende Lösungsprinzipien oder Analogien.",
+          "Entwickle konkrete Lösungsideen.",
+          "Prüfe Umsetzbarkeit und Nebenwirkungen."
+        ],
+        "pitfalls": [
+          "TRIZ zu oberflächlich als Ideenkatalog nutzen.",
+          "Den Widerspruch nicht sauber formulieren.",
+          "Prinzipien mechanisch anwenden, ohne Kontext zu übersetzen."
+        ],
+        "goodFor": [
+          "Technische Innovation",
+          "Engineering",
+          "Widersprüche",
+          "systematische Problemlösung"
+        ],
+        "notIdealFor": [
+          "Sehr einfache Kreativfragen",
+          "Personenbezogene Konflikte",
+          "Schnelle Alltagsentscheidungen"
+        ],
+        "output": "Konkrete Lösungsansätze für einen klar formulierten Widerspruch."
+      },
+      "visual": {
+        "headline": "Widerspruch als Innovationsmotor",
+        "metaphor": "Zwei gegensätzliche Kräfte, die durch ein Prinzip aufgelöst werden.",
+        "layoutHint": "Links Zielkonflikt, Mitte Lösungsprinzipien, rechts konkrete Lösungsoptionen.",
+        "elements": [
+          "Widerspruch",
+          "Prinzipien",
+          "Lösungsoptionen"
+        ]
+      },
+      "relatedTools": [
+        "first-principles-thinking",
+        "morphologischer-kasten",
+        "scamper"
+      ]
     },
     {
       "id": "ishikawa-fishbone",
@@ -2769,36 +4625,104 @@
       "dominantCategoryLabel": "Analysieren",
       "totalScore": 30,
       "template": {
-        "title": "Ishikawa / Fishbone anwenden",
-        "categoryFocus": "Analysieren",
-        "intro": "Ein einfaches Starter-Template, um Ishikawa / Fishbone für die Denkbewegung „Analysieren“ zu nutzen.",
+        "title": "Fishbone Template",
+        "intro": "Sammle Ursachen eines Problems nach Kategorien und leite Prüfungen ab.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Problem definieren",
+          "Kategorien wählen",
+          "Ursachen sammeln",
+          "plausible Ursachen markieren",
+          "Prüfung planen"
+        ],
         "fields": [
           {
-            "label": "Problem, Risiko oder Annahme",
+            "label": "Problem",
+            "helperText": "Welches konkrete Problem untersuchen wir?",
             "value": ""
           },
           {
-            "label": "Beobachtungen und Fakten",
+            "label": "Kategorie 1",
+            "helperText": "Mögliche Ursachen in diesem Bereich",
             "value": ""
           },
           {
-            "label": "Mögliche Ursachen oder Muster",
+            "label": "Kategorie 2",
+            "helperText": "Mögliche Ursachen in diesem Bereich",
             "value": ""
           },
           {
-            "label": "Evidenz und Gegenargumente",
+            "label": "Kategorie 3",
+            "helperText": "Mögliche Ursachen in diesem Bereich",
             "value": ""
           },
           {
-            "label": "Erkenntnis und nächster Prüfpunkt",
+            "label": "Kategorie 4",
+            "helperText": "Mögliche Ursachen in diesem Bereich",
+            "value": ""
+          },
+          {
+            "label": "Top-Ursachen",
+            "helperText": "Welche Ursachen prüfen wir zuerst?",
+            "value": ""
+          },
+          {
+            "label": "Nächste Prüfung",
+            "helperText": "Welche Daten oder Beobachtungen brauchen wir?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Ursachen eines Problems in Kategorien als Fischgräte sammeln.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Ishikawa / Fishbone sammelt mögliche Ursachen eines Problems in Kategorien.",
+      "detail": {
+        "whatItIs": "Das Fishbone-Diagramm visualisiert mögliche Ursachen eines Problems als Fischgräte. Es hilft Teams, Ursachenfelder systematisch zu betrachten, statt vorschnell eine einzelne Ursache anzunehmen.",
+        "whenToUse": [
+          "Wenn ein Problem mehrere mögliche Ursachen hat.",
+          "Wenn Ursachen gemeinsam im Team gesammelt werden sollen.",
+          "Wenn Qualität, Prozesse oder Fehler analysiert werden.",
+          "Wenn 5 Whys zu linear wäre."
+        ],
+        "howToUse": [
+          "Formuliere das Problem am Kopf des Diagramms.",
+          "Wähle passende Ursachen-Kategorien.",
+          "Sammle mögliche Ursachen je Kategorie.",
+          "Markiere plausible oder belegte Ursachen.",
+          "Leite Prüfungen oder Maßnahmen ab."
+        ],
+        "pitfalls": [
+          "Ursachen behaupten, aber nicht prüfen.",
+          "Kategorien unpassend wählen.",
+          "Symptome statt Ursachen eintragen."
+        ],
+        "goodFor": [
+          "Root-Cause-Analyse",
+          "Qualität",
+          "Prozesse",
+          "Fehleranalyse"
+        ],
+        "notIdealFor": [
+          "Priorisierung ohne Ursache",
+          "Kreative Ideensammlung",
+          "Strategische Marktanalyse"
+        ],
+        "output": "Eine strukturierte Übersicht möglicher Ursachen mit Prüfprioritäten."
+      },
+      "visual": {
+        "headline": "Ursachen als Fischgräte",
+        "metaphor": "Ein Fisch, dessen Gräten Ursachenfelder tragen.",
+        "layoutHint": "Problem am Kopf, Hauptgräten als Kategorien, Nebengräten als Ursachen.",
+        "elements": [
+          "Problemkopf",
+          "Ursachenkategorien",
+          "Einzelursachen",
+          "Prüfmarkierung"
+        ]
+      },
+      "relatedTools": [
+        "5-whys",
+        "fmea",
+        "dmaic"
+      ]
     },
     {
       "id": "pareto-analyse",
@@ -2825,36 +4749,98 @@
       "dominantCategoryLabel": "Reduzieren",
       "totalScore": 33,
       "template": {
-        "title": "Pareto-Analyse anwenden",
-        "categoryFocus": "Reduzieren",
-        "intro": "Ein einfaches Starter-Template, um Pareto-Analyse für die Denkbewegung „Reduzieren“ zu nutzen.",
+        "title": "Pareto-Analyse Template",
+        "intro": "Identifiziere die wenigen Kategorien mit der größten Wirkung.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Kategorien definieren",
+          "Daten sammeln",
+          "sortieren",
+          "kumulieren",
+          "Top-Hebel auswählen"
+        ],
         "fields": [
           {
-            "label": "Ausgangsliste oder Themenmenge",
+            "label": "Analysegegenstand",
+            "helperText": "Welche Fehler, Tickets, Ursachen oder Aufwände betrachten wir?",
             "value": ""
           },
           {
-            "label": "Kriterien für Relevanz",
+            "label": "Kategorien",
+            "helperText": "Welche Gruppen werden verglichen?",
             "value": ""
           },
           {
-            "label": "Was wird gestrichen oder zusammengefasst?",
+            "label": "Messwert",
+            "helperText": "Häufigkeit, Kosten, Zeit oder Wirkung?",
             "value": ""
           },
           {
-            "label": "Essenz in einem Satz",
+            "label": "Top-Kategorien",
+            "helperText": "Welche Kategorien verursachen den größten Anteil?",
             "value": ""
           },
           {
-            "label": "Nächster konkreter Schritt",
+            "label": "Kumulierte Wirkung",
+            "helperText": "Wo liegt der sinnvolle Fokusbereich?",
+            "value": ""
+          },
+          {
+            "label": "Maßnahmen",
+            "helperText": "Welche Hebel bearbeiten wir zuerst?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Die wenigen wichtigen Ursachen von den vielen kleineren trennen.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Die Pareto-Analyse fokussiert auf die wenigen Ursachen mit der größten Wirkung.",
+      "detail": {
+        "whatItIs": "Die Pareto-Analyse trennt die wichtigen wenigen Ursachen von den vielen kleineren. Sie hilft, begrenzte Aufmerksamkeit dort einzusetzen, wo der größte Effekt zu erwarten ist.",
+        "whenToUse": [
+          "Wenn viele Fehler, Ursachen oder Aufgaben konkurrieren.",
+          "Wenn Fokus auf die wichtigsten Hebel gebraucht wird.",
+          "Wenn Daten zu Häufigkeit, Aufwand oder Wirkung vorliegen.",
+          "Wenn Verbesserungsarbeit priorisiert werden soll."
+        ],
+        "howToUse": [
+          "Definiere, was gezählt oder bewertet wird.",
+          "Sammle Daten zu Häufigkeit, Kosten oder Wirkung.",
+          "Sortiere Kategorien absteigend.",
+          "Berechne kumulierte Wirkung.",
+          "Wähle die wichtigsten Hebel für Maßnahmen."
+        ],
+        "pitfalls": [
+          "Pareto ohne Daten nur behaupten.",
+          "Kleine, aber kritische Risiken ignorieren.",
+          "Die 80/20-Regel zu wörtlich nehmen."
+        ],
+        "goodFor": [
+          "Qualität",
+          "Prozessverbesserung",
+          "Ticketanalyse",
+          "Priorisierung"
+        ],
+        "notIdealFor": [
+          "Explorative Ideengenerierung",
+          "Probleme ohne Datenbasis",
+          "Risiken mit geringer Häufigkeit, aber extremem Schaden"
+        ],
+        "output": "Eine fokussierte Liste der wichtigsten Ursachen oder Hebel."
+      },
+      "visual": {
+        "headline": "Die wichtigen wenigen finden",
+        "metaphor": "Ein Balkendiagramm mit einer Fokuslinie.",
+        "layoutHint": "Absteigende Balken mit kumulierter Linie und markiertem Fokusbereich.",
+        "elements": [
+          "Balken",
+          "kumulative Linie",
+          "Fokusbereich"
+        ]
+      },
+      "relatedTools": [
+        "impact-effort-matrix",
+        "theory-of-constraints",
+        "a3-report"
+      ]
     },
     {
       "id": "fmea",
@@ -2881,36 +4867,104 @@
       "dominantCategoryLabel": "Analysieren",
       "totalScore": 33,
       "template": {
-        "title": "FMEA anwenden",
-        "categoryFocus": "Analysieren",
-        "intro": "Ein einfaches Starter-Template, um FMEA für die Denkbewegung „Analysieren“ zu nutzen.",
+        "title": "FMEA Template",
+        "intro": "Bewerte potenzielle Fehler und priorisiere Risikominderungsmaßnahmen.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Systembereich wählen",
+          "Fehlermodi sammeln",
+          "Folgen und Ursachen beschreiben",
+          "Risiko bewerten",
+          "Maßnahmen planen"
+        ],
         "fields": [
           {
-            "label": "Problem, Risiko oder Annahme",
+            "label": "Prozess- oder Systemschritt",
+            "helperText": "Welcher Teil wird betrachtet?",
             "value": ""
           },
           {
-            "label": "Beobachtungen und Fakten",
+            "label": "Möglicher Fehler",
+            "helperText": "Was könnte schiefgehen?",
             "value": ""
           },
           {
-            "label": "Mögliche Ursachen oder Muster",
+            "label": "Auswirkung",
+            "helperText": "Was passiert, wenn der Fehler eintritt?",
             "value": ""
           },
           {
-            "label": "Evidenz und Gegenargumente",
+            "label": "Ursache",
+            "helperText": "Warum könnte der Fehler entstehen?",
             "value": ""
           },
           {
-            "label": "Erkenntnis und nächster Prüfpunkt",
+            "label": "Bewertung",
+            "helperText": "Bedeutung, Auftreten und Entdeckung",
+            "value": ""
+          },
+          {
+            "label": "Maßnahme",
+            "helperText": "Wie wird das Risiko reduziert?",
+            "value": ""
+          },
+          {
+            "label": "Owner und Termin",
+            "helperText": "Wer verfolgt die Maßnahme?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Potenzielle Fehler, Ursachen, Auswirkungen und Risiken systematisch bewerten.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "FMEA bewertet potenzielle Fehler nach Auswirkungen, Ursachen und Risiken.",
+      "detail": {
+        "whatItIs": "FMEA untersucht, welche Fehler auftreten könnten, welche Folgen sie hätten und wie gut sie erkennbar oder vermeidbar sind. Dadurch werden Risiken systematisch vorab bewertet.",
+        "whenToUse": [
+          "Wenn Produkte, Prozesse oder Systeme robust gestaltet werden sollen.",
+          "Wenn Risiken vor Umsetzung bewertet werden müssen.",
+          "Wenn Fehlerfolgen kritisch sind.",
+          "Wenn Maßnahmen nach Risiko priorisiert werden sollen."
+        ],
+        "howToUse": [
+          "Wähle Prozess, Produkt oder Systemteil.",
+          "Liste mögliche Fehlermodi auf.",
+          "Beschreibe Ursachen und Auswirkungen.",
+          "Bewerte Bedeutung, Auftreten und Entdeckung.",
+          "Leite Maßnahmen für hohe Risiken ab."
+        ],
+        "pitfalls": [
+          "Bewertungen ohne gemeinsames Verständnis vergeben.",
+          "FMEA als Pflichtdokument statt Denkprozess nutzen.",
+          "Maßnahmen nicht nachverfolgen."
+        ],
+        "goodFor": [
+          "Qualität",
+          "Engineering",
+          "Risikomanagement",
+          "Prozesssicherheit"
+        ],
+        "notIdealFor": [
+          "Frühe kreative Ideenphase",
+          "Einfache Aufgabenplanung",
+          "Strategische Umfeldanalyse"
+        ],
+        "output": "Eine priorisierte Risikoliste mit konkreten Vorbeugungs- und Entdeckungsmaßnahmen."
+      },
+      "visual": {
+        "headline": "Fehler vor dem Auftreten entschärfen",
+        "metaphor": "Ein Sicherheitscheck mit Risikoskala.",
+        "layoutHint": "Tabelle mit Fehlermodus, Wirkung, Ursache, Bewertung und Maßnahme.",
+        "elements": [
+          "Fehlermodus",
+          "Risiko-Score",
+          "Maßnahmen",
+          "Owner"
+        ]
+      },
+      "relatedTools": [
+        "premortem",
+        "ishikawa-fishbone",
+        "dmaic"
+      ]
     },
     {
       "id": "pdca",
@@ -2937,36 +4991,95 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 28,
       "template": {
-        "title": "PDCA anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um PDCA für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "PDCA Template",
+        "intro": "Plane, teste, prüfe und stabilisiere eine Verbesserung in kleinen Schleifen.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Plan",
+          "Do",
+          "Check",
+          "Act",
+          "nächsten Zyklus definieren"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Plan",
+            "helperText": "Was wollen wir verbessern und woran messen wir Erfolg?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Do",
+            "helperText": "Was testen wir konkret und in welchem Umfang?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Check",
+            "helperText": "Was ist passiert? Welche Daten oder Beobachtungen gibt es?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Act",
+            "helperText": "Was wird standardisiert, angepasst oder verworfen?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Nächster Zyklus",
+            "helperText": "Welche Verbesserung testen wir als Nächstes?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Plan, Do, Check, Act als Verbesserungszyklus.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "PDCA ist ein Verbesserungszyklus aus Plan, Do, Check und Act.",
+      "detail": {
+        "whatItIs": "PDCA strukturiert kontinuierliche Verbesserung in vier Schritten: planen, ausprobieren, prüfen und standardisieren oder anpassen. Es ist besonders nützlich, wenn Lernen in kleinen Schleifen stattfinden soll.",
+        "whenToUse": [
+          "Wenn Prozesse schrittweise verbessert werden sollen.",
+          "Wenn Veränderungen kontrolliert getestet werden.",
+          "Wenn Lernen und Standardisierung verbunden werden sollen.",
+          "Wenn kleine Experimente sinnvoller sind als große Würfe."
+        ],
+        "howToUse": [
+          "Plane eine konkrete Verbesserung und Erfolgskriterien.",
+          "Setze sie klein und kontrolliert um.",
+          "Prüfe Ergebnis und Abweichungen.",
+          "Standardisiere, passe an oder starte die nächste Runde.",
+          "Dokumentiere das Lernen."
+        ],
+        "pitfalls": [
+          "Zu große Experimente planen.",
+          "Check-Phase überspringen.",
+          "Lernen nicht in Standards oder nächste Schritte übersetzen."
+        ],
+        "goodFor": [
+          "Kontinuierliche Verbesserung",
+          "Qualität",
+          "Lernen",
+          "Prozessoptimierung"
+        ],
+        "notIdealFor": [
+          "Einmalige strategische Entscheidung",
+          "Reine Ideensammlung",
+          "Akute Krisenreaktion ohne Zeit zum Lernen"
+        ],
+        "output": "Ein dokumentierter Lern- und Verbesserungszyklus mit nächster Iteration."
+      },
+      "visual": {
+        "headline": "Verbesserung als Kreislauf",
+        "metaphor": "Ein Rad, das Lernen in Bewegung hält.",
+        "layoutHint": "Kreisdiagramm mit vier Segmenten und Pfeilen zwischen den Phasen.",
+        "elements": [
+          "Plan",
+          "Do",
+          "Check",
+          "Act",
+          "Lernnotiz"
+        ]
+      },
+      "relatedTools": [
+        "a3-report",
+        "dmaic",
+        "5-whys"
+      ]
     },
     {
       "id": "a3-report",
@@ -2993,36 +5106,105 @@
       "dominantCategoryLabel": "Strukturieren",
       "totalScore": 36,
       "template": {
-        "title": "A3-Report anwenden",
-        "categoryFocus": "Strukturieren",
-        "intro": "Ein einfaches Starter-Template, um A3-Report für die Denkbewegung „Strukturieren“ zu nutzen.",
+        "title": "A3-Report Template",
+        "intro": "Verdichte eine Problemlösung auf eine klare, handlungsorientierte Seite.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Hintergrund klären",
+          "Problem und Ziel beschreiben",
+          "Ursachen analysieren",
+          "Maßnahmen planen",
+          "Follow-up festlegen"
+        ],
         "fields": [
           {
-            "label": "Ausgangsthema",
+            "label": "Hintergrund",
+            "helperText": "Warum ist das Thema relevant?",
             "value": ""
           },
           {
-            "label": "Einzelelemente",
+            "label": "Problem",
+            "helperText": "Was ist die konkrete Abweichung oder Herausforderung?",
             "value": ""
           },
           {
-            "label": "Gruppen, Ebenen oder Beziehungen",
+            "label": "Ist-Zustand",
+            "helperText": "Was zeigen Daten, Beobachtungen oder Prozessbild?",
             "value": ""
           },
           {
-            "label": "Erkennbarer Gesamtzusammenhang",
+            "label": "Zielzustand",
+            "helperText": "Was soll messbar besser sein?",
             "value": ""
           },
           {
-            "label": "Offene Punkte",
+            "label": "Ursachenanalyse",
+            "helperText": "Welche Ursachen wurden identifiziert?",
+            "value": ""
+          },
+          {
+            "label": "Gegenmaßnahmen",
+            "helperText": "Was wird getan, von wem und bis wann?",
+            "value": ""
+          },
+          {
+            "label": "Follow-up",
+            "helperText": "Wie wird Wirkung geprüft?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Problem, Analyse, Maßnahmen und Plan auf einem A3-Blatt verdichten.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Der A3-Report verdichtet Problem, Analyse, Maßnahmen und Plan auf eine Seite.",
+      "detail": {
+        "whatItIs": "Ein A3-Report ist ein kompaktes Problemlösungs- und Kommunikationsformat. Er zwingt dazu, Problem, Ist-Zustand, Ursachen, Zielbild, Maßnahmen und Follow-up klar auf einer Seite zu strukturieren.",
+        "whenToUse": [
+          "Wenn ein Problem strukturiert gelöst und kommuniziert werden soll.",
+          "Wenn Management eine knappe, belastbare Übersicht braucht.",
+          "Wenn Analyse und Maßnahmen zusammengeführt werden sollen.",
+          "Wenn Teams einen gemeinsamen Problemlösungsbogen brauchen."
+        ],
+        "howToUse": [
+          "Beschreibe Hintergrund und Problem.",
+          "Dokumentiere Ist-Zustand und Zielzustand.",
+          "Analysiere Ursachen.",
+          "Definiere Gegenmaßnahmen und Plan.",
+          "Lege Follow-up und Lernen fest."
+        ],
+        "pitfalls": [
+          "A3 als reine Präsentationsfolie nutzen.",
+          "Ursachenanalyse überspringen.",
+          "Zu viel Text statt klarer Visualisierung verwenden."
+        ],
+        "goodFor": [
+          "Lean",
+          "Problemlösung",
+          "Managementkommunikation",
+          "Verbesserungsprojekte"
+        ],
+        "notIdealFor": [
+          "Sehr frühe Ideensammlung",
+          "Kleine Ad-hoc-Aufgaben",
+          "Reine Umfeldanalyse"
+        ],
+        "output": "Eine einseitige, nachvollziehbare Problemlösungsstory."
+      },
+      "visual": {
+        "headline": "Eine Seite für die ganze Problemlösung",
+        "metaphor": "Ein A3-Blatt als Landkarte von Problem zu Maßnahme.",
+        "layoutHint": "Einseitiges Raster mit Problem links, Analyse in der Mitte, Maßnahmen rechts.",
+        "elements": [
+          "Problem",
+          "Analyse",
+          "Ziel",
+          "Maßnahmen",
+          "Follow-up"
+        ]
+      },
+      "relatedTools": [
+        "5-whys",
+        "ishikawa-fishbone",
+        "pdca"
+      ]
     },
     {
       "id": "dmaic",
@@ -3049,36 +5231,100 @@
       "dominantCategoryLabel": "Analysieren",
       "totalScore": 35,
       "template": {
-        "title": "DMAIC anwenden",
-        "categoryFocus": "Analysieren",
-        "intro": "Ein einfaches Starter-Template, um DMAIC für die Denkbewegung „Analysieren“ zu nutzen.",
+        "title": "DMAIC Template",
+        "intro": "Verbessere einen Prozess strukturiert von Problemdefinition bis Kontrolle.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Define",
+          "Measure",
+          "Analyze",
+          "Improve",
+          "Control"
+        ],
         "fields": [
           {
-            "label": "Problem, Risiko oder Annahme",
+            "label": "Define",
+            "helperText": "Welches Problem wird mit welchem Ziel bearbeitet?",
             "value": ""
           },
           {
-            "label": "Beobachtungen und Fakten",
+            "label": "Measure",
+            "helperText": "Welche Daten beschreiben den Ist-Zustand?",
             "value": ""
           },
           {
-            "label": "Mögliche Ursachen oder Muster",
+            "label": "Analyze",
+            "helperText": "Welche Ursachen erklären die Abweichung?",
             "value": ""
           },
           {
-            "label": "Evidenz und Gegenargumente",
+            "label": "Improve",
+            "helperText": "Welche Maßnahmen werden getestet oder umgesetzt?",
             "value": ""
           },
           {
-            "label": "Erkenntnis und nächster Prüfpunkt",
+            "label": "Control",
+            "helperText": "Wie wird sichergestellt, dass die Verbesserung bleibt?",
+            "value": ""
+          },
+          {
+            "label": "Kennzahlen",
+            "helperText": "Welche KPIs zeigen Fortschritt und Stabilität?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Define, Measure, Analyze, Improve, Control.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "DMAIC strukturiert Prozessverbesserung in Define, Measure, Analyze, Improve und Control.",
+      "detail": {
+        "whatItIs": "DMAIC ist ein systematischer Verbesserungsprozess aus Six Sigma. Er verbindet klare Problemdefinition, Messung, Ursachenanalyse, Verbesserung und Stabilisierung.",
+        "whenToUse": [
+          "Wenn Prozessprobleme datenbasiert verbessert werden sollen.",
+          "Wenn Qualität oder Fehlerquote systematisch bearbeitet wird.",
+          "Wenn Ursachen und Wirkung messbar gemacht werden müssen.",
+          "Wenn Verbesserungen dauerhaft kontrolliert werden sollen."
+        ],
+        "howToUse": [
+          "Define: Problem und Ziel klären.",
+          "Measure: Daten und aktuelle Leistung erfassen.",
+          "Analyze: Ursachen untersuchen.",
+          "Improve: Lösungen testen und umsetzen.",
+          "Control: Wirkung absichern und überwachen."
+        ],
+        "pitfalls": [
+          "Measure-Phase überspringen.",
+          "Zu viel Methodik für kleine Probleme einsetzen.",
+          "Control vergessen und Verbesserungen wieder verlieren."
+        ],
+        "goodFor": [
+          "Six Sigma",
+          "Qualität",
+          "Prozessverbesserung",
+          "Datenbasierte Optimierung"
+        ],
+        "notIdealFor": [
+          "Kreative Ideenfindung",
+          "Sehr unscharfe Innovationsfragen",
+          "Schnelle Einzelentscheidungen"
+        ],
+        "output": "Ein datenbasierter Verbesserungsplan mit stabilisierter Umsetzung."
+      },
+      "visual": {
+        "headline": "Vom Problem zur stabilen Verbesserung",
+        "metaphor": "Eine Prozesspipeline mit fünf Qualitätsstationen.",
+        "layoutHint": "Fünf Phasen als horizontale Pipeline mit Datenpunkten und Kontrollschleife.",
+        "elements": [
+          "Define",
+          "Measure",
+          "Analyze",
+          "Improve",
+          "Control"
+        ]
+      },
+      "relatedTools": [
+        "pdca",
+        "ishikawa-fishbone",
+        "pareto-analyse"
+      ]
     },
     {
       "id": "cynefin-framework",
@@ -3105,36 +5351,104 @@
       "dominantCategoryLabel": "Analysieren",
       "totalScore": 33,
       "template": {
-        "title": "Cynefin Framework anwenden",
-        "categoryFocus": "Analysieren",
-        "intro": "Ein einfaches Starter-Template, um Cynefin Framework für die Denkbewegung „Analysieren“ zu nutzen.",
+        "title": "Cynefin Template",
+        "intro": "Ordne eine Situation ein und wähle die passende Art zu handeln.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Situation beschreiben",
+          "Domäne bestimmen",
+          "Handlungslogik wählen",
+          "erste Aktion definieren",
+          "Einordnung überprüfen"
+        ],
         "fields": [
           {
-            "label": "Problem, Risiko oder Annahme",
+            "label": "Situation",
+            "helperText": "Was passiert und was ist unklar?",
             "value": ""
           },
           {
-            "label": "Beobachtungen und Fakten",
+            "label": "Klar",
+            "helperText": "Gibt es bekannte Best Practices?",
             "value": ""
           },
           {
-            "label": "Mögliche Ursachen oder Muster",
+            "label": "Kompliziert",
+            "helperText": "Braucht es Expertenanalyse?",
             "value": ""
           },
           {
-            "label": "Evidenz und Gegenargumente",
+            "label": "Komplex",
+            "helperText": "Braucht es Experimente und Lernen?",
             "value": ""
           },
           {
-            "label": "Erkenntnis und nächster Prüfpunkt",
+            "label": "Chaotisch",
+            "helperText": "Muss zuerst stabilisiert werden?",
+            "value": ""
+          },
+          {
+            "label": "Handlungslogik",
+            "helperText": "Sense-Categorize-Respond, Sense-Analyze-Respond, Probe-Sense-Respond oder Act-Sense-Respond?",
+            "value": ""
+          },
+          {
+            "label": "Nächster Schritt",
+            "helperText": "Was tun wir zuerst?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Situationen nach klar, kompliziert, komplex, chaotisch und unklar einordnen.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Cynefin ordnet Situationen nach klar, kompliziert, komplex, chaotisch und unklar.",
+      "detail": {
+        "whatItIs": "Das Cynefin Framework hilft, den Charakter einer Situation zu erkennen. Je nach Domäne braucht es Best Practices, Expertenanalyse, Experimente, schnelles Handeln oder erst Orientierung.",
+        "whenToUse": [
+          "Wenn unklar ist, welche Art von Problem vorliegt.",
+          "Wenn Standardlösung und Experiment verwechselt werden.",
+          "Wenn Führung und Entscheidungslogik angepasst werden müssen.",
+          "Wenn komplexe Situationen nicht überkontrolliert werden sollen."
+        ],
+        "howToUse": [
+          "Beschreibe die Situation konkret.",
+          "Prüfe, ob Ursache und Wirkung klar, analysierbar, erst im Nachhinein erkennbar oder chaotisch sind.",
+          "Ordne die Situation einer Domäne zu.",
+          "Wähle passende Handlungslogik.",
+          "Überprüfe regelmäßig, ob die Einordnung noch stimmt."
+        ],
+        "pitfalls": [
+          "Komplexe Probleme wie komplizierte behandeln.",
+          "Das Framework als starre Schublade nutzen.",
+          "Zu lange analysieren, wenn schnelles Handeln nötig ist."
+        ],
+        "goodFor": [
+          "Führung",
+          "Strategie",
+          "Komplexität",
+          "Krisen und Veränderung"
+        ],
+        "notIdealFor": [
+          "Feinpriorisierung einzelner Aufgaben",
+          "Reine Ideensammlung",
+          "Standardisierte Checklistenprobleme"
+        ],
+        "output": "Eine passendere Handlungslogik für die jeweilige Problemart."
+      },
+      "visual": {
+        "headline": "Nicht jedes Problem ist gleich",
+        "metaphor": "Eine Karte mit verschiedenen Landschaftszonen.",
+        "layoutHint": "Cynefin-Domänen als Felder um ein Zentrum mit Handlungslogiken.",
+        "elements": [
+          "Domänen",
+          "Situation",
+          "Handlungslogik",
+          "nächster Schritt"
+        ]
+      },
+      "relatedTools": [
+        "rumsfeld-matrix",
+        "ooda-loop",
+        "delphi-methode"
+      ]
     },
     {
       "id": "ooda-loop",
@@ -3161,36 +5475,100 @@
       "dominantCategoryLabel": "Priorisieren",
       "totalScore": 29,
       "template": {
-        "title": "OODA Loop anwenden",
-        "categoryFocus": "Priorisieren",
-        "intro": "Ein einfaches Starter-Template, um OODA Loop für die Denkbewegung „Priorisieren“ zu nutzen.",
+        "title": "OODA Loop Template",
+        "intro": "Treffe Entscheidungen iterativ in dynamischen Situationen.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Observe",
+          "Orient",
+          "Decide",
+          "Act",
+          "Feedback integrieren"
+        ],
         "fields": [
           {
-            "label": "Optionen oder Aufgaben",
+            "label": "Observe",
+            "helperText": "Welche Signale, Daten oder Ereignisse sehen wir?",
             "value": ""
           },
           {
-            "label": "Bewertungskriterien",
+            "label": "Orient",
+            "helperText": "Was bedeuten sie im Kontext? Welche Annahmen wirken?",
             "value": ""
           },
           {
-            "label": "Bewertung je Option",
+            "label": "Decide",
+            "helperText": "Welche nächste Handlung wählen wir?",
             "value": ""
           },
           {
-            "label": "Empfohlene Reihenfolge",
+            "label": "Act",
+            "helperText": "Was setzen wir konkret um?",
             "value": ""
           },
           {
-            "label": "Entscheidung und Begründung",
+            "label": "Feedback",
+            "helperText": "Was hat sich verändert und was lernen wir daraus?",
+            "value": ""
+          },
+          {
+            "label": "Nächste Schleife",
+            "helperText": "Welche Beobachtung startet den nächsten Zyklus?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Observe, Orient, Decide, Act als schneller Entscheidungszyklus.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Der OODA Loop beschreibt schnelles Entscheiden durch Observe, Orient, Decide und Act.",
+      "detail": {
+        "whatItIs": "Der OODA Loop ist ein Entscheidungszyklus für dynamische Situationen. Entscheidend ist nicht nur schnelles Handeln, sondern die Fähigkeit, Beobachtung, Orientierung, Entscheidung und Aktion laufend zu verbessern.",
+        "whenToUse": [
+          "Wenn sich Situationen schnell ändern.",
+          "Wenn Wettbewerb, Unsicherheit oder Zeitdruck eine Rolle spielen.",
+          "Wenn Entscheidungen iterativ getroffen werden müssen.",
+          "Wenn Lernen aus Handlungen wichtig ist."
+        ],
+        "howToUse": [
+          "Observe: relevante Signale sammeln.",
+          "Orient: Kontext, Muster und Annahmen interpretieren.",
+          "Decide: nächste Handlung wählen.",
+          "Act: handeln und Wirkung beobachten.",
+          "Den Zyklus schnell wiederholen."
+        ],
+        "pitfalls": [
+          "Observe mit Datensammeln ohne Fokus verwechseln.",
+          "Orientierungsphase durch Bias verzerren.",
+          "Nur schnell handeln, aber nicht lernen."
+        ],
+        "goodFor": [
+          "Strategie",
+          "Wettbewerb",
+          "Krisenreaktion",
+          "agile Entscheidungen"
+        ],
+        "notIdealFor": [
+          "Ruhige Detailanalyse",
+          "Stabile Routineprozesse",
+          "Kreative Ideensammlung ohne Entscheidungsdruck"
+        ],
+        "output": "Ein wiederholbarer Entscheidungszyklus für dynamische Situationen."
+      },
+      "visual": {
+        "headline": "Schnell lernen, schneller handeln",
+        "metaphor": "Ein Loop mit vier Stationen und Feedbackpfeilen.",
+        "layoutHint": "Kreisförmiger Zyklus mit Observe, Orient, Decide, Act und Rückkopplung.",
+        "elements": [
+          "Observe",
+          "Orient",
+          "Decide",
+          "Act",
+          "Feedback"
+        ]
+      },
+      "relatedTools": [
+        "cynefin-framework",
+        "pdca",
+        "entscheidungsbaum"
+      ]
     },
     {
       "id": "theory-of-constraints",
@@ -3217,36 +5595,104 @@
       "dominantCategoryLabel": "Analysieren",
       "totalScore": 36,
       "template": {
-        "title": "Theory of Constraints anwenden",
-        "categoryFocus": "Analysieren",
-        "intro": "Ein einfaches Starter-Template, um Theory of Constraints für die Denkbewegung „Analysieren“ zu nutzen.",
+        "title": "Theory of Constraints Template",
+        "intro": "Finde den Engpass eines Systems und richte Verbesserungen darauf aus.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Systemziel klären",
+          "Engpass finden",
+          "Engpass ausnutzen",
+          "System ausrichten",
+          "Engpass erweitern"
+        ],
         "fields": [
           {
-            "label": "Problem, Risiko oder Annahme",
+            "label": "Systemziel",
+            "helperText": "Woran messen wir den Gesamterfolg?",
             "value": ""
           },
           {
-            "label": "Beobachtungen und Fakten",
+            "label": "Prozess oder System",
+            "helperText": "Welche Schritte gehören dazu?",
             "value": ""
           },
           {
-            "label": "Mögliche Ursachen oder Muster",
+            "label": "Engpass",
+            "helperText": "Wo staut sich Arbeit, Entscheidung oder Wert?",
             "value": ""
           },
           {
-            "label": "Evidenz und Gegenargumente",
+            "label": "Ausnutzen",
+            "helperText": "Wie nutzen wir den Engpass besser ohne große Investition?",
             "value": ""
           },
           {
-            "label": "Erkenntnis und nächster Prüfpunkt",
+            "label": "Ausrichten",
+            "helperText": "Was müssen andere Bereiche anders tun?",
+            "value": ""
+          },
+          {
+            "label": "Erweitern",
+            "helperText": "Welche Investition oder Änderung erhöht die Kapazität?",
+            "value": ""
+          },
+          {
+            "label": "Nächster Engpass",
+            "helperText": "Wo entsteht danach die neue Begrenzung?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Engpass identifizieren und das System darauf ausrichten.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Theory of Constraints fokussiert auf den Engpass, der die Gesamtleistung begrenzt.",
+      "detail": {
+        "whatItIs": "Die Theory of Constraints betrachtet Systeme über ihren begrenzenden Engpass. Verbesserung entsteht vor allem, wenn dieser Engpass identifiziert, genutzt, entlastet und gezielt erweitert wird.",
+        "whenToUse": [
+          "Wenn ein Prozess trotz vieler Verbesserungen nicht schneller wird.",
+          "Wenn Ressourcen knapp sind.",
+          "Wenn unklar ist, wo der größte Hebel liegt.",
+          "Wenn lokale Optimierung das Gesamtsystem nicht verbessert."
+        ],
+        "howToUse": [
+          "Definiere das Systemziel.",
+          "Identifiziere den aktuellen Engpass.",
+          "Nutze den Engpass bestmöglich aus.",
+          "Richte andere Aktivitäten auf den Engpass aus.",
+          "Erweitere den Engpass und suche danach den nächsten."
+        ],
+        "pitfalls": [
+          "Mehrere Engpässe gleichzeitig behaupten.",
+          "Lokale Auslastung optimieren statt Systemdurchsatz.",
+          "Nach Entlastung des Engpasses nicht neu suchen."
+        ],
+        "goodFor": [
+          "Prozesse",
+          "Produktion",
+          "Projektmanagement",
+          "Systemoptimierung"
+        ],
+        "notIdealFor": [
+          "Reine Kreativarbeit",
+          "Strategische Umfeldanalyse",
+          "Einzelentscheidungen ohne Prozessbezug"
+        ],
+        "output": "Ein klar identifizierter Engpass mit Maßnahmen zur Verbesserung des Gesamtsystems."
+      },
+      "visual": {
+        "headline": "Der Engpass bestimmt den Durchfluss",
+        "metaphor": "Eine Kette, bei der das schwächste Glied markiert ist.",
+        "layoutHint": "Prozesskette mit hervorgehobenem Engpass und Durchfluss-Pfeilen.",
+        "elements": [
+          "Systemziel",
+          "Prozesskette",
+          "Engpass",
+          "Durchfluss"
+        ]
+      },
+      "relatedTools": [
+        "pareto-analyse",
+        "a3-report",
+        "dmaic"
+      ]
     },
     {
       "id": "force-field-analysis",
@@ -3273,36 +5719,99 @@
       "dominantCategoryLabel": "Analysieren",
       "totalScore": 31,
       "template": {
-        "title": "Force Field Analysis anwenden",
-        "categoryFocus": "Analysieren",
-        "intro": "Ein einfaches Starter-Template, um Force Field Analysis für die Denkbewegung „Analysieren“ zu nutzen.",
+        "title": "Force Field Analysis Template",
+        "intro": "Analysiere Kräfte, die eine Veränderung antreiben oder bremsen.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Zielzustand formulieren",
+          "Treiber sammeln",
+          "Bremser sammeln",
+          "Stärke bewerten",
+          "Maßnahmen ableiten"
+        ],
         "fields": [
           {
-            "label": "Problem, Risiko oder Annahme",
+            "label": "Veränderungsziel",
+            "helperText": "Welche Veränderung soll erreicht werden?",
             "value": ""
           },
           {
-            "label": "Beobachtungen und Fakten",
+            "label": "Treibende Kräfte",
+            "helperText": "Was unterstützt die Veränderung?",
             "value": ""
           },
           {
-            "label": "Mögliche Ursachen oder Muster",
+            "label": "Bremsende Kräfte",
+            "helperText": "Was hält die Veränderung zurück?",
             "value": ""
           },
           {
-            "label": "Evidenz und Gegenargumente",
+            "label": "Stärke und Einfluss",
+            "helperText": "Welche Kräfte sind stark und beeinflussbar?",
             "value": ""
           },
           {
-            "label": "Erkenntnis und nächster Prüfpunkt",
+            "label": "Maßnahmen",
+            "helperText": "Wie reduzieren wir Bremser oder stärken Treiber?",
+            "value": ""
+          },
+          {
+            "label": "Nächster Schritt",
+            "helperText": "Was wird zuerst getan?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Treibende und bremsende Kräfte einer Veränderung sichtbar machen.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Force Field Analysis stellt treibende und bremsende Kräfte einer Veränderung gegenüber.",
+      "detail": {
+        "whatItIs": "Die Force Field Analysis macht sichtbar, welche Kräfte eine Veränderung unterstützen und welche sie bremsen. Dadurch lassen sich Maßnahmen ableiten, die nicht nur Treiber stärken, sondern vor allem Widerstände reduzieren.",
+        "whenToUse": [
+          "Wenn Veränderung geplant oder blockiert wird.",
+          "Wenn Widerstände greifbar gemacht werden sollen.",
+          "Wenn Change-Maßnahmen priorisiert werden.",
+          "Wenn soziale, organisatorische und strukturelle Kräfte zusammenspielen."
+        ],
+        "howToUse": [
+          "Beschreibe die gewünschte Veränderung.",
+          "Sammle treibende Kräfte.",
+          "Sammle hemmende Kräfte.",
+          "Bewerte Stärke und Beeinflussbarkeit.",
+          "Leite Maßnahmen ab, um Bremser zu reduzieren und Treiber zu stärken."
+        ],
+        "pitfalls": [
+          "Nur Treiber stärken und Widerstände ignorieren.",
+          "Kräfte zu abstrakt formulieren.",
+          "Personen als Problem markieren statt Bedingungen zu analysieren."
+        ],
+        "goodFor": [
+          "Change Management",
+          "Strategieumsetzung",
+          "Kommunikation",
+          "Stakeholder-Arbeit"
+        ],
+        "notIdealFor": [
+          "Technische Ursachenanalyse",
+          "Reine Ideengenerierung",
+          "Einfaches Aufgabenmanagement"
+        ],
+        "output": "Eine Veränderungslandkarte mit konkreten Hebeln für Umsetzung."
+      },
+      "visual": {
+        "headline": "Veränderung zwischen Zug und Gegenwind",
+        "metaphor": "Ein Ziel in der Mitte, links Treiber, rechts Bremser.",
+        "layoutHint": "Horizontale Kraftlinie mit Pfeilen pro Treiber und Bremser.",
+        "elements": [
+          "Zielzustand",
+          "Treiber",
+          "Bremser",
+          "Maßnahmen"
+        ]
+      },
+      "relatedTools": [
+        "stakeholder-map",
+        "swot",
+        "premortem"
+      ]
     },
     {
       "id": "delphi-methode",
@@ -3329,36 +5838,99 @@
       "dominantCategoryLabel": "Analysieren",
       "totalScore": 33,
       "template": {
-        "title": "Delphi-Methode anwenden",
-        "categoryFocus": "Analysieren",
-        "intro": "Ein einfaches Starter-Template, um Delphi-Methode für die Denkbewegung „Analysieren“ zu nutzen.",
+        "title": "Delphi-Methode Template",
+        "intro": "Strukturiere eine mehrstufige Expertenbefragung für unsichere Zukunftsfragen.",
+        "estimatedTime": "20–45 Minuten",
+        "steps": [
+          "Fragestellung definieren",
+          "Experten auswählen",
+          "Runde 1 befragen",
+          "Feedback aggregieren",
+          "Folgerunden durchführen"
+        ],
         "fields": [
           {
-            "label": "Problem, Risiko oder Annahme",
+            "label": "Fragestellung",
+            "helperText": "Welche Prognose oder Einschätzung wird gesucht?",
             "value": ""
           },
           {
-            "label": "Beobachtungen und Fakten",
+            "label": "Expertenkreis",
+            "helperText": "Welche Perspektiven müssen vertreten sein?",
             "value": ""
           },
           {
-            "label": "Mögliche Ursachen oder Muster",
+            "label": "Runde 1",
+            "helperText": "Welche Einschätzungen und Begründungen wurden gegeben?",
             "value": ""
           },
           {
-            "label": "Evidenz und Gegenargumente",
+            "label": "Aggregiertes Feedback",
+            "helperText": "Welche Muster, Spannbreiten oder Dissenspunkte zeigen sich?",
             "value": ""
           },
           {
-            "label": "Erkenntnis und nächster Prüfpunkt",
+            "label": "Runde 2+",
+            "helperText": "Wie verändern sich Einschätzungen nach Feedback?",
+            "value": ""
+          },
+          {
+            "label": "Ergebnis",
+            "helperText": "Wo gibt es Konsens, Dissens oder offene Unsicherheit?",
             "value": ""
           }
         ]
       },
-      "shortDescription": "Mehrstufige Expertenbefragung mit Feedbackrunden zur Konsensbildung.",
-      "detail": null,
-      "visual": null,
-      "relatedTools": []
+      "shortDescription": "Die Delphi-Methode sammelt Experteneinschätzungen anonym und iterativ zur Konsensbildung.",
+      "detail": {
+        "whatItIs": "Die Delphi-Methode nutzt mehrere Befragungsrunden mit strukturiertem Feedback. Expertinnen und Experten geben Einschätzungen ab, sehen aggregierte Ergebnisse und können ihre Bewertung in Folgerunden anpassen.",
+        "whenToUse": [
+          "Wenn Prognosen unter Unsicherheit gebraucht werden.",
+          "Wenn Expertenwissen verteilt ist.",
+          "Wenn Gruppendominanz vermieden werden soll.",
+          "Wenn Konsens oder Spannbreiten wichtiger sind als Einzelmeinungen."
+        ],
+        "howToUse": [
+          "Definiere Fragestellung und Auswahl der Experten.",
+          "Führe eine erste anonyme Befragung durch.",
+          "Aggregiere Ergebnisse und Begründungen.",
+          "Spiele Feedback an die Gruppe zurück.",
+          "Wiederhole Runden bis Stabilität oder Konsens sichtbar wird."
+        ],
+        "pitfalls": [
+          "Expertenauswahl zu eng oder einseitig treffen.",
+          "Fragen unklar formulieren.",
+          "Konsens erzwingen, obwohl Dissens fachlich wichtig ist."
+        ],
+        "goodFor": [
+          "Prognosen",
+          "Strategie",
+          "Forschung",
+          "Unsicherheit"
+        ],
+        "notIdealFor": [
+          "Schnelle Entscheidungen",
+          "Kreativworkshops",
+          "Probleme mit klaren Daten und wenig Unsicherheit"
+        ],
+        "output": "Eine konsolidierte Experteneinschätzung mit Begründungen, Spannbreiten und Konsensgrad."
+      },
+      "visual": {
+        "headline": "Expertenwissen in Runden verdichten",
+        "metaphor": "Mehrere Feedback-Schleifen, die Einschätzungen stabilisieren.",
+        "layoutHint": "Rundenmodell mit anonymen Antworten, Aggregation und Rückkopplung.",
+        "elements": [
+          "Expertenrunde",
+          "Aggregation",
+          "Feedback",
+          "Konsensbereich"
+        ]
+      },
+      "relatedTools": [
+        "pestel",
+        "entscheidungsbaum",
+        "cynefin-framework"
+      ]
     }
   ],
   "contentSchema": {
